@@ -1,0 +1,68 @@
+h1 {
+	text-align: center;
+	color:orangered;
+	font-family:'Poppins', sans-serif;;
+}
+img{
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+
+
+}
+
+.parent-images{
+	display:flex;
+ 	 flex-wrap:wrap;
+ 	 flex-direction: row;
+
+
+
+}
+.column{
+
+  padding: 5px;
+  flex:1;
+}
+
+.row{
+	display:flex;
+	margin-left:150px;
+  	margin-right:150px;
+  	padding: 0 4px;
+}
+
+
+.row2{
+	display:flex;
+	margin-left:150px;
+  	margin-right:150px;
+ 
+}
+
+.row3{
+	display:flex;
+	margin-left:150px;
+  	margin-right:150px;
+  	
+
+}
+
+
+
+
+/*END OF CODE*/
+
+/*Notes Section:*/
+/*
+CSS -
+Display:table;
+Margin: 0 auto;
+*/
+
+/* -- this function useful when using links
+h1:hover; 
+color:yellow;
+cursor:pointer;
+*/
+  
