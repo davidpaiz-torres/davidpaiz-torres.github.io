@@ -57,6 +57,10 @@ img{
 .parent-images{
 	width:200px;
 	height:auto;
+	margin-left:100px;
+	margin-right:100px;
+	display:table;
+
 }
 
 }
