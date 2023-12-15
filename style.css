@@ -1,0 +1,41 @@
+h2{
+text-align: center;	
+font-size: 25px;
+font-family: 'Poppins', sans-serif;
+margin:auto;
+}
+
+
+
+.header-section p {
+font-size: 16px;
+text-align:center;
+}
+
+.byline{
+font-family:'poppins', sans-serif;
+}
+
+.story-content{
+padding:5px;
+display:flex;
+align:center;
+
+}
+
+.text-info{
+font-size:16px;
+padding:5px;
+margin-left:275px;
+margin-right:275px;
+align:center;
+}
+
+
+.chart {
+display:flex;
+align:center;
+padding:5px;
+margin-left:305px;
+margin-right:305px;
+}
