@@ -59,7 +59,7 @@ justify-content:center;
 justify-content:center;
 padding:5px;
 align:center;
-width:auto;
+max-width:auto;
 height:auto;
 text-align:center;
 background-color:floralwhite;
@@ -92,6 +92,7 @@ max-width:100%
 
 
 .images{
+  align:center;
   display:flex;
   max-width:auto;
   margin-left:auto;
