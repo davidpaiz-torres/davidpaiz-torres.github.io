@@ -1,18 +1,45 @@
-/*img{
- /* margin-left:250px;
-  margin-right:250px;*/
+
+h1{
+/*display:flex;
+justify-content: center;*/
+font-size: 25px;
+/*font-family: 'Poppins', sans-serif;*/
+margin-left:auto;
+margin-right:auto;
+/*background-color:gainsboro;*/
+border-radius: 5;
+  align:center;
+  width: auto;
+  height: auto; 
 }
 
-.images{
-  display:flex;
-  justify-content:center;
-  align:center;
-  flex-direction:column;
 
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat; background-size: cover;
-  background-image: url(images/background-desktop.jpg);
+h3{
+  margin-left:auto;
+margin-right:auto;
+/*background-color:gainsboro;*/
+border-radius: 7;
+  align:center;
+  width: auto;
+  height: auto; 
+  font-style:italic;
+
+}
+
+
+.byline{
+/*display:flex;
+justify-content: center;*/
+/*font-family:'poppins', sans-serif;*/
+border-radius: 75%;
+font-size: 18px;
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+/*background-color:gainsboro;*/
+  padding: 10px; 
+  width: auto;
+  height: auto;  
 
 }
 
@@ -32,58 +59,13 @@ justify-content:center;
 justify-content:center;
 padding:5px;
 align:center;
-width:100%;
+width:auto;
 height:auto;
 text-align:center;
 background-color:floralwhite;
 position:relative;
 display:flex;
 flex-direction: column;
-
-}
-
-
-h1{
-/*display:flex;
-justify-content: center;*/
-font-size: 25px;
-/*font-family: 'Poppins', sans-serif;*/
-margin-left:auto;
-margin-right:auto;
-/*background-color:gainsboro;*/
-border-radius: 5;
-  align:center;
-  width: auto;
-  height: auto; 
-}
- 
-
-
-h3{
-  margin-left:auto;
-margin-right:auto;
-/*background-color:gainsboro;*/
-border-radius: 7;
-  align:center;
-  width: auto;
-  height: auto; 
-  font-style:italic;
-
-}
-
-.byline{
-/*display:flex;
-justify-content: center;*/
-/*font-family:'poppins', sans-serif;*/
-border-radius: 75%;
-font-size: 18px;
-text-align:center;
-margin-left:auto;
-margin-right:auto;
-/*background-color:gainsboro;*/
-  padding: 10px; 
-  width: auto;
-  height: auto;  
 
 }
 
@@ -101,10 +83,38 @@ padding:5px;
 .chart{
 display:flex;
 justify-content: center;
-padding:25px;
-margin-left:auto;
-margin-right:auto;
-max-width:40%;
-max-height:auto;
+/*padding:25px;*/
+/*margin-left:auto;
+margin-right:auto;*/
+max-width:100%
+
+}
+
+img{
+   display:flex;
+  max-width:100%;
+ 
+ 
+  justify-content:center;
+  flex-direction:column;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-image: url(images/background-desktop.jpg);
+}
+
+
+.images{
+  display:flex;
+  
+  justify-content:center;
+ padding:25px;
+  flex-direction:column;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-image: url(images/background-desktop.jpg);
 
 }
