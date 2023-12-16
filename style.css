@@ -1,6 +1,19 @@
+/*img{
+ /* margin-left:250px;
+  margin-right:250px;*/
+}
+
 .images{
   display:flex;
   justify-content:center;
+  align:center;
+  flex-direction:column;
+
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat; background-size: cover;
+  background-image: url(images/background-desktop.jpg);
+
 }
 
 .credits{
