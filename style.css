@@ -18,7 +18,7 @@ h3{
   margin-left:auto;
 margin-right:auto;
 /*background-color:gainsboro;*/
-border-radius: 7;
+/*border-radius: 7;*/
   align:center;
   width: auto;
   height: auto; 
@@ -66,6 +66,12 @@ background-color:floralwhite;
 position:relative;
 display:flex;
 flex-direction: column;
+/*background-position: center center;
+    background-size: ;
+  background-attachment: fixed;
+  background-repeat: no-repeat; 
+  background-size: scroll;
+  background-image: url(images/52507790172_390f1d8017_c.jpg);*/
 
 }
 
@@ -94,19 +100,13 @@ max-width:100%
 .images{
   align:center;
   display:flex;
-  max-width:auto;
+  max-width:100%;
   margin-left:auto;
   margin-right:auto;
   justify-content:center;
+
  padding:25px;
   flex-direction:column;
+    
 }
 
-img{
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat; 
-  background-size: cover;
-  background-image: url(images/52507790172_390f1d8017_c.jpg);
-
-}
