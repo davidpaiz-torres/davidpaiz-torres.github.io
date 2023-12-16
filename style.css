@@ -100,10 +100,13 @@ max-width:100%
   justify-content:center;
  padding:25px;
   flex-direction:column;
+}
+
+img{
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat; 
   background-size: cover;
-  background-image: url(images/background-desktop.jpg);
+  background-image: url(images/52507790172_390f1d8017_c.jpg);
 
 }
