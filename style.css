@@ -107,7 +107,9 @@ img{
 
 .images{
   display:flex;
-  
+  max-width:100%;
+  margin-left:auto;
+  margin-right:auto;
   justify-content:center;
  padding:25px;
   flex-direction:column;
