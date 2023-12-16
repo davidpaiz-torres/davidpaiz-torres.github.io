@@ -1,3 +1,20 @@
+.images{
+  display:flex;
+  justify-content:center;
+}
+
+.credits{
+  font-style:italic;
+  display:flex;
+text-align:center;
+flex-basis: auto;
+font-size:16px;
+padding:5px;
+justify-content:center;
+
+}
+
+
 .story{
 justify-content:center;
 padding:5px;
@@ -38,6 +55,7 @@ border-radius: 7;
   align:center;
   width: auto;
   height: auto; 
+  font-style:italic;
 
 }
 
