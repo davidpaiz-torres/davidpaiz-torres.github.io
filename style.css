@@ -76,14 +76,7 @@ flex-direction: column;
 }
 
 
-.text-info{
-/*display:flex;*/
-text-align:center;
-/*flex-basis: auto;*/
-font-size:16px;
-padding:5px;
-/*justify-content:normal;*/
-}
+
 
 
 .chart{
