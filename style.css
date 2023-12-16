@@ -1,19 +1,41 @@
-h2{
+h1{
 text-align: center;	
 font-size: 25px;
 font-family: 'Poppins', sans-serif;
 margin:auto;
+background-color:orange;
+background-position: center;
+border-radius: 25px;
+  padding: 20px; 
+  align:center;
+  width: auto;
+  height: auto; 
+}
+ 
+.story{
+padding:5px;
+align:center;
+max-width:100%;
+height:auto;
 }
 
 
-
-.header-section p {
-font-size: 16px;
-text-align:center;
+.dek {
+font-family:'poppins', sans-serif;	
 }
 
 .byline{
 font-family:'poppins', sans-serif;
+border-radius: 25px;
+font-size: 16px;
+text-align:center;
+background-color:lightblue;
+background-position: center;
+  padding: 10px; 
+  align:center;
+  width: auto;
+  height: auto;  
+
 }
 
 .story-content{
@@ -36,6 +58,9 @@ align:center;
 display:flex;
 align:center;
 padding:5px;
+max-width:100%;
+height:auto;
 margin-left:305px;
 margin-right:305px;
+
 }
