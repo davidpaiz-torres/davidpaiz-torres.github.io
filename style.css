@@ -4,19 +4,25 @@ padding:5px;
 align:center;
 width:100%;
 height:auto;
+text-align:center;
 background-color:floralwhite;
 position:relative;
+display:flex;
+flex-direction: column;
+justify-content: center;
+
 }
 
 
 h1{
-text-align: center;	
+/*display:flex;
+justify-content: center;*/
 font-size: 25px;
-font-family: 'Poppins', sans-serif;
-margin:auto;
-background-color:orange;
-border-radius: 25px;
-  padding: 20px; 
+/*font-family: 'Poppins', sans-serif;*/
+margin-left:auto;
+margin-right:auto;
+/*background-color:gainsboro;*/
+border-radius: 5;
   align:center;
   width: auto;
   height: auto; 
@@ -24,18 +30,27 @@ border-radius: 25px;
  
 
 
-.dek {
-font-family:'poppins', sans-serif;	
+h3{
+  margin-left:auto;
+margin-right:auto;
+/*background-color:gainsboro;*/
+border-radius: 7;
+  align:center;
+  width: auto;
+  height: auto; 
+
 }
 
 .byline{
-font-family:'poppins', sans-serif;
-border-radius: 25px;
-font-size: 16px;
+/*display:flex;
+justify-content: center;*/
+/*font-family:'poppins', sans-serif;*/
+border-radius: 75%;
+font-size: 18px;
 text-align:center;
 margin-left:auto;
 margin-right:auto;
-background-color:lightblue;
+/*background-color:gainsboro;*/
   padding: 10px; 
   width: auto;
   height: auto;  
@@ -49,17 +64,17 @@ text-align:center;
 /*flex-basis: auto;*/
 font-size:16px;
 padding:5px;
-justify-content:normal;
+/*justify-content:normal;*/
 }
 
 
 .chart {
 display:flex;
+flex-wrap:wrap;
 justify-content:center;
-align-content:center;
-padding:5px;
+/*align-content:center;*/
+padding:25px;
 max-width:100%;
 height:auto;
-
 
 }
