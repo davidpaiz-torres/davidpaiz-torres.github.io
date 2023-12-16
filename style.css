@@ -90,19 +90,7 @@ max-width:100%
 
 }
 
-img{
-   display:flex;
-  max-width:100%;
- 
- 
-  justify-content:center;
-  flex-direction:column;
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat; 
-  background-size: cover;
-  background-image: url(images/background-desktop.jpg);
-}
+
 
 
 .images{
