@@ -8,6 +8,7 @@ margin-top:-25px;
 margin-left:-25px;
 margin-right:-25px;
 margin-bottom:-25px;
+
 }
 
 h1{
@@ -71,9 +72,9 @@ margin-right:250px;
 }
 
 .graf_1{
-  margin-left:150px;
-  margin-right:150px;
-/*  align:center;*/
+/*  text-align:left-center;*/
+  margin-left:250px;
+  margin-right:250px;
 
 }
 
@@ -95,5 +96,17 @@ img{
   height:auto;
   margin-left:auto;
   margin-right:auto;
+}
+
+@media only screen and (min-width: 390px)
+{.graf_1{
+  margin-left: auto;
+  margin-right:auto;
+}
+
+@media only screen and (min-width: 900px)
+{.graf_1{
+  margin-left: 250px;
+  margin-right:250px;
 }
 
