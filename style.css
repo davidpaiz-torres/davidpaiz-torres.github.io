@@ -146,7 +146,7 @@ img{
 
 
 /*MACBOOK SCREEN SIZE*/
-@media only screen and (min-width: 750px)
+@media only screen and (min-width: 900px)
 {.graf_1{
   margin-left: 250px;
   margin-right:250px;
