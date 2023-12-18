@@ -92,29 +92,34 @@ max-height:auto;
 }
 
 img{
-  max-width:50%;
+  max-width:100%;
   height:auto;
   margin-left:auto;
   margin-right:auto;
 }
 
 /*IPHONE SCREEN WIDTH*/
-@media only screen and (max-width: 390px)
+@media only screen and (max-width: 590px)
 {
   .story{
   margin-left: auto;
   margin-right:auto;
+}
   .graf_1{
   margin-left: auto;
   margin-right:auto;
+  }
   .map{
   margin-left: auto;
   margin-right:auto;
+  }
   .chart_1{
   margin-left: auto;
   margin-right:auto;
+  }
   .images{
   max-height:100%;
+  }
 }
 
 /*IPHONE SCREEN HEIGHT*/
@@ -123,24 +128,37 @@ img{
   .story{
   margin-left: auto;
   margin-right:auto;
+}
    .map{
   margin-left: auto;
   margin-right:auto;
+}
   .graf_1{
   margin-left: auto;
   margin-right:auto;
+}
   .chart_1{
   margin-left: auto;
   margin-right:auto;
-  .images{
-   max-height:100%;
+}
+
 }
 
 
 /*MACBOOK SCREEN SIZE*/
-@media only screen and (max-width: 900px)
+@media only screen and (min-width: 750px)
 {.graf_1{
   margin-left: 250px;
   margin-right:250px;
+}
+  .chart_1{
+  margin-left: 250px;
+  margin-right:250px;
+}
+ .map{
+  margin-left: 250px;
+  margin-right:250px;
+}
+
 }
 
