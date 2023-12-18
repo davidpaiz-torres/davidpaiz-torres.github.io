@@ -98,32 +98,47 @@ img{
   margin-right:auto;
 }
 
+/*IPHONE SCREEN WIDTH*/
 @media only screen and (max-width: 390px)
-{.story{
+{
+  .story{
   margin-left: auto;
   margin-right:auto;
-}
-
-@media only screen and (max-width: 390px)
-{.graf_1 {
+  .graf_1{
   margin-left: auto;
   margin-right:auto;
-}
-
-@media only screen and (max-width: 390px)
-{.chart_1{
+  .map{
   margin-left: auto;
   margin-right:auto;
-}
-
-@media only screen and (max-width: 390px)
-{.map{
+  .chart_1{
   margin-left: auto;
   margin-right:auto;
+  .images{
+  max-height:100%;
+}
+
+/*IPHONE SCREEN HEIGHT*/
+@media only screen and (max-height: 844px)
+{ 
+  .story{
+  margin-left: auto;
+  margin-right:auto;
+   .map{
+  margin-left: auto;
+  margin-right:auto;
+  .graf_1{
+  margin-left: auto;
+  margin-right:auto;
+  .chart_1{
+  margin-left: auto;
+  margin-right:auto;
+  .images{
+   max-height:100%;
 }
 
 
-@media only screen and (min-width: 900px)
+/*MACBOOK SCREEN SIZE*/
+@media only screen and (max-width: 900px)
 {.graf_1{
   margin-left: 250px;
   margin-right:250px;
