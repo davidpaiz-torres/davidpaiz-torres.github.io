@@ -1,15 +1,11 @@
 .story{
 justify-content:center;
 align:center;
-max-width:auto;
-height:auto;
 text-align:center;
 background-color:floralwhite;
 display:flex;
 flex-direction: column;
 font-family: 'Poppins', sans-serif;
-/*border-style:inset;
-border-radius:5px;*/
 padding:25px;
 margin-top:-25px;
 margin-left:-25px;
@@ -24,6 +20,11 @@ margin-right:auto;
 align:center;
 width: auto;
 height: auto; 
+}
+
+.hed_dek{
+  border-style:inset;
+  border-radius:5px;
 }
 
 .hed {
@@ -52,12 +53,7 @@ weight: auto;
 font-style:italic;
 }
 
-.hed_dek{
-  border-style:inset;
-  border-radius:5px;
-}
-
-.credits{
+.photo_credits{
 font-style:italic;
 display:flex;
 text-align:center;
