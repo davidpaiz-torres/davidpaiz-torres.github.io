@@ -7,25 +7,21 @@ font-size: 25px;
 margin-left:auto;
 margin-right:auto;
 /*background-color:gainsboro;*/
-border-radius: 5;
+/*border-radius: 5;*/
   align:center;
   width: auto;
   height: auto; 
 }
 
-
-h3{
-  margin-left:auto;
+.dek{
+margin-left:auto;
 margin-right:auto;
-/*background-color:gainsboro;*/
-/*border-radius: 7;*/
   align:center;
   width: auto;
   height: auto; 
   font-style:italic;
 
 }
-
 
 .byline{
 /*display:flex;
