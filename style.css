@@ -23,26 +23,23 @@ height: auto;
 }
 
 .hed_dek{
-  border-style:inset;
-  border-radius:5px;
+
   display:flex;
   flex-direction:column;
   justify-content: center;
-  border-radius: 30px;
+
 }
 
 .hed {
-/*    border-style:outset;
-  border-radius:5px;
-*/}
+border-style:outset;
+border-radius:15px;
+}
 
 .dek{
-margin-left:auto;
-margin-right:auto;
 align:center;
 font-size:16px;
 font-style:italic;
-  
+
 }
 
 .byline{
