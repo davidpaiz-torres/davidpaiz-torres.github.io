@@ -25,12 +25,16 @@ height: auto;
 .hed_dek{
   border-style:inset;
   border-radius:5px;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  border-radius: 30px;
 }
 
 .hed {
-    border-style:outset;
+/*    border-style:outset;
   border-radius:5px;
-}
+*/}
 
 .dek{
 margin-left:auto;
@@ -38,12 +42,10 @@ margin-right:auto;
 align:center;
 font-size:16px;
 font-style:italic;
-  border-style:outset;
-  border-radius:5px;
+  
 }
 
 .byline{
-border-radius: 75%;
 font-size: 13px;
 text-align:center;
 margin-left:auto;
