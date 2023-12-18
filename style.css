@@ -98,11 +98,30 @@ img{
   margin-right:auto;
 }
 
-@media only screen and (min-width: 390px)
-{.graf_1{
+@media only screen and (max-width: 390px)
+{.story{
   margin-left: auto;
   margin-right:auto;
 }
+
+@media only screen and (max-width: 390px)
+{.graf_1 {
+  margin-left: auto;
+  margin-right:auto;
+}
+
+@media only screen and (max-width: 390px)
+{.chart_1{
+  margin-left: auto;
+  margin-right:auto;
+}
+
+@media only screen and (max-width: 390px)
+{.map{
+  margin-left: auto;
+  margin-right:auto;
+}
+
 
 @media only screen and (min-width: 900px)
 {.graf_1{
