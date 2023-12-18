@@ -1,102 +1,77 @@
-
-h1{
-/*display:flex;
-justify-content: center;*/
-font-size: 25px;
-/*font-family: 'Poppins', sans-serif;*/
-margin-left:auto;
-margin-right:auto;
-/*background-color:gainsboro;*/
-/*border-radius: 5;*/
-  align:center;
-  width: auto;
-  height: auto; 
-}
-
-.dek{
-margin-left:auto;
-margin-right:auto;
-  align:center;
-  width: auto;
-  height: auto; 
-  font-style:italic;
-
-}
-
-.byline{
-/*display:flex;
-justify-content: center;*/
-/*font-family:'poppins', sans-serif;*/
-border-radius: 75%;
-font-size: 18px;
-text-align:center;
-margin-left:auto;
-margin-right:auto;
-/*background-color:gainsboro;*/
-  padding: 10px; 
-  width: auto;
-  height: auto;  
-
-}
-
-.credits{
-  font-style:italic;
-  display:flex;
-text-align:center;
-flex-basis: auto;
-font-size:16px;
-padding:5px;
-justify-content:center;
-
-}
-
-
 .story{
 justify-content:center;
-padding:5px;
 align:center;
 max-width:auto;
 height:auto;
 text-align:center;
 background-color:floralwhite;
-position:relative;
 display:flex;
 flex-direction: column;
-/*background-position: center center;
-    background-size: ;
-  background-attachment: fixed;
-  background-repeat: no-repeat; 
-  background-size: scroll;
-  background-image: url(images/52507790172_390f1d8017_c.jpg);*/
-
+font-family: 'Poppins', sans-serif;
+border-style:inset;
+border-radius:5px;
 }
 
+h1{
+font-size: 25px;
+margin-left:auto;
+margin-right:auto;
+align:center;
+width: auto;
+height: auto; 
+}
 
+.lede {
+    border-style:outset;
+  border-radius:5px;
+}
 
+.dek{
+margin-left:auto;
+margin-right:auto;
+align:center;
+font-style:italic;
+  border-style:outset;
+  border-radius:5px;
+}
 
+.byline{
+border-radius: 75%;
+font-size: 18px;
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+width: auto;
+weight: auto;
+font-style:italic;
+}
+
+.lede_dek{
+  border-style:outset;
+  border-radius:5px;
+}
+
+.credits{
+font-style:italic;
+display:flex;
+text-align:center;
+flex-basis: auto;
+font-size:16px;
+padding:5px;
+justify-content:center;
+}
 
 .chart{
 display:flex;
 justify-content: center;
-/*padding:25px;*/
-/*margin-left:auto;
-margin-right:auto;*/
-max-width:100%
-
+max-width:100%;
 }
 
 
 .images{
-  align:center;
-  display:flex;
-  max-width:100%;
-/*  margin-left:auto;
-  margin-right:auto;*/
-  justify-content:center;
-
- padding:25px;
-  flex-direction:column;
-    
+display:flex;
+max-width:100%;
+max-height:auto;
 }
 
 img{
