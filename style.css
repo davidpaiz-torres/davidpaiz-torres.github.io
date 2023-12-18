@@ -105,8 +105,12 @@ img{
   margin-left: auto;
   margin-right:auto;
 }
-h1{
+.hed
 font-size: 16px;
+border-style:inset;
+border-radius:15px;
+display:flex;
+flex-direction: row;
 }
 
 
