@@ -125,7 +125,6 @@ display:flex;
 flex-direction: row;
 }
 
-
   .graf_1{
   margin-left: auto;
   margin-right:auto;
@@ -142,6 +141,7 @@ flex-direction: row;
   margin-left: auto;
   margin-right:auto;
 }
+
 .images{
 max-height:100%;
 }
@@ -196,7 +196,7 @@ max-height:100%;
   margin-left: 400px;
   margin-right:400px;
 }
-}
+
 
   .chart_1{
   margin-left: 300px;
