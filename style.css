@@ -12,8 +12,8 @@ margin-bottom:-25px;
 }
 
 h1{
-  text-align:center;
-font-size: 25px;
+text-align:center;
+font-size: 40px;
 margin-left:auto;
 margin-right:auto;
 align:center;
@@ -39,6 +39,12 @@ align:center;
 font-size:16px;
 font-style:italic;
 
+}
+
+.lede{
+/*  text-align:left-center;*/
+  margin-left:300px;
+  margin-right:300px;
 }
 
 .byline{
@@ -68,15 +74,15 @@ flex-direction: column;
 justify-content: center;
 margin-left:250px;
 margin-right:250px;
-
 }
 
 .graf_1{
 /*  text-align:left-center;*/
   margin-left:250px;
   margin-right:250px;
-
 }
+
+
 
 .map{
 display:flex;
@@ -98,28 +104,37 @@ img{
   margin-right:auto;
 }
 
+
+/*MEDIA QUEIRIES BELOW*/
+
+
 /*IPHONE SCREEN WIDTH*/
 @media only screen and (max-width: 590px)
 {
-  .story{
+ .story{
   margin-left: auto;
   margin-right:auto;
 }
-  .graf_1{
+.graf_1{
   margin-left: auto;
   margin-right:auto;
-  }
-  .map{
+ }
+ .lede{
   margin-left: auto;
   margin-right:auto;
-  }
-  .chart_1{
+ }
+.map{
   margin-left: auto;
   margin-right:auto;
-  }
-  .images{
-  max-height:100%;
-  }
+}
+.chart_1{
+  margin-left: auto;
+  margin-right:auto;
+}
+.images{
+max-height:100%;
+}
+
 }
 
 /*IPHONE SCREEN HEIGHT*/
@@ -129,11 +144,16 @@ img{
   margin-left: auto;
   margin-right:auto;
 }
+
    .map{
   margin-left: auto;
   margin-right:auto;
 }
   .graf_1{
+  margin-left: auto;
+  margin-right:auto;
+}
+.lede{
   margin-left: auto;
   margin-right:auto;
 }
@@ -147,18 +167,29 @@ img{
 
 /*MACBOOK SCREEN SIZE*/
 @media only screen and (min-width: 900px)
-{.graf_1{
-  margin-left: 250px;
-  margin-right:250px;
+{
+
+ .graf_1{
+  margin-left: 300px;
+  margin-right:300px;
 }
+.lede{
+  margin-left: 300px;
+  margin-right:300px;
+}
+
   .chart_1{
-  margin-left: 250px;
-  margin-right:250px;
+  margin-left: 300px;
+  margin-right:300px;
+  max-width:50%;
+
 }
  .map{
-  margin-left: 250px;
-  margin-right:250px;
+  margin-left: 300px;
+  margin-right: 300px;
+  max-width:50%;
 }
+
 
 }
 
