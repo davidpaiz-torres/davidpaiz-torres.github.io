@@ -30,10 +30,14 @@ height: auto;
 
 }
 
+/*REMOVED THIS BECAUSE BORDER MADE IT FEEL TOO MUCH LIKE 2006 :'(
+
 .hed {
 border-style:outset;
 border-radius:15px;
 }
+
+*/
 
 .dek{
 align:center;
@@ -184,8 +188,7 @@ max-height:100%;
   margin-right:300px;
 }
 .images{
-  margin-left:300px;
-  margin-right:300px;
+  max-width:100%;
 }
 
 h1{
