@@ -39,11 +39,9 @@ border-radius:15px;
 align:center;
 font-size:16px;
 font-style:italic;
-
 }
 
-.lede{
-/*  text-align:left-center;*/
+.lede_nutgraf{
   margin-left:300px;
   margin-right:300px;
 }
@@ -129,7 +127,7 @@ flex-direction: row;
   margin-left: auto;
   margin-right:auto;
  }
- .lede{
+ .lede_nutgraf{
   margin-left: auto;
   margin-right:auto;
  }
@@ -156,7 +154,7 @@ max-height:100%;
   margin-right:auto;
 }
 
-   .map{
+  .map{
   margin-left: auto;
   margin-right:auto;
 }
@@ -164,9 +162,10 @@ max-height:100%;
   margin-left: auto;
   margin-right:auto;
 }
-.lede{
+.lede_nutgraf{
   margin-left: auto;
   margin-right:auto;
+  font-size:35;
 }
   .chart_1{
   margin-left: auto;
@@ -188,13 +187,19 @@ max-height:100%;
   margin-left:300px;
   margin-right:300px;
 }
-.lede{
+
+h1{
+font-size:25pt;
+}
+.lede_nutgraf{
   margin-left: 300px;
   margin-right:300px;
 }
+
 .dek{
   margin-left: 400px;
   margin-right:400px;
+
 }
 
 
