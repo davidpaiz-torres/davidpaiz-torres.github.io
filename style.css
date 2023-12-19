@@ -45,7 +45,7 @@ font-size:16px;
 font-style:italic;
 }
 
-.lede_nutgraf{
+.lede_storygrafs{
   margin-left:300px;
   margin-right:300px;
 }
@@ -64,13 +64,20 @@ font-style:italic;
 font-style:italic;
 display:flex;
 text-align:center;
-flex-basis: auto;
+/*flex-basis: auto;*/
 font-size:14px;
 padding:5px;
 justify-content:center;
 }
 
+/*.charts{
+  display:flex;
+  align-items:flex-start;
+  flex-direction:row;
+  justify-content:start;
 
+}
+*/
 .chart_1{
 display:flex;
 flex-direction: column;
@@ -79,8 +86,15 @@ margin-left:250px;
 margin-right:250px;
 }
 
+.chart_2{
+display:flex;
+flex-direction: column;
+justify-content: center;
+margin-left:250px;
+margin-right:250px;
+}
+
 .graf_1{
-/*  text-align:left-center;*/
   margin-left:250px;
   margin-right:250px;
 }
@@ -108,6 +122,8 @@ img{
 }
 
 
+
+
 /*MEDIA QUEIRIES BELOW*/
 
 
@@ -131,7 +147,7 @@ flex-direction: row;
   margin-left: auto;
   margin-right:auto;
  }
- .lede_nutgraf{
+ .lede_storygrafs{
   margin-left: auto;
   margin-right:auto;
  }
@@ -166,7 +182,7 @@ max-height:100%;
   margin-left: auto;
   margin-right:auto;
 }
-.lede_nutgraf{
+.lede_storygrafs{
   margin-left: auto;
   margin-right:auto;
   font-size:35;
@@ -194,7 +210,7 @@ max-height:100%;
 h1{
 font-size:25pt;
 }
-.lede_nutgraf{
+.lede_storygrafs{
   margin-left: 300px;
   margin-right:300px;
 }
@@ -204,14 +220,18 @@ font-size:25pt;
   margin-right:400px;
 
 }
-
-
   .chart_1{
   margin-left: 300px;
   margin-right:300px;
   max-width:50%;
-
 }
+
+ .chart_2{
+  margin-left: 300px;
+  margin-right:300px;
+  max-width:50%;
+}
+
  .map{
   margin-left: 300px;
   margin-right: 300px;
