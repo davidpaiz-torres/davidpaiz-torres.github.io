@@ -173,9 +173,18 @@ max-height:100%;
   margin-left: 300px;
   margin-right:300px;
 }
+.images{
+  margin-left:300px;
+  margin-right:300px;
+}
 .lede{
   margin-left: 300px;
   margin-right:300px;
+}
+.dek{
+  margin-left: 400px;
+  margin-right:400px;
+}
 }
 
   .chart_1{
@@ -187,7 +196,7 @@ max-height:100%;
  .map{
   margin-left: 300px;
   margin-right: 300px;
-  max-width:50%;
+  max-width:100%;
 }
 
 
