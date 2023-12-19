@@ -159,6 +159,10 @@ flex-direction: row;
   margin-left: auto;
   margin-right:auto;
 }
+.chart_2{
+  margin-left: auto;
+  margin-right:auto;
+}
 
 .images{
 max-height:100%;
@@ -190,6 +194,10 @@ max-height:100%;
   .chart_1{
   margin-left: auto;
   margin-right:auto;
+  .chart_2{
+  margin-left: auto;
+  margin-right:auto;
+}
 }
 
 }
