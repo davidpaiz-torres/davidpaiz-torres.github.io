@@ -1,1 +1,1 @@
-WIP site for a data story regarding the rise in rodent violations between 2020-2023 in NYC School Cafeterias
+Data story regarding rodent violations in NYC School Cafeterias. Story was crafted using inspection data from the department of Health and Mental Hygiene
