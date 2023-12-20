@@ -169,7 +169,7 @@ max-height:100%;
 }
 
 /*IPHONE SCREEN HEIGHT*/
-@media only screen and (max-height: 844px)
+@media only screen and (max-height: 650px)
 { 
   .story{
   margin-left: auto;
@@ -184,6 +184,7 @@ max-height:100%;
   margin-left: auto;
   margin-right:auto;
 }
+
 .lede_storygrafs{
   margin-left: auto;
   margin-right:auto;
@@ -192,13 +193,14 @@ max-height:100%;
   .chart_1{
   margin-left: auto;
   margin-right:auto;
+}
   .chart_2{
   margin-left: auto;
   margin-right:auto;
 }
 }
 
-}
+
 
 
 /*MACBOOK SCREEN SIZE*/
@@ -206,8 +208,8 @@ max-height:100%;
 {
 
  .graf_1{
-  margin-left: auto;
-  margin-right:auto;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 .images{
   max-width:100%;
@@ -222,8 +224,8 @@ font-size:25pt;
 }
 
 .dek{
-  margin-left: 400px;
-  margin-right:400px;
+  margin-left: 200px;
+  margin-right:200px;
 
 }
   .chart_1{
@@ -246,51 +248,4 @@ font-size:25pt;
 
 
 }
-
-/*1440 SIZE MONITOR*/
-/*@media only screen and (min-width: 8040px)
-{
-
- .graf_1{
-  margin-left:600px;
-  margin-right:600px;
-}
-.images{
-  max-width:100%;
-}
-
-h1{
-font-size:35pt;
-}
-.lede_storygrafs{
-  margin-left: 600px;
-  margin-right:600px;
-}
-
-.dek{
-  margin-left: 500px;
-  margin-right:500px;
-
-}
-  .chart_1{
-  margin-left: 600px;
-  margin-right:600px;
-  max-width:100%;
-}
-
- .chart_2{
-  margin-left: 600px;
-  margin-right:600px;
-  max-width:100%;
-}
-
- .map{
-  margin-left: 600px;
-  margin-right: 600px;
-  max-width:100%;
-}
-
-
-}*/
-
-
+ 
