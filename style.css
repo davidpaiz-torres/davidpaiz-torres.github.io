@@ -186,8 +186,8 @@ font-size:25pt;
 }
 
 .lede_storygrafs{
-  margin-left: 300px;
-  margin-right:300px;
+  margin-left: 250px;
+  margin-right:250px;
 }
 
 .dek{
@@ -197,22 +197,31 @@ font-size:25pt;
 }
 
 
+  .charts{
+    display:flex;
+    flex-direction: column;
+  max-width: 100%;
+  
 
+  }
 
 .chart_1{
-   margin-left: 300px;
-  margin-right: 300px;
+  max-width: 500%;
+ 
+
+
 }
 
-.chart_2{
-  margin-left: 300px;
-  margin-right: 300px;
+
+  .chart_2{
+  max-width:500%;
+
 }
 
 
  .map{
-  margin-left: 290px;
-  margin-right: 290px;
+  margin-left: 240px;
+  margin-right: 240px;
   max-width:100%;
 }
 
@@ -242,16 +251,22 @@ font-size:35px;
   margin-right:400px;
 
 }
-  .chart_1{
-  margin-left: 650px;
-  margin-right: 650px;
-  max-width:50%;
+ .charts{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    align-items: baseline;
+     justify-content: space-around;
+
 }
 
- .chart_2{
-  margin-left: 650px;
+.chart_1{
+   margin-left: 650px;
   margin-right: 650px;
-  max-width:50%;
+  flex-grow:1;
+  flex-direction:row;
+ flex-basis:auto;
+
 }
 
  .map{
