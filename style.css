@@ -174,13 +174,9 @@ max-height:100%;
 
 
 /*MACBOOK SCREEN SIZE*/
-@media only screen and (min-width: 900px) and (max-width:900px)
+@media only screen and (min-width: 900px)
 {
 
- .graf_1{
-  margin-left: 250px;
-  margin-right: 250px;
-}
 .images{
   max-width:100%;
 }
@@ -189,8 +185,8 @@ h1{
 font-size:25pt;
 }
 .lede_storygrafs{
-  margin-left: 250px;
-  margin-right:250px;
+  margin-left: 300px;
+  margin-right:300px;
 }
 
 .dek{
@@ -199,26 +195,26 @@ font-size:25pt;
 
 }
   .chart_1{
-  margin-left: 250px;
-  margin-right:250px;
+  margin-left: 300px;
+  margin-right:300px;
   max-width:50%;
 }
 
  .chart_2{
-  margin-left: 250px;
-  margin-right:250px;
+  margin-left: 300px;
+  margin-right:300px;
   max-width:50%;
 }
 
  .map{
-  margin-left: 255px;
-  margin-right: 255px;
+  margin-left: 290px;
+  margin-right: 290px;
   max-width:100%;
 }
 
 }
 
-
+/*
 /*1440 Size Monitor*/
 @media only screen and (min-width: 2048px)
 {
@@ -227,7 +223,7 @@ max-width:100%;
   }
 
   h1{
-font-size:45pt;
+font-size:35pt;
 }
 
 .lede_storygrafs{
@@ -263,5 +259,5 @@ font-size:45pt;
 }
 
 
-}
+
 
