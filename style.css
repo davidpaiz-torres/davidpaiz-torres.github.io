@@ -247,13 +247,13 @@ font-size:25pt;
 
 }
 
-/*MACBOOK SCREEN SIZE*/
+/*1440 SIZE MONITOR*/
 @media only screen and (min-width: 1440px)
 {
 
  .graf_1{
-  margin-left:500px;
-  margin-right:500px;
+  margin-left:600px;
+  margin-right:600px;
 }
 .images{
   max-width:100%;
@@ -263,8 +263,8 @@ h1{
 font-size:35pt;
 }
 .lede_storygrafs{
-  margin-left: 500px;
-  margin-right:500px;
+  margin-left: 600px;
+  margin-right:600px;
 }
 
 .dek{
@@ -273,23 +273,24 @@ font-size:35pt;
 
 }
   .chart_1{
-  margin-left: 400px;
-  margin-right:400px;
-  max-width:50%;
+  margin-left: 600px;
+  margin-right:600px;
+  max-width:100%;
 }
 
  .chart_2{
-  margin-left: 400px;
-  margin-right:400px;
-  max-width:50%;
+  margin-left: 600px;
+  margin-right:600px;
+  max-width:100%;
 }
 
  .map{
-  margin-left: 400px;
-  margin-right: 400px;
+  margin-left: 600px;
+  margin-right: 600px;
   max-width:100%;
 }
 
 
 }
+
 
