@@ -227,6 +227,63 @@ font-size:25pt;
 
 }
 
+/*1920px screen size*/
+@media only screen and (min-width: 1920px)
+{
+
+.images{
+  max-width:100%;
+}
+
+h1{
+font-size:25pt;
+}
+
+.lede_storygrafs{
+  margin-left: 550px;
+  margin-right:550px;
+}
+
+.dek{
+  margin-left: 200px;
+  margin-right:200px;
+
+}
+
+  .charts{
+    display:flex;
+    flex-direction: column;
+    max-width: 100%;
+  
+
+  }
+
+.chart_1{
+  max-width: 50%;
+  margin-left: 550px;
+  margin-right:550px;
+ 
+
+
+}
+
+
+  .chart_2{
+  max-width:50%;
+  margin-left: 550px;
+  margin-right:550px;
+ 
+
+}
+
+ .map{
+  margin-left: 560px;
+  margin-right: 560px;
+  max-width:60%;
+}
+
+}
+
 
 /*1440 Size Monitor*/
 @media only screen and (min-width: 2048px)
