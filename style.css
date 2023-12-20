@@ -261,6 +261,6 @@ font-size:35px;
 
 @media screen and (min-width: 2048px){   
     #images{      
-        content:src("img/Test_Photo.jpg");
+        url:src("images/Test_Photo.jpg");
     } 
 }
