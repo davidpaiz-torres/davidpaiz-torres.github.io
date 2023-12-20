@@ -253,10 +253,10 @@ font-size:25pt;
 @media only screen and (min-width: 1440px)
 {
 
-/* .graf_1{
+ .graf_1{
   margin-left: 600px;
   margin-right: 600px;
-}*/
+}
 .images{
   max-width:100%;
 }
