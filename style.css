@@ -128,7 +128,7 @@ img{
 
 
 /*IPHONE SCREEN WIDTH*/
-@media only screen and (max-width: 900px)
+@media only screen and (max-width: 590px)
 {
  .story{
   margin-left: auto;
