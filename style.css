@@ -195,17 +195,20 @@ font-size:25pt;
   margin-right:200px;
 
 }
-  .chart_1{
-  margin-left: 300px;
-  margin-right:300px;
-  max-width:50%;
+
+
+
+
+.chart_1{
+   margin-left: 300px;
+  margin-right: 300px;
 }
 
- .chart_2{
+.chart_2{
   margin-left: 300px;
-  margin-right:300px;
-  max-width:50%;
+  margin-right: 300px;
 }
+
 
  .map{
   margin-left: 290px;
