@@ -204,7 +204,7 @@ max-height:100%;
 
 
 /*MACBOOK SCREEN SIZE*/
-@media only screen and (min-width: 900px) and (max-width:1300px)
+@media only screen and (min-width: 900px) and (max-width:900px)
 {
 
  .graf_1{
