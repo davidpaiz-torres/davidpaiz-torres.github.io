@@ -218,9 +218,7 @@ font-size:25pt;
 /*1440 Size Monitor*/
 @media only screen and (min-width: 2048px)
 {
-  .story{
-max-width:100%;
-  }
+  
 
   h1{
 font-size:30px;
