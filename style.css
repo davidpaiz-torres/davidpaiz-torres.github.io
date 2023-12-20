@@ -257,12 +257,12 @@ max-width:100%;
   }
 
   h1{
-font-size:25pt;
+font-size:45pt;
 }
 
 .lede_storygrafs{
-  margin-left: 600px;
-  margin-right: 600px;
+  margin-left: 650px;
+  margin-right: 650px;
 }
  
 .images{
@@ -281,8 +281,8 @@ font-size:25pt;
 }
 
  .chart_2{
-  margin-left: 600px;
-  margin-right:600px;
+  margin-left: 650px;
+  margin-right:650px;
   max-width:50%;
 }
 
