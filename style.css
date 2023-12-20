@@ -184,6 +184,7 @@ max-height:100%;
 h1{
 font-size:25pt;
 }
+
 .lede_storygrafs{
   margin-left: 300px;
   margin-right:300px;
@@ -260,6 +261,6 @@ font-size:35px;
 
 @media screen and (min-width: 2048px){   
     #images{      
-        content:url("img/52507790172_ee527872b3_3k.jpg");
+        content:url("img/Test_Photo.jpg");
     } 
 }
