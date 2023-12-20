@@ -256,21 +256,20 @@ font-size:25pt;
 max-width:100%;
   }
 
- .graf_1{
-  margin-left: 600px;
-  margin-right: 600px;
-}
-.images{
-  max-width:100%;
-}
-
-h1{
+  h1{
 font-size:25pt;
 }
 
 .lede_storygrafs{
   margin-left: 600px;
   margin-right: 600px;
+}
+ .graf_1{
+  margin-left: 625px;
+  margin-right: 625px;
+}
+.images{
+  max-width:100%;
 }
 
 .dek{
