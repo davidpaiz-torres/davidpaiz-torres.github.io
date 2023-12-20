@@ -248,7 +248,7 @@ font-size:25pt;
 }
 
 /*MACBOOK SCREEN SIZE*/
-@media only screen and (min-width: 1800px)
+@media only screen and (min-width: 1440px)
 {
 
  .graf_1{
