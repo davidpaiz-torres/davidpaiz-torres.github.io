@@ -256,11 +256,10 @@ font-size:35px;
   margin-right:560px;
   max-width:100%;
 }
-}
-
-
-@media screen and (min-width: 2048px){   
-    #images{      
+ .images{      
         img:src("images/Test_Photo.jpg");
     } 
 }
+
+
+
