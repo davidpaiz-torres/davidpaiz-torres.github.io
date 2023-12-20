@@ -219,7 +219,6 @@ font-size:25pt;
 
 }
 
-
  .map{
   margin-left: 300px;
   margin-right: 300px;
@@ -228,7 +227,7 @@ font-size:25pt;
 
 }
 
-/*
+
 /*1440 Size Monitor*/
 @media only screen and (min-width: 2048px)
 {
@@ -239,8 +238,8 @@ font-size:35px;
 }
 
 .lede_storygrafs{
-  margin-left: 650px;
-  margin-right: 650px;
+  margin-left: 750px;
+  margin-right: 750px;
 }
  
 .images{
@@ -262,8 +261,16 @@ font-size:35px;
 }
 
 .chart_1{
-   margin-left: 650px;
-  margin-right: 650px;
+   margin-left: 750px;
+  margin-right: 750px;
+  flex-grow:1;
+  flex-direction:row;
+ flex-basis:auto;
+
+}
+.chart_2{
+   margin-left: 750px;
+  margin-right: 750px;
   flex-grow:1;
   flex-direction:row;
  flex-basis:auto;
@@ -271,8 +278,8 @@ font-size:35px;
 }
 
  .map{
-  margin-left: 560px;
-  margin-right:560px;
+  margin-left: 740px;
+  margin-right:740px;
   max-width:100%;
 }
 
