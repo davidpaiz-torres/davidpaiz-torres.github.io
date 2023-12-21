@@ -194,8 +194,8 @@ font-size:25pt;
 }
 
 .lede_storygrafs{
-  margin-left: 300px;
-  margin-right:300px;
+  margin-left: 250px;
+  margin-right:250px;
   max-width: 100%;
   display:flex;
   flex-direction: column;
@@ -218,8 +218,8 @@ font-size:25pt;
 
 .chart_1{
   max-width: 50%;
-  margin-left: 300px;
-  margin-right:300px;
+  margin-left: 250px;
+  margin-right:250px;
  
 
 
@@ -228,15 +228,15 @@ font-size:25pt;
 
   .chart_2{
   max-width:50%;
-  margin-left: 300px;
-  margin-right:300px;
+  margin-left: 250px;
+  margin-right:250px;
  
 
 }
 
  .map{
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 250px;
+  margin-right: 250px;
   max-width:100%;
  
 }
