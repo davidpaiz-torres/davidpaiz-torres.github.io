@@ -130,38 +130,39 @@ img{
 /*IPHONE SCREEN WIDTH*/
 @media only screen and (max-width: 390px)
 {
- 
-.hed{
-font-size: 16px;
-display:flex;
-flex-direction: column;
+  .story{
+    display:flex;
+    flex-direction: column;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:100%;
+
+  }
+   .lede_storygrafs{
+  margin-left: auto;
+  margin-right:auto;
+ }
+ .chart_1{
+  margin-left: auto;
+  margin-right:auto;
 }
 
-  .graf_1{
+ .chart_2{
   margin-left: auto;
   margin-right:auto;
- }
- .lede_storygrafs{
-  margin-left: auto;
-  margin-right:auto;
- }
+}
+
+/*
 .map{
   margin-left: auto;
   margin-right:auto;
   max-width:100%;
 }
-.chart_1{
-  margin-left: auto;
-  margin-right:auto;
-}
-.chart_2{
-  margin-left: auto;
-  margin-right:auto;
-}
+
 
 .images{
-max-height:100%;
-}
+max-width:100%;
+}*/
 
 }
 
