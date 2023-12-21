@@ -148,7 +148,7 @@ flex-direction: column;
 .map{
   margin-left: auto;
   margin-right:auto;
-  max-width:60%;
+  max-width:100%;
 }
 .chart_1{
   margin-left: auto;
