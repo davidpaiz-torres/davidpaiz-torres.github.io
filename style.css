@@ -128,7 +128,7 @@ img{
 
 
 /*IPHONE SCREEN WIDTH*/
-@media only screen and (max-width: 390px)
+@media only screen and (max-width: 450px)
 {
   .story{
     display:flex;
@@ -141,15 +141,21 @@ img{
    .lede_storygrafs{
   margin-left: auto;
   margin-right:auto;
+  display:flex;
+    flex-direction: column;
  }
  .chart_1{
   margin-left: auto;
   margin-right:auto;
+  display:flex;
+    flex-direction: column;
 }
 
  .chart_2{
   margin-left: auto;
   margin-right:auto;
+  display:flex;
+    flex-direction: column;
 }
 
 /*
@@ -172,7 +178,7 @@ max-width:100%;
 
 
 /*MACBOOK SCREEN SIZE*/
-@media only screen and (min-width: 490px)
+@media only screen and (min-width: 560px)
 {
 .story{
   display:flex;
