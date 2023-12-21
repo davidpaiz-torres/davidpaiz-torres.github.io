@@ -128,7 +128,7 @@ img{
 
 
 /*IPHONE SCREEN WIDTH*/
-@media only screen and (max-width: 450px)
+@media only screen and (max-width: 430px)
 {
   .story{
     display:flex;
@@ -178,7 +178,7 @@ max-width:100%;
 
 
 /*MACBOOK SCREEN SIZE*/
-@media only screen and (min-width: 560px)
+@media only screen and (min-width: 900px)
 {
 .story{
   display:flex;
