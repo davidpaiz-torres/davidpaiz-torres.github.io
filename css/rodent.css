@@ -64,11 +64,60 @@ font-size:20pt;
 }
 }
 
+/*27-INCH 2K MONITOR SCREEN SIZE*/
+@media only screen and (min-width: 2449px) and (max-width: 2560px) {
+  body {
+      background-color: floralwhite;
+      font-family: 'poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      align-content:center;
+      justify-content: center;
+      flex-wrap:wrap
+  }
 
+  .hed, .dek, .byline, .photo_credits {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      align-items: center; /* Horizontally center the content */
+      justify-content: center; /* Vertically center the content */
+  }
+
+  h1 {
+      font-size: 20pt;
+  }
+
+  .lede_storygrafs {
+      padding-left: 350px;
+      padding-right: 350px;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+  }
+  .charts{
+    display:flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding-left: 350px;
+    padding-right:350px;
+  }
+  .map{
+    display:flex;
+    flex-direction: column;
+    padding-left: 350px;
+    padding-right: 350px;
+    max-width:100%;
+  }
+}
+
+
+ /*  */
 
 /*IPHONE 13 PRO TO IPHONE 14 PRO MAX SCREEN WIDTH*/
-@media screen and (max-width: 1284px) and (min-width: 1170px) 
- {
+@media screen and (max-width: 432px) and (min-width: 393px) 
+{
   body{
     background-color:floralwhite;
     font-family: 'poppins', sans-serif;
@@ -82,15 +131,19 @@ font-size:20pt;
     margin-left:auto;
     margin-right:auto;
   }
-
+  
+   
   .hed, .dek, .byline, .photo_credits {
     display: flex;
     flex-direction: column;
     max-width: 100%;
     align-items: center; /* Horizontally center the content */
     justify-content: center; /* Vertically center the content */
+    
      margin: 0 auto;
-  }
+      }
+  
+
   .images, .photo_credits, .byline {
     display: flex;
     flex-direction: column;
@@ -100,7 +153,8 @@ font-size:20pt;
     text-align: center; /* Center the text */
       max-width: 100%; /* Make the image responsive */
       height: auto; /* Maintain the aspect ratio */
-      margin: 0 auto;   
+      margin: 0 auto; 
+   
   }
   .hed{
     font-size: 10pt;
