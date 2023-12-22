@@ -41,7 +41,7 @@ font-size:20pt;
 .charts{
   display:flex;
   flex-direction: column;
-  max-width: 50%;
+  max-width: 100%;
   padding-left: 250px;
   padding-right:250px;
 }
@@ -122,9 +122,6 @@ font-size:20pt;
   body{
     background-color:floralwhite;
     font-family: 'poppins', sans-serif;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin: 0 auto;
     max-width:100%;
@@ -276,20 +273,16 @@ font-size:20pt;
   .home_button:hover, .rodent_story_button:hover, .about_button:hover {
       animation: bounce 1s infinite;
   }
-
+/* END OF NAVIGATION BAR */
   .images{
     display:flex;
     max-width:100%;
     max-height:auto;
-    }
-    
+    } 
     img{
       max-width:100%;
       height:auto;
       margin-left:auto;
       margin-right:auto;
     }
-
-
     
- 
