@@ -1,0 +1,259 @@
+/*MACBOOK SCREEN SIZE*/
+@media only screen and (min-width:900px) and (max-width: 2448px)
+{
+  body{
+    background-color:floralwhite;
+    font-family: 'poppins', sans-serif;
+    display:flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    
+  
+  }
+  .story{
+    display:flex;
+    flex-direction: column;
+    padding-left:auto;
+    padding-right:auto;
+    max-width:100%;
+
+  }
+  .hed, .dek, .byline, .photo_credits {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center; /* Horizontally center the content */
+    justify-content: center; /* Vertically center the content */
+}
+
+
+h1{
+font-size:20pt;
+}
+
+.lede_storygrafs{
+  padding-left: 250px;
+  padding-right:250px;
+  max-width: 100%;
+  display:flex;
+  flex-direction: column;
+}
+
+.charts{
+  display:flex;
+  flex-direction: column;
+  max-width: 50%;
+  padding-left: 250px;
+  padding-right:250px;
+}
+  .chart_1{
+  display:flex;
+  flex-direction: column;
+  }
+  .chart_2{
+  display:flex;
+  flex-direction: column;
+  }
+
+
+ .map{
+  padding-left: 250px;
+  padding-right: 250px;
+  max-width:100%;
+}
+}
+
+
+ /*  */
+
+/*IPHONE 13 PRO TO IPHONE 14 PRO MAX SCREEN WIDTH*/
+@media screen and (max-width: 1284px) and (min-width: 1170px) 
+{
+  body{
+    background-color:floralwhite;
+    font-family: 'poppins', sans-serif;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width:100%;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+    
+   
+ 
+  .hed, .dek, .byline, .photo_credits {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center; /* Horizontally center the content */
+    justify-content: center; /* Vertically center the content */
+    
+     margin: 0 auto;
+      }
+  
+
+  .images, .photo_credits, .byline {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally center the content */
+    justify-content: center; /* Vertically center the content */
+    margin: 0 auto; /* Horizontally center the image */
+    text-align: center; /* Center the text */
+      max-width: 100%; /* Make the image responsive */
+      height: auto; /* Maintain the aspect ratio */
+      margin: 0 auto; 
+   
+  }
+  .hed{
+    font-size: 10pt;
+    display:flex;
+    flex-direction: column;
+    max-width:100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .dek{
+    text-align:enter;
+    display:flex;
+    flex-direction: column;
+    max-width:100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+      
+.images{
+  max-width:10%;
+}
+  .lede_storygrafs{
+    padding-left: auto;
+    padding-right:auto;
+    display:flex;
+    flex-direction: column;
+    max-width:100%;
+  }
+.chart_1{
+  display:flex;
+  flex-direction: column;
+
+  }
+  
+.chart_2{
+  display:flex;
+  flex-direction: column;
+  padding: auto;  
+  }
+.map{
+  padding-left: auto;
+  padding-right:auto;
+  display:flex;
+  flex-direction: column;
+}
+  .hed{
+    font-size:16pt;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    max-width:100%;
+    justify-content: center;
+  }
+  .hed_dek{
+  
+    display:flex;
+    flex-direction: column;
+    max-width:100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dek{
+    display:flex;
+    flex-direction: column;
+    max-width:100%;
+  }
+
+  .images{
+    display:flex;
+    max-width:100%;
+    max-height:auto;
+    }
+    
+    img{
+      max-width:100%;
+      height:auto;
+      margin-left:auto;
+      margin-right:auto;
+      border:outset
+    }
+
+  }
+
+    .navigation_bar{
+      display:flex;
+      flex-direction:row;
+      justify-content:center;
+      align-content:baseline;
+      padding: 10px;
+      margin: 0 auto;
+  }
+  
+  .home_button, .rodent_story_button, .about_button {
+      padding: 5px 10px; /* Add some padding */
+      background-color: #f8f9fa; /* Add a background color */
+      border: 2px solid orangered; /* Add a border */
+      border-radius: 25px; /* Make the buttons rounded */
+      color: black; /* Change the text color */
+      text-decoration: none; /* Remove the underline */
+      margin: 0px 10px; /* Add some spacing between the buttons */
+      transition: background-color 0.3s ease; /* Prepare for the hover effect */
+      padding: 20px;
+      border-radius:30px;
+      box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5); /* Add shadow to the border */
+  }
+  
+  .home{
+      text-decoration: none; /* Remove the underline */
+  }
+  
+  .home_button:hover, .rodent_story_button:hover, .about_button:hover {
+      background-color: #e7e9eb; /* Change the background color on hover */
+      color: #ff6347; /* Change the text color on hover */
+      transform: scale(1.1); /* Add a scale effect to the buttons */
+  }
+  
+  
+  
+  /* Define the bounce animation */
+  @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+      40% {transform: translateY(-30px);}
+      60% {transform: translateY(-15px);}
+  }
+  
+  /* Apply the bounce animation on hover */
+  .home_button:hover, .rodent_story_button:hover, .about_button:hover {
+      animation: bounce 1s infinite;
+  }
+  .images{
+    display:flex;
+    max-width:100%;
+    max-height:auto;
+    }
+    
+    img{
+      max-width:100%;
+      height:auto;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    
+ 
