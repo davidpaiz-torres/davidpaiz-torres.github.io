@@ -68,7 +68,7 @@ font-size:20pt;
  /*  */
 
 /*IPHONE 13 PRO TO IPHONE 14 PRO MAX SCREEN WIDTH*/
-@media screen and (max-width: 1284px) and (min-width: 1170px) 
+@media screen and (max-width: 430px) and (min-width: 100px) 
 {
   body{
     background-color:floralwhite;
@@ -83,21 +83,15 @@ font-size:20pt;
     margin-left:auto;
     margin-right:auto;
   }
-  
-    
-   
- 
+
   .hed, .dek, .byline, .photo_credits {
     display: flex;
     flex-direction: column;
     max-width: 100%;
     align-items: center; /* Horizontally center the content */
     justify-content: center; /* Vertically center the content */
-    
      margin: 0 auto;
-      }
-  
-
+  }
   .images, .photo_credits, .byline {
     display: flex;
     flex-direction: column;
@@ -107,8 +101,7 @@ font-size:20pt;
     text-align: center; /* Center the text */
       max-width: 100%; /* Make the image responsive */
       height: auto; /* Maintain the aspect ratio */
-      margin: 0 auto; 
-   
+      margin: 0 auto;   
   }
   .hed{
     font-size: 10pt;
