@@ -177,11 +177,14 @@ font-size:20pt;
     display:flex;
     flex-direction: column;
     max-width:100%; 
+    justify-content: center;
+    align-content: center;
 }
 .charts{
   display:flex;
   flex-direction: column;
   max-width:100%;
+  margin: 0 auto;
   height:auto;
   padding:auto;
 }
