@@ -23,7 +23,7 @@
   max-width:100%;
   max-height:auto;
   opacity: 0;
-  transition: opacity 2s;
+  transition: opacity 3.25s;
 }  
   .hed, .dek, .byline, .photo_credits {
     display: flex;
