@@ -5,7 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
             event.preventDefault();
         }
     });
-
+    if (/iPhone|iPod/.test(navigator.userAgent)) {
+        return;
+    }
+    
     var image = document.getElementById('adams_event');
     var caption = document.querySelector('.images figcaption');
     var charts = document.querySelector('.charts');
@@ -17,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
         var captionMiddle = caption ? caption.getBoundingClientRect().top + caption.offsetHeight / 2 : 0;
         var chartsMiddle = charts ? charts.getBoundingClientRect().top + charts.offsetHeight / 2 : 0;
         var mapMiddle = map ? map.getBoundingClientRect().top + map.offsetHeight / 2 : 0;
-
         image.style.opacity = Math.max(0, Math.min(1, 1 - Math.abs(screenHeight / 2 - imageMiddle) / (screenHeight / 3)));
         caption.style.opacity = Math.max(0, Math.min(1, 1 - Math.abs(screenHeight / 2 - captionMiddle) / (screenHeight / 3)));
         charts.style.opacity = Math.max(0, Math.min(1, 1 - Math.abs(screenHeight / 2 - chartsMiddle) / (screenHeight / 3)));
