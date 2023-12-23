@@ -20,7 +20,7 @@ body {
 .home_button, .rodent_story_button, .about_button {
     padding: 10px 20px; /* Add some padding */
     background-color: #f8f9fa; /* Add a background color */
-    border: 2px solid orangered; /* Add a border */
+    border: 0.75px solid orangered; /* Add a border */
     border-radius: 25px; /* Make the buttons rounded */
     color: black; /* Change the text color */
     text-decoration: none; /* Remove the underline */
