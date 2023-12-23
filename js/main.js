@@ -1,3 +1,6 @@
+ if (/iPhone|iPod/.test(navigator.userAgent)) {
+        return;
+    }
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('resume_button').addEventListener('click', function(event) {
         var confirmLeave = window.confirm("You are about to leave to another page. Are you sure?");
@@ -5,9 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
             event.preventDefault();
         }
     });
-    if (/iPhone|iPod/.test(navigator.userAgent)) {
-        return;
-    }
     
     var image = document.getElementById('adams_event');
     var caption = document.querySelector('.images figcaption');
