@@ -3,7 +3,6 @@
 {
   body{
     background-color:floralwhite;
-    font-family: 'poppins', sans-serif;
     display:flex;
     flex-direction: column;
     max-width: 100%;
@@ -214,37 +213,45 @@ font-size:20pt;
       margin-right:auto;
       border:outset
     }
+    .github_button, .resume_button, .about_button {
+     display:none;
+  }
 
   }  
 
   /* UNIVERSAL STYLES */
-    .navigation_bar{
+  body {
+    font-family: 'Nunito Sans', sans-serif;
+    padding-top: 10px; /* Adjust based on the height of your header */
+}
+    .header{
       display:flex;
       flex-direction:row;
       justify-content:center;
       align-content:baseline;
-      padding: 10px;
-      margin: 0 auto;
-  } 
-  .home_button, .rodent_story_button, .about_button {
-      padding: 5px 10px; /* Add some padding */
-      background-color: #f8f9fa; /* Add a background color */
-      border: 2px solid orangered; /* Add a border */
-      border-radius: 25px; /* Make the buttons rounded */
-      color: black; /* Change the text color */
-      text-decoration: none; /* Remove the underline */
-      margin: 0px 10px; /* Add some spacing between the buttons */
-      transition: background-color 0.3s ease; /* Prepare for the hover effect */
       padding: 20px;
-      border-radius:30px;
-      box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5); /* Add shadow to the border */
-  }
+      margin: 0 auto;
+      
+  } 
+  .home_button, .rodent_story_button, .github_button, .resume_button, .about_button {
+    padding: 10px 20px; /* Add some padding */
+    background-color: floralwhite; /* Add a background color */
+    border: 0.75px solid orangered; /* Add a border */
+    border-radius: 25px; /* Make the buttons rounded */
+    color: black; /* Change the text color */
+    text-decoration: none; /* Remove the underline */
+    margin: 0px 10px; /* Add some spacing between the buttons */
+    transition: background-color 0.3s ease; /* Prepare for the hover effect */
+    padding: 20px;
+    border-radius:30px;
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5); /* Add shadow to the border */
+}
   
   .home{
       text-decoration: none; /* Remove the underline */
   }
   
-  .home_button:hover, .rodent_story_button:hover, .about_button:hover {
+  .home_button:hover, .rodent_story_button:hover, .github_button:hover, .resume_button:hover, .about_button:hover {
       background-color: #e7e9eb; /* Change the background color on hover */
       color: #ff6347; /* Change the text color on hover */
       transform: scale(1.1); /* Add a scale effect to the buttons */
@@ -257,7 +264,7 @@ font-size:20pt;
   }
   
   /* Apply the bounce animation on hover */
-  .home_button:hover, .rodent_story_button:hover, .about_button:hover {
+  .home_button:hover, .rodent_story_button:hover, .github_button:hover, .resume_button:hover, .about_button:hover {
       animation: bounce 1s infinite;
   }
 /* END OF NAVIGATION BAR */
@@ -266,10 +273,12 @@ font-size:20pt;
     max-width:100%;
     max-height:auto;
     } 
-    img{
+    #adams_event, .charts, .map {
+      display:flex;
       max-width:100%;
-      height:auto;
-      margin-left:auto;
-      margin-right:auto;
-    }
+      max-height:auto;
+      opacity: 0;
+      transition: opacity 2s;
+  }
+    
     

@@ -4,18 +4,19 @@
 	<head>
 			<title> Roaches, Mice and Rats Found in NYC Schools</title>
 			<link rel="stylesheet" type="text/css" href="css/rodent.css">
-			<link rel="preconnect" href="https://fonts.googleapis.com">
-			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-			<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<script src="js/main.js"></script>
 	</head>
 <!--End of MetaData -->
 	<body>
-		<div class="navigation_bar">
-			<!-- <a class="home_button" href="index.html">Latest Data Stories</a> -->
-		   <!-- <a class="rodent_story_button" href="rodent.html">Data Stories</a> -->
-		   <a class= "about_button" href="https://github.com/dpt82?tab=repositories">Return To Github Repositories</a> 
-		</div>
+		<div class="header">
+			<!-- <a class="home_button" href="home.html">Home</a> -->
+			<a href="sources/resume.pdf" id="resume_button" class="resume_button">Resume</a>
+		   <!-- <a class="rodent_story_button" href="rodent.html">My Latest Data Stories</a> -->
+		   <a class="github_button" id="github" href="https://github.com/dpt82">Github Repositories</a> 
+		  <!-- <a class="about_button" href="Insert_About_Page_Here.html">About Me</a> -->
+	</div>
 <div class= "hed_dek">
 			<div class="hed">
 				<h1>	
@@ -28,32 +29,30 @@
 			</div>
 </div>
 <br>
-	<div class = "images">
-		<img src="images/52507790172_ee527872b3_3k.jpg" alt = "Mayor Eric Adams signs legislation, declaring war on NYC rats. Nov. 2022
-		Credit: © City of New York/Ed Reed/Mayoral Photography Office. Used with permission.">
-	<picture>
-		<source media="(max-width: 493px)" srcset="images/sanitation_event.jpg">
-	</picture>
-	</div>
+<div class="images">
+    <figure>
+        <img id="adams_event" src="images/52507790172_ee527872b3_3k.jpg" alt="Mayor Eric Adams signs legislation, declaring war on NYC rats. Nov. 2022
+        Credit: © City of New York/Ed Reed/Mayoral Photography Office. Used with permission.">
+        <figcaption style="text-align: center;">
+			Mayor Eric Adams signs legislation, declaring war on NYC rats. Nov. 2022<br>
+			Credit: City of New York/Ed Reed/Mayoral Photography Office. Used with permission.
+			<span class="byline"> 
+				By: David Paiz-Torres 
+				 <br>
+				December 15, 2023
+			</span>	
+		</figcaption>
+    </figure>
+</div>
 
-	<div class= "photo_credits">
-		Mayor Eric Adams signs legislation, declaring war on NYC rats. Nov. 2022<br>
-		Credit: City of New York/Ed Reed/Mayoral Photography Office. Used with permission.
-	</div>
-
-	<div class="byline"> 
-		By: David Paiz-Torres 
-		 <br>
-		December 15, 2023
-	</div>	
+	
  <!-- Lede/Nutgraf Below -->
 		<div class= "lede_storygrafs">
-			<div class="lede">
-				<p>
-				Mice were the third most common cause for violations in New York City schools during cafeteria inspections this year, according to <a href= "https://data.cityofnewyork.us/Health/DOHMH-School-Cafeteria-Inspections-2020-Present-/5ery-qagt"> Department of Health & Mental Hygiene Data.</a>
-				</p>	
-			</div>
-	<h3>Rodents in Schools?</h3>		
+		
+	<h3>Rodents in Schools?</h3>	
+		<p>
+		Mice were the third most common cause for violations in New York City schools during cafeteria inspections this year, according to <a href= "https://data.cityofnewyork.us/Health/DOHMH-School-Cafeteria-Inspections-2020-Present-/5ery-qagt"> Department of Health & Mental Hygiene Data.</a>
+		</p>	
 				<p>
 				473 rodent-related violations were recorded throughout 2023. Roaches were also found across New York City school cafeterias, with 81 such violations reported in 2023, according to the same data.
 				</p>
@@ -99,9 +98,18 @@
 	<div class="methodlogy">
 		<h3>Methodology</h3>
 			<p>
-				The methodology for this data analysis can be found <a href="https://doc-04-98-docstext.googleusercontent.com/export/qdo8ufovnvq7nnfjhaujgenucc/i9ijnq617c1vrd2ih78q3mfbp0/1703201690000/106630865057575320188/106630865057575320188/1KgTdF3SWsDWb0BfgA_9Ae8JEnaUIoA3kV1uWIgDwUCs?format=pdf&id=1KgTdF3SWsDWb0BfgA_9Ae8JEnaUIoA3kV1uWIgDwUCs&token=AC4w5VjuZQiPzXNP5k8Nj6knXYK5TsBzpg:1703200590682&ouid=106630865057575320188&includes_info_params=true&usp=docs_home&cros_files=false&inspectorResult=%7B%22pc%22:1,%22lplc%22:26%7D&dat=AOBvIb13t46lr6Z-DCajo8awnpGdRqzRw24xf61kflC6nQTv-c8yfbOlgZ8hrN0OOE6d7uH8he5508uYHEuPW6yc_qxEih7xMmD-hC_HXnTUqr1r7duyln2q8q1CCFAPOoeGroHOUZfn-6rI7OfTjTHfrwL3GfAJ8pgg-pReA3o6suCqDfeBOaGjhCHNalsVfc8TxLUgrpWsq9Riblf6Vr4fdte_KeYy6dQMJkqLADX13j_dhqtmq6EmegcSxn1vOdqJw-DJ1kVfsEXkfEE0hneP9-Zngu3JZmP7zfpzVA2buNUIu6BgLxDHE2w0RU5-3_KGeiATzDv-tJLtGokxKwUWv0KoRX5lsG4pE72fIF6K8pkIdpIgBFZtk_3ze-tBlAL4z1vXNixYYbMfDoxeng5Mt1vLduE_HtQFL0_JVdlZ5_1vwB_SCDywbjVIy8pYOAq2tGNjyqspwZGpkyz1ZVwZx8fzuTCMN8-P7Tpa6dC8RkS6kyA-WtG7uspmDFcPYf0nRuHko-__ImkGLne9aTHEoWYPSgO3FqixiBcwYlpPxL_-ciQrYUfv69Jp-ztqQlxXoT29c4VBZPWg2Nlaws6Fu4PgC-EvmgzYLk_bzULwLXfQTe3vOQJ6H_AuYhT-BILUwC-prGdfr0coOlWK5ncNowqL2Tw7GXCaBThAtRc_VB-HEh76tInXgkwCcW2wtmPwJBZZykbRnDfDlW1CR_zJDrormEdMKkmMFZ8VvaLXmd6ReoszAFviR9mnuyz2fIrxahUCrZUd-Wj2d94lpKxD1GuLNEvBwdHSnnyCsC6gt9sjK1zig9XyBOL7FzZp3NIa7J2Rqrmrpcu3vxWTqahoNBRITzz4bewoR6LwRTsBYYvTsYmKZ3C6ulW2JU53NGNB41VASWyqY4wctmsqmFGDn02r5O0mccs9I8Afj3o"> here. </a> 
-			</p>
+			<a>	The methodology for this data analysis can be found <a href="sources/methodology.pdf" download="methodology.pdf"> here. </a> </p>
 	</div>
 </div>		 
 </body>
+<script>
+	document.querySelectorAll('#resume_button, #github').forEach(function(button) {
+	   button.addEventListener('click', function(event) {
+		   var confirmLeave = window.confirm("To do this, you must leave to a separate page. Are you sure?");
+		   if (!confirmLeave) {
+			   event.preventDefault();
+		   }
+	   });
+   });
+   </script>
 </html>
