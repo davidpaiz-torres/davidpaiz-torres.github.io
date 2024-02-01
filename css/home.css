@@ -1,33 +1,65 @@
 /* FILEPATH: /Volumes/Crucial X8/Portfolio Website/css/home.css */
 
 /* Style the heading */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
 
+/* Style the paragraphs */
+p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
 
+.home_page{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-content:baseline;
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size:8px;
+   
+}
+.story_list_one{
+        display:flex;
+        flex-direction:row;
+        align-content:baseline;
+        padding: 20px;
+        font-size:8px;
+        text-decoration: none; /* Remove the underline */;
+        flex-wrap: wrap;
+}
 /* Set background color and font styles */
 body {
     background-color: floralwhite;
-    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
-.navigation_bar{
+.header{
     display:flex;
     flex-direction:row;
     justify-content:center;
     align-content:baseline;
     padding: 20px;
+    
 }
 
-.home_button, .rodent_story_button, .about_button {
+.home_button, .rodent_story_button, .github_button, .resume_button, .about_button, .contact_button {
     padding: 10px 20px; /* Add some padding */
-    background-color: #f8f9fa; /* Add a background color */
-    border: 0.75px solid orangered; /* Add a border */
-    border-radius: 25px; /* Make the buttons rounded */
+    background-color: floralwhite; /* Add a background color */
+    border: 1.25px solid orangered; /* Add a border */
+    border-radius: 55px; /* Make the buttons rounded */
     color: black; /* Change the text color */
     text-decoration: none; /* Remove the underline */
     margin: 0px 10px; /* Add some spacing between the buttons */
     transition: background-color 0.3s ease; /* Prepare for the hover effect */
     padding: 20px;
-    border-radius:30px;
     box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5); /* Add shadow to the border */
 }
 
@@ -35,11 +67,12 @@ body {
     text-decoration: none; /* Remove the underline */
 }
 
-.home_button:hover, .rodent_story_button:hover, .about_button:hover {
-    background-color: #e7e9eb; /* Change the background color on hover */
+.home_button:hover, .rodent_story_button:hover, .github_button:hover, .resume_button:hover, .about_button:hover, .contact_button:hover {
+    background-color: antiquewhite; /* Change the background color on hover */
     color: #ff6347; /* Change the text color on hover */
     transform: scale(1.1); /* Add a scale effect to the buttons */
 }
+
 
 
 /* Define the bounce animation */
@@ -50,6 +83,22 @@ body {
 }
 
 /* Apply the bounce animation on hover */
-.home_button:hover, .rodent_story_button:hover, .about_button:hover {
+.home_button:hover, .rodent_story_button:hover, .github_button:hover, .resume_button:hover, .about_button:hover, .contact_button:hover{
     animation: bounce 1s infinite;
 }
+
+@keyframes rotateBorder {
+    0% { border-color: red; }
+    25% { border-color: orange; }
+    50% { border-color: yellow; }
+    75% { border-color: green; }
+    100% { border-color: blue; }
+
+}
+
+.home_button, .rodent_story_button, .github_button, .resume_button, .about_button, .contact_button{
+        /* existing styles... */
+        animation: rotateBorder 8s linear infinite;
+}
+
+
