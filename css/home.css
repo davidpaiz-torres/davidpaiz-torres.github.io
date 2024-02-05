@@ -40,9 +40,6 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     transition: background-color 0.3s ease; 
-   
-
-
 }
 .home_button, .rodent_story_button, .github_button, .resume_button, .about_button, .contact_button {
     padding: 10px 20px; 
@@ -69,7 +66,6 @@ body {
 .home_contents:hover, .resume_button:hover {
     color: #ff6347; /* Change the text color on hover */
     background-color: floralwhite;
-    transform: scale(0.9); /* Add a scale effect to the buttons */
 }
 
 
