@@ -41,7 +41,7 @@ body {
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    transition: background-color 0.6s ease; 
+    transition: background-color 0.3s ease; 
    
 
 
@@ -62,12 +62,17 @@ body {
 
 
 
-.home_button:hover, .rodent_story_button:hover, .github_button:hover, .resume_button:hover, .about_button:hover, .contact_button:hover, .home_contents {
+.home_button:hover, .rodent_story_button:hover, .github_button:hover, .resume_button:hover, .about_button:hover, .contact_button:hover {
     background-color: floralwhite; /* Change the background color on hover */
     color: #ff6347; /* Change the text color on hover */
     transform: scale(1.1); /* Add a scale effect to the buttons */
 }
 
+.home_contents:hover {
+    color: #ff6347; /* Change the text color on hover */
+    background-color: floralwhite;
+    transform: scale(0.9); /* Add a scale effect to the buttons */
+}
 
 
 /* bounce animation */
