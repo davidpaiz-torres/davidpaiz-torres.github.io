@@ -195,14 +195,13 @@ section.visible {
   opacity: 1;
 }
 
-/* Styles for desktop devices */
-/* Add your existing CSS styles here */
-
 /* Media query for mobile devices */
 @media only screen and (max-width: 767px) {
   /* Hide the filters on mobile */
   #borough, #restaurant {
-    display: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   /* Adjust styles for the card container on mobile */
@@ -234,6 +233,4 @@ section.visible {
     color: #333;
     margin-top: 5px;
   }
-
- 
 }
