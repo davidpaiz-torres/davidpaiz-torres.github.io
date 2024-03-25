@@ -104,22 +104,24 @@ document.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('section');
 
   const options = {
-      root: null, // use the viewport as the root
-      rootMargin: '0px',
-      threshold: 0.5 // trigger when at least 50% of the section is visible
+    root: null, // use the viewport as the root
+    rootMargin: '0px',
+    threshold: 0.5, // trigger when at least 50% of the section is visible
+    media: 'screen and (min-width: 1280px) and (max-width: 1440px)' // MacBook screen sizes
   };
 
   const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-          if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-          } else {
-              entry.target.classList.remove('visible');
-          }
-      });
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      } else {
+        entry.target.classList.remove('visible');
+      }
+    });
   }, options);
 
   sections.forEach(section => {
-      observer.observe(section);
+    observer.observe(section);
   });
 });
+

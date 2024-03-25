@@ -58,6 +58,7 @@ section {
 
 #filters {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20px;
 }
@@ -198,6 +199,8 @@ section.visible {
 /* Media query for mobile devices */
 @media only screen and (max-width: 767px) {
   /* Hide the filters on mobile */
+
+  
   #borough, #restaurant {
     display: block;
     width: 100%;
@@ -219,6 +222,7 @@ section.visible {
     border-radius: 8px;
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s ease;
   }
 
   /* Style the hover effect on mobile */
