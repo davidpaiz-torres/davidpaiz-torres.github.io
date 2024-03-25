@@ -84,19 +84,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
-
 // Select the card container
 const cardContainer = document.getElementById('dashboard-grid');
 
 // Filter and display the cards
 function filterAndDisplayCards() {
-    // Your filtering logic here...
+  // Your filtering logic here...
 
-    // Append the filtered cards to the card container
-    cardContainer.innerHTML = ''; // Clear previous content
-    filteredCards.forEach(card => {
-        cardContainer.appendChild(card);
-    });
+  // Append the filtered cards to the card container
+  cardContainer.innerHTML = ''; // Clear previous content
+  filteredCards.forEach(card => {
+    cardContainer.appendChild(card);
+  });
 }
 
 // Call the filterAndDisplayCards function as needed
@@ -106,14 +105,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const options = {
     root: null, // use the viewport as the root
     rootMargin: '0px',
-    threshold: 0.5, // trigger when at least 50% of the section is visible
-    media: 'screen and (min-width: 1280px) and (max-width: 1440px)' // MacBook screen sizes
+    threshold: 0.3, // trigger when at least 50% of the section is visible
   };
 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
+        // Call your filtering and displaying function here
+        filterAndDisplayCards();
       } else {
         entry.target.classList.remove('visible');
       }
@@ -124,4 +124,3 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(section);
   });
 });
-
