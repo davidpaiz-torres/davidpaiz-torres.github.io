@@ -22,9 +22,6 @@ font-size:40px;
 
 .hed_dek{
 text-align:center;
-display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
   
 .graf {
@@ -42,7 +39,6 @@ display: flex;
 
 .scene {
   position: relative; /* Change position to relative */
-
   width: 100%; /* Ensure images occupy full width of their container */
 }
 
@@ -70,7 +66,7 @@ text-align: center;
   bottom: 20px; /* Adjust the distance from the bottom */
   left: 50%; /* Align the left edge of the text container to the center */
   transform: translateX(-50%); 
-  max-width: calc(100% - 40px);
+  max-width: calc(100% - 40px); 
 }
 
 
@@ -101,35 +97,28 @@ footer {
     margin: 0 auto; /* Center the footer horizontally */
 }
 
-@media screen {
-
-
-
+@media only screen and (max-width: 430px) and (max-height: 932px) and (orientation: portrait) {
   .active {
     position: sticky;
     top: 0;
   }
 
-.text-overlay {
-  background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity (fourth value) as needed */
-  padding: 10px; /* Adjust padding as needed */
-  border-radius: 5px; 
-  color: white; /* Set text color to contrast with the background */
-  position: relative; /* Position the text container relative to its parent */
-  bottom: 20px; /* Adjust the distance from the bottom */
-  left: 50%; /* Align the left edge of the text container to the center */
-  transform: translateX(-50%); 
-  max-width: calc(100% - 80px);
-}
-
-img {
-  max-width: 100%; /* Set maximum width to prevent images from overflowing */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Ensure images behave as block elements */
-  align-items: center;
-  margin: auto; /* Center images horizontally */
-}
-
-  
-  
-}
+     .text-overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      border-radius: 5px;
+      color: white;
+      position: relative;
+      z-index: 1;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: calc(100% - 40px);
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: auto;
+    }
+  }

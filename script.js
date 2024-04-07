@@ -14,14 +14,14 @@ const updateContent = (index) => {
     document.getElementById('person'),
     document.getElementById('bags')
   ];
-
+}
   // imageElements.forEach((imageElement, i) => {
   //   if (i === index) {
   //     imageElement.style.display = 'block'; // Show the image
   //   } else {
   //     imageElement.style.display = 'none'; // Hide other images
   //   }
-  };
+  // })};
 
 const images = document.querySelectorAll('.image-container img');
 
