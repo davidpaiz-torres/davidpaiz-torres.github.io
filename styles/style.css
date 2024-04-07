@@ -126,6 +126,7 @@ img {
   max-width: 100%; /* Set maximum width to prevent images from overflowing */
   height: auto; /* Maintain aspect ratio */
   display: block; /* Ensure images behave as block elements */
+  align-items: center;
   margin: auto; /* Center images horizontally */
 }
 
