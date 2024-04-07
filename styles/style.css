@@ -39,7 +39,7 @@ text-align:center;
 
 .scene {
   position: relative; /* Change position to relative */
-  width: 100%; /* Ensure images occupy full width of their container */
+  max-width: 100%; /* Ensure images occupy full width of their container */
 }
 
 .container {
@@ -72,7 +72,7 @@ text-align: center;
 
 img {
   max-width: 100%; /* Set maximum width to prevent images from overflowing */
-  height: auto; /* Maintain aspect ratio */
+  height: auto;
   display: block; /* Ensure images behave as block elements */
   margin: auto; /* Center images horizontally */
 }
@@ -121,4 +121,12 @@ footer {
       display: block;
       margin: auto;
     }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      height: 300px;
+      overflow-x: auto;
+      width: auto;
   }
+  }
+
