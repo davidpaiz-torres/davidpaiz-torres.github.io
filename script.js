@@ -1,126 +1,58 @@
-document.addEventListener('DOMContentLoaded', () => {
-  // Select the filters
-  const boroughFilter = document.getElementById('borough');
-  const restaurantFilter = document.getElementById('restaurant');
+const text_change = [
+  'THE HARDSHIPS OF CONGOLESE MIGRANTS',
+  'FINDING COMMUNITY IN HARLEM',
+  'A TASTE OF HOME'
+];
 
-  // Select the item elements
-  const items = document.querySelectorAll('.item');
+const updateContent = (index) => {
+  // Update content based on the current index
+  console.log(text_change[index]);
 
-  // Filter by borough
-  function filterByBorough() {
-    // Get the selected borough
-    const selectedBorough = boroughFilter.value;
+  // Update image based on the current index
+  const imageElements = [
+    document.getElementById('hardships'),
+    document.getElementById('person'),
+    document.getElementById('bags')
+  ];
 
-    // Show only the selected borough
-    items.forEach(item => {
-      const itemBorough = item.getAttribute('borough');
-      if (selectedBorough === 'Default' || itemBorough === selectedBorough) {
-        item.style.display = 'block';
-      } else {
-        item.style.display = 'none';
-      }
-    });
-  }
-
-  // Filter by restaurant
-  function filterByRestaurant() {
-    // Get the selected restaurant
-    const selectedRestaurant = restaurantFilter.value;
-
-    // Show all items initially
-    items.forEach(item => {
-      item.style.display = 'block';
-    });
-
-    // Filter by restaurant if a specific restaurant is selected
-    if (selectedRestaurant !== 'Default') {
-      items.forEach(item => {
-        const itemRestaurant = item.getAttribute('restaurant');
-        if (itemRestaurant !== selectedRestaurant) {
-          item.style.display = 'none';
-        }
-      });
-    }
-  }
-
-  // Add event listeners for each filter
-  if (boroughFilter && restaurantFilter) {
-    boroughFilter.addEventListener('change', filterByBorough);
-    restaurantFilter.addEventListener('change', filterByRestaurant);
-
-    // Call the filter functions initially to apply the initial filtering
-    filterByBorough();
-    filterByRestaurant();
-  }
-
-  // Add mouseover and mouseout event listeners to borough items
-  const boroughItems = document.querySelectorAll('.item[borough]');
-
-  boroughItems.forEach(item => {
-    item.addEventListener('mouseover', handleMouseOver);
-    item.addEventListener('mouseout', handleMouseOut);
-  });
-
-  function handleMouseOver(e) {
-    const hoveredBorough = e.currentTarget;
-    const totalViolations = hoveredBorough.getAttribute('data-violations');
-    const numberOfViolations = totalViolations.match(/\d+/)[0];
-    const existingP = hoveredBorough.querySelector('.violations-info');
-
-    // Only add the violations info if it doesn't already exist
-    if (!existingP) {
-      const pElement = document.createElement('p');
-      pElement.textContent = `Total rodent violations: ${numberOfViolations}`;
-      pElement.classList.add('violations-info');
-      hoveredBorough.appendChild(pElement);
-    }
-  }
-
-  function handleMouseOut(e) {
-    const hoveredBorough = e.currentTarget;
-    const pElement = hoveredBorough.querySelector('.violations-info');
-    if (pElement) {
-      pElement.remove();
-    }
-  }
-});
-// Select the card container
-const cardContainer = document.getElementById('dashboard-grid');
-
-// Filter and display the cards
-function filterAndDisplayCards() {
-  // Your filtering logic here...
-
-  // Append the filtered cards to the card container
-  cardContainer.innerHTML = ''; // Clear previous content
-  filteredCards.forEach(card => {
-    cardContainer.appendChild(card);
-  });
-}
-
-// Call the filterAndDisplayCards function as needed
-document.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('section');
-
-  const options = {
-    root: null, // use the viewport as the root
-    rootMargin: '0px',
-    threshold: 0.3, // trigger when at least 50% of the section is visible
+  // imageElements.forEach((imageElement, i) => {
+  //   if (i === index) {
+  //     imageElement.style.display = 'block'; // Show the image
+  //   } else {
+  //     imageElement.style.display = 'none'; // Hide other images
+  //   }
   };
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        // Call your filtering and displaying function here
-        filterAndDisplayCards();
-      } else {
-        entry.target.classList.remove('visible');
-      }
-    });
-  }, options);
+const images = document.querySelectorAll('.image-container img');
 
-  sections.forEach(section => {
-    observer.observe(section);
-  });
+const scroller = new Scroller({
+  scenes: document.querySelectorAll('.scene'),
+  container: document.querySelector('.container'),
+  rootMargin: '-850px 0px', 
+  threshold: 0 
 });
+
+// Scroller has a tiny event emitter embedded in it!
+
+// the `enter` event is triggered every time a scene crosses the threshold
+scroller.on('scene:enter', d => {
+  // Add an active class to the div when it crosses in
+  d.element.classList.add('active');    
+  // change the text in the graphc container when it comes in
+  updateContent(d.index); // Call updateContent with the index
+});
+
+// the `exit` event is triggered every time a scene exits the threshold
+scroller.on('scene:exit', d => {
+  // remove active class when it leaves 
+  d.element.classList.remove('active');
+});
+
+
+//don't worry about the stuff below here, but make sure to put it in at the end --------------------
+
+scroller.on('init', () => {
+  console.log('Everything is ready to go!');
+});
+
+scroller.init();

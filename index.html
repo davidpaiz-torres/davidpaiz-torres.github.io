@@ -1,130 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Restaurant Inspection Dashboard</title>
-        <script src="script.js"></script>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet">
-      </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://unpkg.com/@newswire/scroller/dist/index.umd.js"></script>
+</head>
 <body>
-  <div id="violations-display" class="hidden"></div>
-  <h1>Restaurant Report Card: NYC Establishments With Most Rodent Violations</h1>
-  <h2> Broken Down by Borough and Restaurant</h2>
-  <h3> Data used for this report card can be found <a href="https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j/about_data">here</a></h3>
-  <section>
-    <div id="filters">
-      <div class="filter-container">
-        <label>Filter by Borough:</label>
-        <select id="borough" class="select">
-          <option value="Default">Select</option>
-          <option value="Manhattan">Manhattan</option>
-          <option value="Brooklyn">Brooklyn</option>
-          <option value="Bronx">Bronx</option>
-          <option value="Queens">Queens</option>
-          <option value="Staten Island">Staten Island</option>
-        </select>
-      </div>
-      <div class="filter-container">
-        <label>Filter by Restaurant:</label>
-        <select id="restaurant" class="select">
-          <option value="Default">Select</option>
-          <option value="SUBWAY">Subway</option>
-          <option value="DUNKIN DONUTS">Dunkin Donuts</option>
-          <option value="KENNEDY FRIED CHICKEN">Kennedy Fried Chicken</option>
-          <option value="BLUESTONE">Bluestone Lane</option>
-          <option value="POPEYES">Popeyes</option>
-        </select>
-      </div>
-    </div>
-  </section>
+<article>       
+    <section class="graf text-overlay">
+    <section class="hed_dek">
+        <section class="graf text-overlay"> 
+        <h1>A TASTE OF HOME</h1>
+            <div class="gif">
+                <img class="gif" src="media/IMG_3924.gif" type="picture/gif" >
+            </div>
+        <h2> For Congolese immigrants, food proves key in building community in NYC.</h2>
+            <p>By Raymond DePaul <br>
+            Edited by Deidre Foley</p>
+        </section>
+    </section>
 
-  
-  <section class="dashboard-grid">
-    <div id="borough_filter" class="card item" borough="Queens" violation = "rodent" data-violations="254 Total Rodent Violations">
-      <h1>Queens</h1>
-      <h3>Queens' Top Rodent Violators:</h3>
-      <p>1. SUBWAY</p>
-      <p>2. YER MAN'S IRISH PUB</p>
-      <p>3. PATMAR BAKE SHOP</p>
-    </div>
-    <div id="borough_filter" class="card item" borough="Manhattan" violation="rodent" data-violations="379 Total Rodent Violations">
-      <h1>Manhattan</h1>
-      <h3>Manhattan's Top Rodent Violators:</h3>
-      <p>1. BLUESTONE LANE</p>
-      <p>2. CRUMBL</p>
-      <p>3. VAN LEEUWEN ICE CREAM</p>
-    </div>
-    <div id="borough_filter" class="card item" borough="Brooklyn" violation = "rodent" data-violations="372 Total Rodent Violations">
-      <h1>Brooklyn</h1>
-      <h3>Brooklyn's Top Rodent Violators:</h3>
-      <p>1. SUBWAY</p>
-      <p>2. TASTE OF CHINA</p>
-      <p>3. STAND UP TEA</p>
-    </div>
-  
-    <div id="borough_filter"class="card item" borough="Staten Island" violation = "rodent" data-violations="45 Total Rodent Violations">
-      <h1>Staten Island</h1>
-      <h3>Staten Island's Top Violators:</h3>
-      <p>1. Subway</p>
-      <p>2. STATUE OF LIBERTY DELI</p>
-      <p>3. REYES DELI MEXICANA</p>
-    </div>
-    <div id="borough_filter" class="card item" borough="Bronx" violation = "rodent" data-violations="129 Total Rodent Violations">
-      <h1>The Bronx</h1>
-      <h3>The Bronx's Top Rodent Violators:</h3>
-      <p>1. KENNEDY FRIED CHICKEN</p>
-      <p>2. DUNKIN</p>
-      <p>3. POPEYES</p>
-    </div>
-  </section>
-  
-  <section class="dashboard-grid">
-    <div id="restaurant_filter" class="card item" restaurant="KENNEDY FRIED CHICKEN">
-      <div class="KENNEDY FRIED CHICKEN"><h1>Kennedy Fried Chicken</h1></div>
-      <div class="BR_KENNEDY FRIED CHICKEN" id="BR_KENNEDY FRIED CHICKEN"><h3>The Bronx:</h3> <p>4 Rodent Violations</p></div>
-      <div class="QU_KENNEDY FRIED CHICKEN" id="QU_KENNEDY FRIED CHICKEN"><h3>Queens: </h3> <p> 2 Rodent Violations</p></div>
-      <div class="BK_KENNEDY FRIED CHICKEN" id="BK_KENNEDY FRIED CHICKEN"><h3>Brooklyn:</h3> <p> 1 Rodent Violation</p></div>
-      <div class="SI_KENNEDY FRIED CHICKEN" id="SI_KENNEDY FRIED CHICKEN"><h3>Staten Island:</h3> <p>0 Rodent Violations</p></div>
-      <div class="MA_KENNEDY FRIED CHICKEN" id="MA_KENNEDY FRIED CHICKEN"><h3>Manhattan:</h3><p>0 Rodent Violations</p></div>
-    </div>
-    
-    <div id="restaurant_filter" class="card item" restaurant="DUNKIN DONUTS">
-      <div class="DUNKIN"><h1>Dunkin Donuts</h1></div>
-      <div class="BR_DUNKIN DONUTS" id="BR_DUNKIN DONUTS"><h3>The Bronx:</h3><p>3 Rodent Violations</p></div>
-      <div class="BK_DUNKIN DONUTS" id="BK_DUNKIN DONUTS"><h3>Brooklyn:</h3><p>2 Rodent Violations</p></div>
-      <div class="QU_DUNKIN DONUTS" id="QU_DUNKIN DONUTS"><h3>Queens:</h3><p>2 Rodent Violations</p></div>
-      <div class="SI_DUNKIN DONUTS" id="SI_DUNKIN DONUTS"><h3>Staten Island:</h3><p>1 Rodent Violation</p></div>
-      <div class="MA_DUNKIN DONUTS" id="MA_DUNKIN DONUTS"><h3>Manhattan:</h3><p>1 Rodent Violation</p></div>
-    </div>
-    <div id="restaurant_filter" class="card item" restaurant="SUBWAY">
-      <div class="SUBWAY"><h1>Subway</h1></div>
-      <div class="QU_Subway" id="QU_Subway"><h3>Queens:</h3><p>5 Rodent Violations</p></div>
-      <div class="SI_Subway" id="SI_Subway"><h3>Staten Island:</h3><p>3 Rodent Violations</p></div>
-      <div class="BK_Subway" id="BK_Subway"><h3>Brooklyn:</h3><p>3 Rodent Violations</p></div>
-      <div class="MA_Subway" id="MA_Subway"><h3>Manhattan:</h3><p>2 Rodent Violations</p></div>
-      <div class="BR_Subway" id="BR_Subway"><h3>Bronx:</h3><p>1 Rodent Violation</p></div>
-    </div>
-    <div id="restaurant_filter" class="card item" restaurant="BLUESTONE">
-      <div class="BLUESTONE"><h1>Bluestone Lane</h1></div>
-      <div class="MA_BLUESTONE" id="MA_BLUESTONE"><h3>Manhattan:</h3><p>3 Rodent Violations</p></div>
-      <div class="BK_BLUESTONE" id="BK_BLUESTONE"><h3>Brooklyn:</h3><p>0 Rodent Violation</p></div>
-      <div class="BR_BLUESTONE" id="BR_BLUESTONE"><h3>The Bronx:</h3><p>0 Rodent Violations</p></div>
-      <div class="QU_BLUESTONE" id="QU_BLUESTONE"><h3>Queens:</h3><p>0 Rodent Violations</p></div>
-      <div class="SI_BLUESTONE" id="SI_BLUESTONE"><h3>Staten Island:</h3><p>0 Rodent Violations</p></div>
-    </div>
-    <div id="restaurant_filter" class="card item" restaurant="POPEYES">
-      <div class="POPEYES"><h1>Popeyes</h1></div>
-      <div class="BR_POPEYES" id="BR_POPEYES"><h3>The Bronx:</h3><p>2 Rodent Violations</p></div>
-      <div class="QU_POPEYES" id="QU_POPEYES"><h3>Queens:</h3><p>1 Rodent Violation</p></div>
-      <div class="BK_POPEYES" id="BK_POPEYES"><h3>Brooklyn:</h3><p>0 Rodent Violations</p></div>
-      <div class="MA_POPEYES" id="MA_POPEYES"><h3>Manhattan:</h3><p>0 Rodent Violation</p></div>
-      <div class="SA_POPEYES" id="SA_POPEYES"><h3>Staten Island:</h3><p>0 Rodent Violation</p></div>
-    </div>
-  </section>
+    <section class="graf text-overlay"> 
+        <p>The warm autumnal hues decorating dishes like wali pilau, loso na madesu and ntaba comfort Iranga Tcheko, reminding the 28-year-old Manhattan woman of joyful Christmas dinners she enjoyed as a young child in Bukavu, in the Democratic Republic of Congo. The meals almost make her forget how she vomited while escaping her home country at age 3, her body “violently rejecting” what she had to leave behind.</p>
+        
+        <p>Food is a grounding force for Tcheko, a Congolese immigrant living in Morningside Heights. Dishes from her home country help her shorten the nearly 7,000-mile distance from Congo to New York City. Food allows her and other African immigrants to cope with cultural differences and create community.<br>
+        
+        <br>“I think we sometimes don’t fully appreciate how much food routes us to home,” said Tcheko.</p>
+    </section>
 
+    <br>
+
+    <div class="container">
+        <div class="scene"> 
+            <h1>THE HARDSHIPS OF CONGOLESE MIGRANTS</h1>
+            
+            <img id="hardships" src="media/items-on-shelves.jpeg" alt="Various products from a market on display.">
+        </div>
+        <section class="graf text-overlay"> 
+            <p>Except for 2020, when COVID-19 restrictions kicked in, the number of Congolese refugees in the U.S. has dramatically risen over the past decade, with migration largely driven by political turmoil, violence and economic challenges. Since 2016, Congolese refugees have represented the largest number of refugees resettled in the U.S., according to Migration Policy Institute. Between October 2022 through May 2023, more than 10,000 refugees from the Democratic Republic of Congo have arrived in the country, making up a third of all U.S. refugee arrivals.</p>
+
+            <p>Tcheko came to New York in 2020 for graduate school, but before that, she spent the majority of her life in the United Kingdom. She and her family left the DRC  amid a civil war, traveling through several East African countries before migrating to the United Kingdom “in search of safety.” </p>
+
+            <p>She said she remembers being handed a Ribena blackcurrant juice at immigration in the U.K. “I’m being both treated like I’m part of some sort of prison system and then given grace and kindness through this juice box,” she said. “I think that sums up a lot of people’s experience of being a refugee.”<br>
+            
+            <br>Even in New York, access to Congolese food isn’t necessarily easy.</p>
+
+            <p>“It was very hard to find Congolese food here,” said Adria Sebisaho, a Congolese immigrant who moved to Morningside Heights in 2008. She said other cuisines similar to her cultural foods were a way to “create a bridge” between the food she knew and its scarcity now. For example, she noted that Mexican and Korean dishes use beans and rice akin to the food she ate in the DRC.</p>
+
+            <p>But she also made sure to journey to African markets sprinkled throughout the city, many in Harlem.</p>
+        </section>
+    </div>
+    <br>
+
+    <div class="container">
+        <div class="scene">
+            <h1>FINDING COMMUNITY IN HARLEM</h1>
+
+            <img id="person" src="media/person-standing-at-shop.jpeg" alt="A man stands outside a shop at the market, looking at the products.">
+        </div>
+        <section class="graf text-overlay">
+            <p>Over the past few years, Sebisaho and Tcheko have joined a vibrant African community in Harlem, where a quarter of residents were born outside of the U.S. Some 25% of those foreign-born Harlemites came from Africa.</p>
+
+            <p>Harlem’s rich African community manifests itself through storefronts trickled among its bustling streets. Markets, hairdressers and restaurants, with African names like Adja Khady and Maliba African Market, decorate the corners of the neighborhood.</p>
+
+            <p>One African community hub Tcheko frequents is the Malcolm Shabazz Harlem Market on West 116th Street and Malcolm X Boulevard. Walking through the colorful alleyways of the market, African garments like kanzus, kangas and gomesis radiate vibrant colors.</p>
+
+            <p>Mounkaila Abdourahamane, an Ivorian-Nigerien immigrant who operates a jewelry and bag store in the Shabazz Market, described how he connects to his culture. “All the bags that you see, all of them come from my home country of Niger,” he said. “I’m here to support my family, that’s the most important thing.”</p>
+
+        </section>
+        <br>
+    </div>
+    <div class="container">
+        <div class="scene">
+            <img id="bags" src="media/colorful-bags.jpeg" alt="A line of hand-made bags lined up hung on a wall.">
+        </div>
+        <section class="graf text-overlay">
+            <p>Neighborhood nonprofits also create community spaces for African immigrants. “There’s a narrative of [that region] that is solely looking at the war and conflict,” said Nelson Walker, co-founder of Congo in Harlem. “We want to shape the narrative by celebrating the rich culture.”</p>
+
+            <p>Congo In Harlem hosts annual October events that showcase art and film from the Democratic Republic of the Congo and the Congolese population living in New York City. One highlight this year: the theatrical release of a film exploring French Congolese director Alain Kassanda’s family history and its intersection with politics.</p>
+
+            <p>“It’s an accomplishment to get people together [to] create dialogue and broaden the narrative,” Walker said of Congo in Harlem’s programming.</p>
+
+            <p>Congo in Harlem also serves as a “platform for activists,” said Walker, and the community effort to foster a collective creative environment may have helped some participants in other ways. Walker’s organization carries film archives from decades past, all essential to Tcheko’s thesis project in graduate school — an in-depth look into the “weaponization of Black consciousness, authenticité and negritude,” she said. </p>
+
+            <p>“I left when I was very little. There’s the assumption that I’m very disconnected from that culture,” Tcheko said. “But it’s my culture, and I’m connected in my own way.”</p>
+
+            <p>Since moving to New York, Tcheko said she’s found a community of other Congolese immigrants through “chance” meetings. Now, she is a part of a WhatsApp group of around 60 Congolese living in the city. They recently hosted a Friendsgiving event — a primary example of “uniting a community” through food, even if they are busy working and getting by in an expensive city.</p>
+
+            <p>“Putting together Congolese dishes requires a lot of time, love and care,” she said. “I possess the love and the care. Patience and the time, not so much.”</p>
+        </section>
+    </div>
+</article>
+    <footer> Visual Designs by Ray DePaul and David Paiz-Torres  </footer>
 </body>
 </html>
+<script src="script.js"></script>

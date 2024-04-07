@@ -1,0 +1,134 @@
+body{
+    background-color: black;
+      font-family: "Playfair Display", serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+.gif {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: auto;    
+}
+
+.hed_dek h1{
+text-align:center;
+font-size:40px;
+}
+
+.hed_dek{
+text-align:center;
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+  
+.graf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Align items in the center horizontally */
+
+}
+
+.graf p {
+  max-width: 650px; /* Adjust the maximum width as needed */
+  margin: 1em 0; /* Add margin for vertical spacing between paragraphs */
+}
+
+.scene {
+  position: relative; /* Change position to relative */
+
+  width: 100%; /* Ensure images occupy full width of their container */
+}
+
+.container {
+  position: relative;
+  width: 100%; /* Ensure container takes up full width of its parent */
+  margin-bottom: 20px; /* Add margin to create space between containers */
+}
+
+.container h1{
+text-align: center;
+}
+
+.active {
+  position: sticky;
+  top: 0;
+}
+
+.text-overlay {
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity (fourth value) as needed */
+  padding: 10px; /* Adjust padding as needed */
+  border-radius: 5px; 
+  color: white; /* Set text color to contrast with the background */
+  position: relative; /* Position the text container relative to its parent */
+  bottom: 20px; /* Adjust the distance from the bottom */
+  left: 50%; /* Align the left edge of the text container to the center */
+  transform: translateX(-50%); 
+  max-width: calc(100% - 40px);
+}
+
+
+img {
+  max-width: 100%; /* Set maximum width to prevent images from overflowing */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure images behave as block elements */
+  margin: auto; /* Center images horizontally */
+}
+
+p {
+  color: whitesmoke;
+  font-size: 23px;
+}
+
+h1 {
+  color:whitesmoke;
+  font-size: 30px;
+}
+
+h2 {
+  color: whitesmoke;
+  font-size: 27px;
+}
+
+footer {
+    max-width: fit-content; /* Set max-width to fit the content */
+    margin: 0 auto; /* Center the footer horizontally */
+}
+
+@media screen {
+
+
+
+  .active {
+    position: sticky;
+    top: 0;
+  }
+
+.text-overlay {
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity (fourth value) as needed */
+  padding: 10px; /* Adjust padding as needed */
+  border-radius: 5px; 
+  color: white; /* Set text color to contrast with the background */
+  position: relative; /* Position the text container relative to its parent */
+  bottom: 20px; /* Adjust the distance from the bottom */
+  left: 50%; /* Align the left edge of the text container to the center */
+  transform: translateX(-50%); 
+  max-width: calc(100% - 80px);
+}
+
+img {
+  max-width: 100%; /* Set maximum width to prevent images from overflowing */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure images behave as block elements */
+  margin: auto; /* Center images horizontally */
+}
+
+  
+  
+}
