@@ -16,10 +16,14 @@ body{
 }
 
 .hed_dek h1{
-text-align:center;
-font-size:40px;
+font-size:45px;
+color:floralwhite;
 }
-
+.hed_dek h2{
+  font-size:35px;
+  color:floralwhite;
+  }
+  
 .hed_dek{
 text-align:center;
 }
@@ -75,17 +79,17 @@ img {
 }
 
 p {
-  color: whitesmoke;
+  color: floralwhite;
   font-size: 23px;
 }
 
 h1 {
-  color:whitesmoke;
+  color:floralwhite;
   font-size: 30px;
 }
 
-h2 {
-  color: whitesmoke;
+h2, h3 {
+  color:floralwhite;
   font-size: 27px;
 }
 
@@ -99,6 +103,8 @@ footer {
   display: block !important;
   top: 0;
 }
+
+
 
 
 
