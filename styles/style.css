@@ -125,7 +125,6 @@ footer {
       display: flex;
       flex-wrap: wrap;
       height: 300px;
-      overflow-x: auto; /* Remove horizontal scrolling */
       overflow-y: scroll; /* Enable vertical scrolling */
       width: auto;
     }
