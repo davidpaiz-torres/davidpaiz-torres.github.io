@@ -37,10 +37,6 @@ text-align:center;
   margin: 1em 0; /* Add margin for vertical spacing between paragraphs */
 }
 
-.scene {
-  position: relative; /* Change position to relative */
-  max-width: 100%; /* Ensure images occupy full width of their container */
-}
 
 .container {
   position: relative;
@@ -100,21 +96,21 @@ footer {
 .scene {
  position:sticky;
   transition:0s;
-  display: block !important; /* Show active scene */
-  position: sticky;
+  display: block !important;
   top: 0;
 }
 
 
-    
 
   @media only screen and (max-width: 600px) and (orientation: portrait) {
     .scene {
       position:sticky;
        transition:0s;
-       display: block !important; /* Show active scene */
+       display: block !important; 
        position: sticky;
        top: 0;
+       max-width: 100%;
+       height:auto;
      }
     .container {
       display: flex;
@@ -124,7 +120,7 @@ footer {
       width: auto;
     }
     .active {
-      display: block !important; /* Show active scene */
+      display: block !important;   /* !important makes it so any previous display properties for this class are hereby overwritten */
       position: sticky;
       top: 0;
     }
