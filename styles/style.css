@@ -85,6 +85,7 @@ p {
 
 h1 {
   color:floralwhite;
+  text-align: center;
   font-size: 30px;
 }
 
@@ -125,6 +126,9 @@ footer {
       overflow-y: scroll; /* Enable vertical scrolling */
       width: auto;
     }
+    h1{
+      text-align:center;
+      }
     .active {
       display: block !important;   /* !important makes it so any previous display properties for this class are hereby overwritten */
       position: sticky;
