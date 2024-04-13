@@ -217,18 +217,16 @@ nav{
 @media only screen and (max-width: 600px) and (orientation: portrait) {
     body {
         background-color: aliceblue;
-        max-width: 100%;
         justify-content: center;
         align-items: center;
         align-content: center;
         font-family: 'Nunito Sans', sans-serif;
         align-content: center;
         align-items: center;  
-        
         margin:0;
     }
     #header_img{
-        max-width:450px;
+        width: 450px;
         top: 0;
         height:auto;
         position: sticky;
@@ -240,17 +238,8 @@ nav{
         text-align: center; 
       }
    
-    .active {
-      display: block !important;
-      position: sticky;
-      top: 0;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      margin: auto;
-    }
-    #text-overlay {
+
+    /* #text-overlay {
       background-color: rgba(0, 0, 0, 0.7);
       padding: 10px;
       border-radius: 5px;
@@ -261,5 +250,5 @@ nav{
       left: 50%;
       transform: translateX(-50%);
       max-width: calc(100% - 40px);
-    }
+    } */
   }
