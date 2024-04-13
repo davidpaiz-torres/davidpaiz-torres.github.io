@@ -9,14 +9,6 @@ body {
     align-items: center; 
     margin:0;
 }
-#fusion_graphics{
-    max-width: 100%;
-    height:auto;
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-
-}
 #header_img{
     max-width: 100%;
     top: 0;
