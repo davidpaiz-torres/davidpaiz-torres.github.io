@@ -4,13 +4,17 @@ body {
     align-content: center;
     align-items: center; 
     margin:0;
+   
 }
 #fusion_graphics{
     max-width: 100%;
     height:auto;
     display:flex;
-   justify-content: center;
+    justify-content: center;
+
 }
+
+
 #marmorato_graph{
     max-width: 100%;
     height:auto;
@@ -75,51 +79,3 @@ nav{
     opacity: 1;
     z-index: 2;
 }
-@media only screen and (max-width: 600px) and (orientation: portrait) {
-    body {
-        background-color: aliceblue;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        font-family: 'Nunito Sans', sans-serif;
-        align-content: center;
-        align-items: center;  
-        margin:0;
-    }
-    #header_img{
-        width: 450px;
-        top: 0;
-        height:fit-content;
-        position: sticky;
-        z-index: 1;
-      }
-    .nav_1{
-        color:orangered;
-        max-width:100%;
-        text-align: center; 
-      }
-   
-    #text-overlay {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 10px;
-      border-radius: 5px;
-      color: white;
-      position: relative;
-      z-index: 2;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: calc(100% - 40px);
-    }
-    #text-overlay-1 {
-        background-color: rgba(0, 0, 0, 0.7);
-        padding: 10px;
-        border-radius: 5px;
-        color: white;
-        position: relative;
-        z-index: 2;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-  }
