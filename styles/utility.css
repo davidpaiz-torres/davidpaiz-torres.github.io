@@ -31,7 +31,6 @@ body {
     max-width: calc(100% - 40px); 
     z-index: 2;
     color:orangered;
-  
   }
 
 #text-overlay {
@@ -216,3 +215,46 @@ nav{
     opacity: 1;
     z-index: 2;
 }
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+    body {
+        background-color: aliceblue;
+        /* max-width: 100%; */
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        font-family: 'Nunito Sans', sans-serif;
+        align-content: center;
+        align-items: center;  
+         max-width: calc(100% - 50px); 
+        margin:0;
+    }
+    .nav_1{
+        color:orangered;
+        align-content: center;
+        text-align: center; 
+      }
+   
+    .active {
+      display: block !important;
+      position: sticky;
+      top: 0;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+    }
+    #text-overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      border-radius: 5px;
+      color: white;
+      position: relative;
+      z-index: 1;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: calc(100% - 40px);
+    }
+  }
