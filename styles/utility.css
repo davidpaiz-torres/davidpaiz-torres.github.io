@@ -228,7 +228,7 @@ nav{
     #header_img{
         width: 450px;
         top: 0;
-        height:auto;
+        height:fit-content;
         position: sticky;
         z-index: 1;
       }
@@ -238,8 +238,7 @@ nav{
         text-align: center; 
       }
    
-
-    /* #text-overlay {
+    #text-overlay {
       background-color: rgba(0, 0, 0, 0.7);
       padding: 10px;
       border-radius: 5px;
@@ -249,6 +248,17 @@ nav{
       bottom: 20px;
       left: 50%;
       transform: translateX(-50%);
-      max-width: calc(100% - 40px);
-    } */
+      width: calc(100% - 40px);
+    }
+    #text-overlay-1 {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        position: relative;
+        z-index: 2;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
   }
