@@ -152,14 +152,11 @@
     <g>
       <line class="cls-5" x1="18.1" y1="656.3" x2="18.1" y2="117.9"/>
       <g>
-        <g>
-          <path class="cls-1" d="M17.8,709.3"/>
+        <g class="cls-15">
           <g class="cls-15">
             <g class="cls-15">
               <g class="cls-15">
-                <g class="cls-15">
-                  <text class="cls-10" transform="translate(94.4 649.5) rotate(-45)"><tspan x="0" y="0">0</tspan></text>
-                </g>
+                <text class="cls-10" transform="translate(94.4 649.5) rotate(-45)"><tspan x="0" y="0">0</tspan></text>
               </g>
             </g>
           </g>
@@ -283,16 +280,10 @@
       <path id="point-0-1" class="cls-14" d="M399.6,640V136.7h246.3v503.3h-246.3Z"/>
     </g>
     <g class="cls-21">
-      <g>
-        <path id="point-1-0" class="cls-11" d="M133.7,638.5V141.7h246.3v496.8h-246.3Z"/>
-        <path id="point-1-1" class="cls-14" d="M628.9,135.2h-246.3"/>
-      </g>
+      <path id="point-1-0" class="cls-11" d="M133.7,638.5V141.7h246.3v496.8h-246.3Z"/>
     </g>
     <g class="cls-24">
-      <g>
-        <path id="point-2-0" class="cls-9" d="M379.3,142.9h-246.3v-42.6h246.3"/>
-        <path id="point-2-1" class="cls-14" d="M628.9,135.2h0"/>
-      </g>
+      <path id="point-2-0" class="cls-9" d="M379.3,142.9h-246.3v-42.6h246.3"/>
     </g>
   </g>
   <g id="data-point-labels">
