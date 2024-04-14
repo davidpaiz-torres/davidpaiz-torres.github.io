@@ -6,7 +6,9 @@ body {
     margin:0;
 }
 
-
+h1{
+    font-size: 16px;
+}
 
 #text-overlay {
     background-color: rgba(0, 0, 0, 0.7); 
