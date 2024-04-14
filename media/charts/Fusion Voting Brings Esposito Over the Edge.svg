@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="fl-legend-discrete-color-0-svg-screenshot-container" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 699.3 684.9">
+<svg id="CD-4-Graph" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 699.3 684.9">
   <defs>
     <style>
       .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
@@ -128,7 +128,7 @@
       <polygon class="cls-2" points="-20.8 655.6 -20.8 40.3 646.8 23.5 646.8 638.8 -20.8 655.6"/>
     </clipPath>
   </defs>
-  <g>
+  <g id="_CD-4-Group_" data-name="&amp;lt;CD-4-Group&amp;gt;">
     <g>
       <line class="cls-5" x1="18.1" y1="656.3" x2="18.1" y2="117.9"/>
       <g>
@@ -136,7 +136,9 @@
           <g class="cls-12">
             <g class="cls-12">
               <g class="cls-12">
-                <text class="cls-10" transform="translate(94.4 649.5) rotate(-45)"><tspan x="0" y="0">0</tspan></text>
+                <g class="cls-12">
+                  <text class="cls-10" transform="translate(94.5 649.5) rotate(-45)"><tspan x="0" y="0">0</tspan></text>
+                </g>
               </g>
             </g>
           </g>
@@ -147,7 +149,9 @@
             <g class="cls-12">
               <g class="cls-12">
                 <g class="cls-12">
-                  <text class="cls-10" transform="translate(84.7 344.1) rotate(-46.6)"><tspan x="0" y="0">80,000</tspan></text>
+                  <g class="cls-12">
+                    <text class="cls-10" transform="translate(84.7 344.2) rotate(-46.6)"><tspan x="0" y="0">80,000</tspan></text>
+                  </g>
                 </g>
               </g>
             </g>
@@ -159,7 +163,9 @@
             <g class="cls-12">
               <g class="cls-12">
                 <g class="cls-12">
-                  <text class="cls-10" transform="translate(84.7 422) rotate(-45.5)"><tspan x="0" y="0">60,000</tspan></text>
+                  <g class="cls-12">
+                    <text class="cls-10" transform="translate(84.7 422) rotate(-45.5)"><tspan x="0" y="0">60,000</tspan></text>
+                  </g>
                 </g>
               </g>
             </g>
@@ -171,7 +177,9 @@
             <g class="cls-12">
               <g class="cls-12">
                 <g class="cls-12">
-                  <text class="cls-10" transform="translate(82.4 502.9) rotate(-44.4)"><tspan x="0" y="0">40,000</tspan></text>
+                  <g class="cls-12">
+                    <text class="cls-10" transform="translate(82.4 502.9) rotate(-44.4)"><tspan x="0" y="0">40,000</tspan></text>
+                  </g>
                 </g>
               </g>
             </g>
@@ -183,7 +191,9 @@
             <g class="cls-12">
               <g class="cls-12">
                 <g class="cls-12">
-                  <text class="cls-10" transform="translate(81.1 582.4) rotate(-47.1)"><tspan x="0" y="0">20,000</tspan></text>
+                  <g class="cls-12">
+                    <text class="cls-10" transform="translate(81.1 582.4) rotate(-47.1)"><tspan x="0" y="0">20,000</tspan></text>
+                  </g>
                 </g>
               </g>
             </g>
@@ -196,7 +206,9 @@
             <g class="cls-12">
               <g class="cls-12">
                 <g class="cls-12">
-                  <text class="cls-10" transform="translate(86.9 134.1) rotate(-45)"><tspan x="0" y="0">140,00</tspan></text>
+                  <g class="cls-12">
+                    <text class="cls-10" transform="translate(87 134.1) rotate(-45)"><tspan x="0" y="0">140,00</tspan></text>
+                  </g>
                 </g>
               </g>
             </g>
@@ -208,7 +220,9 @@
             <g class="cls-12">
               <g class="cls-12">
                 <g class="cls-12">
-                  <text class="cls-10" transform="translate(84.7 193.3) rotate(-44.9)"><tspan x="0" y="0">120,000</tspan></text>
+                  <g class="cls-12">
+                    <text class="cls-10" transform="translate(84.7 193.3) rotate(-44.9)"><tspan x="0" y="0">120,000</tspan></text>
+                  </g>
                 </g>
               </g>
             </g>
@@ -220,7 +234,9 @@
             <g class="cls-12">
               <g class="cls-12">
                 <g class="cls-12">
-                  <text class="cls-10" transform="translate(81.1 275.9) rotate(-44.2)"><tspan x="0" y="0">100,000</tspan></text>
+                  <g class="cls-12">
+                    <text class="cls-10" transform="translate(81.1 275.9) rotate(-44.2)"><tspan x="0" y="0">100,000</tspan></text>
+                  </g>
                 </g>
               </g>
             </g>
@@ -235,7 +251,9 @@
           <g class="cls-12">
             <g class="cls-12">
               <g class="cls-12">
-                <text class="cls-10" transform="translate(487.4 655.1)"><tspan x="0" y="0">Laura A. Gillen</tspan></text>
+                <g class="cls-12">
+                  <text class="cls-10" transform="translate(487.4 655.1)"><tspan x="0" y="0">Laura A. Gillen</tspan></text>
+                </g>
               </g>
             </g>
           </g>
@@ -247,7 +265,9 @@
           <g class="cls-12">
             <g class="cls-12">
               <g class="cls-12">
-                <text class="cls-10" transform="translate(179.5 655.1)"><tspan x="0" y="0">Anthony P. D&apos;Esposito</tspan></text>
+                <g class="cls-12">
+                  <text class="cls-10" transform="translate(179.5 655.1)"><tspan x="0" y="0">Anthony P. D&apos;Esposito</tspan></text>
+                </g>
               </g>
             </g>
           </g>
@@ -255,7 +275,7 @@
       </g>
     </g>
   </g>
-  <g id="data-points">
+  <g id="Cd-4-data-points">
     <g class="cls-14">
       <path id="point-0-1" class="cls-9" d="M399.6,640V134h246.3v506h-246.3Z"/>
     </g>
@@ -266,7 +286,7 @@
       <path id="point-2-0" class="cls-16" d="M380,141.7h-246.3v-59.6h246.3"/>
     </g>
   </g>
-  <g id="data-point-labels">
+  <g id="CD-4-data-point-labels">
     <g class="cls-19">
       <g>
         <g class="cls-22" pointer-events="none">
@@ -274,14 +294,18 @@
             <g class="cls-12">
               <g class="cls-12">
                 <g class="cls-12">
-                  <text class="cls-8" transform="translate(189.6 110.7) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                  <g class="cls-12">
+                    <text class="cls-8" transform="translate(189.6 110.7) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                  </g>
                 </g>
               </g>
             </g>
             <g class="cls-12">
               <g class="cls-12">
                 <g class="cls-12">
-                  <text class="cls-4" transform="translate(189.6 110.7) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                  <g class="cls-12">
+                    <text class="cls-4" transform="translate(189.6 110.7) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                  </g>
                 </g>
               </g>
             </g>
@@ -290,7 +314,9 @@
             <g class="cls-12">
               <g class="cls-12">
                 <g class="cls-12">
-                  <text class="cls-6" transform="translate(189.6 110.7) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                  <g class="cls-12">
+                    <text class="cls-6" transform="translate(189.6 110.7) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                  </g>
                 </g>
               </g>
             </g>
@@ -301,7 +327,9 @@
             <g class="cls-12">
               <g class="cls-12">
                 <g class="cls-12">
-                  <text class="cls-6" transform="translate(497.4 304.6)"><tspan x="0" y="0">130,871</tspan></text>
+                  <g class="cls-12">
+                    <text class="cls-6" transform="translate(504.2 313.6)"><tspan x="0" y="0">130,871</tspan></text>
+                  </g>
                 </g>
               </g>
             </g>
@@ -316,7 +344,9 @@
             <g class="cls-12">
               <g class="cls-12">
                 <g class="cls-12">
-                  <text class="cls-6" transform="translate(225.1 314.3)"><tspan x="0" y="0">129,353</tspan></text>
+                  <g class="cls-12">
+                    <text class="cls-6" transform="translate(225.1 314.3)"><tspan x="0" y="0">129,353</tspan></text>
+                  </g>
                 </g>
               </g>
             </g>
@@ -327,14 +357,18 @@
             <g class="cls-12">
               <g class="cls-12">
                 <g class="cls-12">
-                  <text class="cls-8" transform="translate(497.4 148.2) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                  <g class="cls-12">
+                    <text class="cls-8" transform="translate(497.4 148.2) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                  </g>
                 </g>
               </g>
             </g>
             <g class="cls-12">
               <g class="cls-12">
                 <g class="cls-12">
-                  <text class="cls-3" transform="translate(497.4 148.2) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                  <g class="cls-12">
+                    <text class="cls-3" transform="translate(497.4 148.2) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                  </g>
                 </g>
               </g>
             </g>
@@ -343,7 +377,9 @@
             <g class="cls-12">
               <g class="cls-12">
                 <g class="cls-12">
-                  <text class="cls-6" transform="translate(497.4 148.2) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                  <g class="cls-12">
+                    <text class="cls-6" transform="translate(497.4 148.2) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                  </g>
                 </g>
               </g>
             </g>
@@ -358,7 +394,9 @@
             <g class="cls-12">
               <g class="cls-12">
                 <g class="cls-12">
-                  <text class="cls-6" transform="translate(237.1 125.3)"><tspan x="0" y="0">11,269</tspan></text>
+                  <g class="cls-12">
+                    <text class="cls-6" transform="translate(237.1 125.3)"><tspan x="0" y="0">11,269</tspan></text>
+                  </g>
                 </g>
               </g>
             </g>
@@ -369,14 +407,18 @@
             <g class="cls-12">
               <g class="cls-12">
                 <g class="cls-12">
-                  <text class="cls-8" transform="translate(497.4 148.2) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                  <g class="cls-12">
+                    <text class="cls-8" transform="translate(497.4 148.2) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                  </g>
                 </g>
               </g>
             </g>
             <g class="cls-12">
               <g class="cls-12">
                 <g class="cls-12">
-                  <text class="cls-3" transform="translate(501.1 165.9) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                  <g class="cls-12">
+                    <text class="cls-3" transform="translate(501.1 165.9) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                  </g>
                 </g>
               </g>
             </g>
@@ -385,7 +427,9 @@
             <g class="cls-12">
               <g class="cls-12">
                 <g class="cls-12">
-                  <text class="cls-6" transform="translate(501.1 165.9) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                  <g class="cls-12">
+                    <text class="cls-6" transform="translate(501.1 165.9) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                  </g>
                 </g>
               </g>
             </g>
@@ -394,37 +438,48 @@
       </g>
     </g>
   </g>
-  <g class="cls-12">
+  <g id="_CD-4-Group_-2" data-name="&amp;lt;CD-4-Group&amp;gt;" class="cls-12">
     <g class="cls-12">
       <g class="cls-12">
         <g class="cls-12">
-          <text class="cls-7" transform="translate(65.3 24.6)"><tspan x="0" y="0">Fusion Voting Brings Esposito Over the Edge in NY-4</tspan></text>
+          <g class="cls-12">
+            <text class="cls-7" transform="translate(65.3 24.6)"><tspan x="0" y="0">Fusion Voting Brings Esposito Over the Edge in NY-4</tspan></text>
+          </g>
         </g>
       </g>
     </g>
   </g>
-  <circle class="cls-15" cx="57.6" cy="36.4" r="5.2"/>
-  <circle class="cls-9" cx="543.1" cy="35.1" r="5.2"/>
-  <g class="cls-12">
+  <circle id="_CD-4-Path_" data-name="&amp;lt;CD-4-Path&amp;gt;" class="cls-15" cx="57.6" cy="36.4" r="5.2"/>
+  <circle id="_CD-4-Path_-2" data-name="&amp;lt;CD-4-Path&amp;gt;" class="cls-9" cx="543.1" cy="35.1" r="5.2"/>
+  <g id="_CD-4-Group_-3" data-name="&amp;lt;CD-4-Group&amp;gt;" class="cls-12">
     <g class="cls-12">
       <g class="cls-12">
         <g class="cls-12">
-          <text class="cls-13" transform="translate(68.6 42.4)"><tspan x="0" y="0">Republican Party </tspan><tspan x="0" y="16.8">Votes</tspan></text>
+          <g class="cls-12">
+            <text class="cls-13" transform="translate(68.6 42.4)"><tspan x="0" y="0">Republican Party </tspan></text>
+            <text class="cls-13" transform="translate(68.6 59.2)"><tspan x="0" y="0">Votes</tspan></text>
+          </g>
         </g>
       </g>
     </g>
   </g>
-  <g class="cls-12">
+  <g id="_CD-4-Group_-4" data-name="&amp;lt;CD-4-Group&amp;gt;" class="cls-12">
     <g class="cls-12">
       <g class="cls-12">
         <g class="cls-12">
-          <text class="cls-13" transform="translate(553.4 39.9)"><tspan x="0" y="0">Democratic Party</tspan><tspan x="0" y="16.8">Votes</tspan></text>
+          <g class="cls-12">
+            <text class="cls-13" transform="translate(553.4 39.9)"><tspan x="0" y="0">Democratic Party</tspan></text>
+            <text class="cls-13" transform="translate(553.4 56.7)"><tspan x="0" y="0">Votes</tspan></text>
+          </g>
         </g>
       </g>
     </g>
   </g>
-  <circle class="cls-16" cx="305.8" cy="36.4" r="5.2"/>
-  <g class="cls-12">
-    <text class="cls-11" transform="translate(315.4 40.1)"><tspan x="0" y="0">Conservative Party</tspan><tspan x="0" y="16.8">Votes</tspan></text>
+  <circle id="_CD-4-Path_-3" data-name="&amp;lt;CD-4-Path&amp;gt;" class="cls-16" cx="305.8" cy="36.4" r="5.2"/>
+  <g id="_CD-4-Group_-5" data-name="&amp;lt;CD-4-Group&amp;gt;" class="cls-12">
+    <g class="cls-12">
+      <text class="cls-11" transform="translate(315.4 40.1)"><tspan x="0" y="0">Conservative Party</tspan></text>
+      <text class="cls-11" transform="translate(315.4 56.9)"><tspan x="0" y="0">Votes</tspan></text>
+    </g>
   </g>
 </svg>
