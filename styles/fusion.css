@@ -92,6 +92,10 @@ nav{
         justify-self: center;
         overflow-y: scroll;
     }
+    svg{
+        max-width: 100%;
+        height: auto;
+    }
       #fusion_graphics {
         width: 430px;
         height: auto;
