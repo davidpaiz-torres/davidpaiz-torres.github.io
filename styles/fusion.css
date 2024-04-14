@@ -89,7 +89,6 @@ nav{
         max-width: fit-content;
         font-family: 'Nunito Sans', sans-serif;
         margin: 0 auto;  
-        justify-self: center;
         max-width: 932px;
         overflow-y: scroll;
     }
