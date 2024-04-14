@@ -404,7 +404,7 @@ img{
 @media only screen and (max-width: 496px) and (orientation: portrait) and (device-height: 926px) {
     #header_img {
         max-width: 100%;
-        width: 3070px;
+        width: 1440px;
         }   
         body {
             background-color: aliceblue;
