@@ -84,6 +84,8 @@ nav{
 @media only screen and (max-width:696px) and (orientation: portrait) {
     body {
         background-color: aliceblue;
+        display:flex;
+        flex-direction:column;
         font-family: 'Nunito Sans', sans-serif;
         justify-content: center;
         margin: 0 auto; 
