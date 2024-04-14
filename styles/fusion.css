@@ -120,16 +120,19 @@ svg {
         margin: 0 auto;
     } */
 
-    #marmorato_graph{
+    /* #marmorato_graph{
         max-width: 90%;
         height:auto;
         display:flex;
         justify-content: center;
         margin: 0 auto;
-    }
+    } */
 
     
     #header_img{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
         top: 0;
         height:fit-content;
         position: sticky;
