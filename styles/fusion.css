@@ -89,6 +89,7 @@ nav{
         margin: 0 auto; 
         overflow-y: scroll;
         font-size: 12px;
+        width:396px;
         
     }
     h1{
