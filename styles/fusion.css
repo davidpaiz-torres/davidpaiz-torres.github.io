@@ -104,20 +104,12 @@ nav{
     }
     #fusion_graphics{
         width: 100%;
-        height:auto;
+        height:100%;
         display:flex;
         justify-content: center;
         margin: 0 auto;
     }
-    
-    
-    #marmorato_graph{
-        width: 450px;
-        height:auto;
-        display:flex;
-        justify-content: center;
-        margin: 0 auto;
-    }
+
     
     #header_img{
         width: 450px;
