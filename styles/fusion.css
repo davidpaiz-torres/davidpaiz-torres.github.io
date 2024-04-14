@@ -88,6 +88,10 @@ nav{
         background-color: aliceblue;
         max-width: fit-content;
         font-family: 'Nunito Sans', sans-serif;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         margin: 0 auto;  
         max-width: 396px;
         overflow-y: scroll;
