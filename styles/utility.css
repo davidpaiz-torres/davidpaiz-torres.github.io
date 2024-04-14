@@ -335,15 +335,17 @@ img{
 @media only screen and (max-width: 396px) {
     body {
         background-color: aliceblue;
-        display: flex;
-        flex-direction: column;
         font-family: 'Nunito Sans', sans-serif;
-        justify-content: center;
         margin: 0 auto;
         overflow-y: scroll;
         font-size: 12px; 
+        max-width: 100%;
        
     }
+    #header_img {
+        max-width: 100%;
+        width: 3070px;
+        }  
 
     h1 {
         font-size: 12px;
@@ -385,10 +387,7 @@ img{
         left: 50%;
         transform: translateX(-50%);
     }
-    img {
-        max-width: 100%;
-        width: 3070px;
-        }
+   
 }
 /* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW */
 /* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW */
@@ -398,7 +397,7 @@ img{
 /* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW */
 
 @media only screen and (max-width: 496px) and (orientation: portrait) and (device-height: 926px) {
-    img {
+    #header_img {
         max-width: 100%;
         width: 3070px;
         }   
