@@ -83,7 +83,7 @@ nav{
     z-index: 2;
 }
 
-@media only screen and (max-width:461px) and (orientation: portrait) {
+@media only screen and (max-width:465px) and (orientation: portrait) {
     body {
         background-color: aliceblue;
         max-width: fit-content;
@@ -92,7 +92,7 @@ nav{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        width:461px;
+        width:465px;
         margin: 0 auto; 
         overflow-y: scroll;
         font-size: 12px;
