@@ -83,7 +83,7 @@ nav{
     z-index: 2;
 }
 
-@media only screen and (max-width: 422px) and (orientation: portrait) {
+@media only screen and (max-width: 922px) and (orientation: portrait) {
     body {
         background-color: aliceblue;
         max-width: fit-content;
@@ -99,18 +99,16 @@ nav{
     }
   
 #CD-4-Graph_unique {
-        max-width: 492px;
+        max-width: 932px;
         height: auto;
         display: flex;
         justify-content: center;
-        margin: 0 auto;
     }
   
     #marmorato_graph {
         display: flex;
-        max-width: 492px;
+        max-width: 932px;
         justify-content: center;
-        margin: 0 auto;
     } 
    
     .nav_1{
