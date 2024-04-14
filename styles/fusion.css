@@ -109,7 +109,7 @@ nav{
     }
     #marmorato_graph {
         height: auto;
-        max-width: 422px;
+        width: 432px;
         display: flex;
         align-items: center;
         justify-content: center;
