@@ -101,15 +101,15 @@ nav{
         align-content: center;
         margin: 0 auto;
     } */
-    /* #CD-4-Graph_unique {
-        max-width: 705px;
+    #CD-4-Graph_unique {
+        max-width: 430px;
         height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
         align-content: center;
         margin: 0 auto;
-    } */
+    }
     #marmorato_graph {
         height: auto;
         max-width: 430px;
