@@ -83,7 +83,7 @@ nav{
     z-index: 2;
 }
 
-@media only screen and (max-width: 633px) and (orientation: portrait) {
+@media only screen and (max-width: 933px) and (orientation: portrait) {
     body {
         background-color: aliceblue;
         max-width: fit-content;
