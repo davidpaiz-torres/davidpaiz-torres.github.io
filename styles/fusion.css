@@ -83,13 +83,13 @@ nav{
     z-index: 2;
 }
 
-@media only screen and (max-width: 496px) and (orientation: portrait) {
+@media only screen and (max-width: 396px) and (orientation: portrait) {
     body {
         background-color: aliceblue;
         max-width: fit-content;
         font-family: 'Nunito Sans', sans-serif;
         margin: 0 auto;  
-        max-width: 496px;
+        max-width: 396px;
         overflow-y: scroll;
         font-size: 12px;
     }
@@ -99,7 +99,7 @@ nav{
     }
   
 #CD-4-Graph {
-        width: 432px;
+        width: 392px;
         height: auto;
         display: flex;
         justify-content: center;
@@ -113,7 +113,7 @@ nav{
    
     .nav_1{
         color:orangered;
-        max-width: 496px;
+        max-width: 396px;
         margin: 0 auto;
         text-align: center; 
         justify-content: center;
