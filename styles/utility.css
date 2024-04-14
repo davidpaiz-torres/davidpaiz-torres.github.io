@@ -228,13 +228,7 @@ nav{
         font-size: 16px;
         text-align: center;
     }
-  
-   img {
-        display: flex;
-        max-width: 100%;
-        height:auto;
-        justify-content: center;
-    } 
+ 
    
     .nav_1{
         color:orangered;
