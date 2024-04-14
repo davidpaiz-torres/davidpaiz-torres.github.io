@@ -4,8 +4,6 @@
     <title>What is Your Congressional District's Electoral History?</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/utility.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
-    <!-- WOHOOOO I FOUND OUT HOW TO USE ICONS FOR MY TABS-->
     <link rel="icon" href="media/Icons/latest-news-newspaper-icon.svg" type="image/svg">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -30,11 +28,16 @@
             
     
     <!-- Image Below -->
-    <img id="header_img" src="media/US Capitol/US_Capitol_at_Night.jpg" alt="Picture of the US Capitol"> 
+    <img id="header_img" src="media/US Capitol/US_Capitol_at_Night_3.jpg" alt="Picture of the US Capitol"> 
     <section id="text-container">
         <section id="text-overlay-1" style="margin-top: 0; position: absolute; top: 85%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
             <p>Scroll Up! </p>    
         </section>
+        <!-- <section id="text-overlay-0" style="margin-top: 0; position: absolute; top: 90%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+            <button id="no-scroll">
+            <p>I don't want to scroll  </p>    
+            </button>
+        </section> -->
     </section>
     <br>  <br>
     <br>  <br>
@@ -93,7 +96,7 @@
                 <br>  <br>
                 <br>  <br>
             <section id="text-overlay-4">
-                    <h1 style="font-size:20px;"> Unless you live in one of <span style="color: darkred; font-weight:bold;"> 5 rare districts,</span> your representative is likely the same as it was <br> <span style="color: darkred; font-weight:bold;">10 years ago. </span></h1>
+                    <h1 style="font-size:20px;"> Unless you live in one of <div id="rare"> <span  style="color: darkred; font-weight:bold;"> 5 rare districts,</span></div> your representative is likely the same as it was  <div id="rare"> <span style="color: darkred; font-weight:bold;">10 years ago. </span></div></h1>
             </section>
         <br>  <br>
         <br>  <br>
@@ -114,7 +117,13 @@
         <br>  <br>
         <br>  <br>
         <section id ="text-overlay-5">
-            <h1 style="font-size:20px;">Do You Know Who Your District Has Sent to Congress?</h1>
+            <h1 style="font-size:20px;">Do You Know Your Congressional District?</h1>
+    
+                <div class="button">
+                    <button style = "color:cornflowerblue;" id="Yes">Yes</button>
+                    <button  style = "color:orangered;" id="No">No</button>
+                </div>
+            </nav>
        </section>
         <br>  <br>
         <br>  <br>
@@ -138,6 +147,5 @@
     <iframe id="find_pollsite" src="https://findmypollsite.vote.nyc"></iframe>
 </section>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 <script src="scripts/script.js"></script> 
 </html>
