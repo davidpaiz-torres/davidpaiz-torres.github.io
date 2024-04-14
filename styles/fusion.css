@@ -90,12 +90,13 @@ nav{
         width: auto;
         margin: 0 auto;  
         justify-self: center;
-        overflow-y: scroll;
+        overflow-y: scroll
     }
     svg {
         width: 100%;
         height: auto;
       }
+    
       #fusion_graphics {
         width: 100%;
         height: auto;
@@ -106,8 +107,8 @@ nav{
         margin: 0 auto;
     }
     #marmorato_graph {
-        width: 100%;
         height: auto;
+        width: 75%;
         display: flex;
         align-items: center;
         justify-content: center;
