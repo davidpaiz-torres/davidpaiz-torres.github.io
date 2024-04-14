@@ -101,13 +101,15 @@ nav{
         width: 432px;
         height: auto;
         display: flex;
+        justify-content: center;
         margin: 0 auto;
     }
   
     #marmorato_graph {
         height: auto;
         width: 232px;
-        align-content: center;
+        display: flex;
+        justify-content: center;
         margin: 0 auto;
     } 
    
