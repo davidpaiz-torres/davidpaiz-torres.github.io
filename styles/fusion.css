@@ -116,11 +116,11 @@ nav{
   
     #marmorato_graph {
         display: flex;
-         max-width: 100%;
-         height: auto;
-         margin: 0 auto; 
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto; 
         justify-content: center;
-         display:flex;
+        display:flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
