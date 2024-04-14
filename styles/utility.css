@@ -224,7 +224,9 @@ nav{
         align-content: center;
         align-items: center;  
         margin:0;
+        overflow-y: scroll;
     }
+    
     #header_img{
         width: 450px;
         top: 0;
