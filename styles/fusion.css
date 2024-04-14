@@ -81,7 +81,7 @@ nav{
     z-index: 2;
 }
 
-@media only screen and (max-width:605px) and (orientation: portrait) {
+@media only screen and (max-width:496px) and (orientation: portrait) {
     body {
         background-color: aliceblue;
         font-family: 'Nunito Sans', sans-serif;
