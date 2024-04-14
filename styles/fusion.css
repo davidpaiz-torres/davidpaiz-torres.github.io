@@ -102,19 +102,22 @@ nav{
     }
   
 #CD-4-Graph {
-        width: 492px;
+        max-width: 100%;
         height: auto;
         display: flex;
         justify-content: center;
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
+        margin: 0 auto; 
         justify-content: center;
     }
   
     #marmorato_graph {
         display: flex;
-      max-width: 492px;
+         max-width: 100%;
+         height: 100%;
+         margin: 0 auto; 
         justify-content: center;
          display:flex;
         flex-direction: row;
