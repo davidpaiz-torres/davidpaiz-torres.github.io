@@ -101,22 +101,6 @@ nav{
         font-size: 16px;
         text-align: center;
     }
-    #nav_1{
-        background-color:aliceblue; 
-        display: block !important;
-        padding: 15px;
-        border-radius: 5px; 
-        width: fit-content;
-        height:auto;
-        color: white; 
-        bottom: 20px; 
-        left: 50%;
-        transform: translateX(-50%); 
-        max-width: calc(100% - 40px); 
-        z-index: 2;
-        color:orangered;
-      
-      }
   
 #CD-4-Graph {
         width: 392px;
@@ -131,6 +115,7 @@ nav{
   
     #marmorato_graph {
       max-width: 496px;
+      
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -139,7 +124,7 @@ nav{
    
     .nav_1{
         color:orangered;
-        max-width: 496px;
+        max-width: 396px;
         margin: 0 auto;
         text-align: center; 
         justify-content: center;
