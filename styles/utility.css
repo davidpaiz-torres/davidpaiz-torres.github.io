@@ -231,7 +231,7 @@ nav{
   
    img {
         display: flex;
-        width: 432px;
+        max-width: 100%;
         justify-content: center;
     } 
    
