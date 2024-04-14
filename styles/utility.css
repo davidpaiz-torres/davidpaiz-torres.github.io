@@ -214,30 +214,33 @@ nav{
     opacity: 1;
     z-index: 2;
 }
-@media only screen and (max-width: 600px) and (orientation: portrait) {
+@media only screen and (max-width: 432px) and (orientation: portrait) {
     body {
         background-color: aliceblue;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
+        max-width: fit-content;
         font-family: 'Nunito Sans', sans-serif;
-        align-content: center;
-        align-items: center;  
-        margin:0;
+        margin: 0 auto;  
+        max-width: 432px;
         overflow-y: scroll;
+        font-size: 12px;
     }
-    
-    #header_img{
-        width: 450px;
-        top: 0;
-        height:fit-content;
-        position: sticky;
-        z-index: 1;
-      }
+    h1{
+        font-size: 16px;
+        text-align: center;
+    }
+  
+   img {
+        display: flex;
+        width: 432px;
+        justify-content: center;
+    } 
+   
     .nav_1{
         color:orangered;
-        max-width:100%;
+         max-width: 932px;
+        margin: 0 auto;
         text-align: center; 
+        justify-content: center;
       }
    
     #text-overlay {
