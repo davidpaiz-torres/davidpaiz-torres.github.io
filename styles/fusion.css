@@ -107,15 +107,15 @@ nav{
         width:432px;
         height:auto;
     }
-    /* #marmorato_graph {
+    #marmorato_graph {
         height: auto;
-        max-width: 232px;
+        max-width: 432px;
         display: flex;
         align-items: center;
         justify-content: center;
         align-content: center;
         margin: 0 auto;
-    }  */
+    } 
    
     .nav_1{
         color:orangered;
