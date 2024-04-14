@@ -107,11 +107,17 @@ nav{
         height: auto;
         display: flex;
         justify-content: center;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
   
     #marmorato_graph {
-        display: flex;
       max-width: 496px;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
     } 
    
