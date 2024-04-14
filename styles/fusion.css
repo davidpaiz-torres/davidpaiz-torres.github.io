@@ -91,6 +91,7 @@ nav{
         margin: 0 auto;  
         max-width: 932px;
         overflow-y: scroll;
+        font-size: 12px;
     }
     h1{
         font-size: 12px;
@@ -106,8 +107,7 @@ nav{
     }
   
     #marmorato_graph {
-        height: auto;
-        width: 232px;
+       
         display: flex;
         justify-content: center;
         margin: 0 auto;
