@@ -6,10 +6,7 @@ body {
     margin:0;
 }
 
-h1{
-    font-size: 16px;
-    text-align: center;
-}
+
 
 #text-overlay {
     background-color: rgba(0, 0, 0, 0.7); 
@@ -94,6 +91,10 @@ nav{
         margin: 0 auto;  
         max-width: 932px;
         overflow-y: scroll;
+    }
+    h1{
+        font-size: 16px;
+        text-align: center;
     }
   
 #CD-4-Graph_unique {
