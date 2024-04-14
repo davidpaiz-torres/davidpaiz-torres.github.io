@@ -103,11 +103,11 @@ nav{
         font-family: 'Nunito Sans', sans-serif;
     }
     #fusion_graphics{
-        width: 367px;
+        width: 100%;
         height:auto;
         display:flex;
         justify-content: center;
-    
+        margin: 0 auto;
     }
     
     
@@ -116,6 +116,7 @@ nav{
         height:auto;
         display:flex;
         justify-content: center;
+        margin: 0 auto;
     }
     
     #header_img{
