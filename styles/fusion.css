@@ -87,16 +87,11 @@ nav{
     body {
         background-color: aliceblue;
         font-family: 'Nunito Sans', sans-serif;
-        width: 430px;
+        max-width: 430px;
         margin: 0 auto;  
         justify-self: center;
         overflow-y: scroll;
     }
-    svg {
-        width: 100%;
-        height: auto;
-      }
-    
       #fusion_graphics {
         width: 430px;
         height: auto;
