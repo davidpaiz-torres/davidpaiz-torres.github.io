@@ -81,7 +81,7 @@ nav{
     z-index: 2;
 }
 
-@media only screen and (max-width:1265px) and (orientation: portrait) {
+@media only screen and (max-width:605px) and (orientation: portrait) {
     body {
         background-color: aliceblue;
         font-family: 'Nunito Sans', sans-serif;
@@ -97,7 +97,7 @@ nav{
     }
   
 #CD-4-Graph {
-        width:461px;
+        width:396px;
         height: auto;
         display: flex;
         justify-content: center;
@@ -107,7 +107,7 @@ nav{
   
     #marmorato_graph {
         display: flex;
-        width:461px;
+        width:396px;
         height: auto;
         margin: 0 auto; 
         justify-content: center;
