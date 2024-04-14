@@ -194,7 +194,7 @@ nav{
 }
 
 
-@media only screen and (max-width:696px) and (orientation: portrait) {
+@media only screen and (max-width:496px) and (orientation: portrait) {
     body {
         background-color: aliceblue;
         display:flex;
@@ -209,10 +209,10 @@ nav{
         
     }
     #header_img{
-        width: 100%;
         display:none;
-        height: auto;
-      position: sticky;
+    }
+    #text-container{
+        display:none;
     }
     
     h1{
