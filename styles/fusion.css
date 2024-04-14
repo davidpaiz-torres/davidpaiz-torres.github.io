@@ -90,7 +90,7 @@ nav{
         width: auto;
         margin: 0 auto;  
         justify-self: center;
-        overflow-y: scroll
+        overflow-y: scroll;
     }
     svg {
         width: 100%;
@@ -98,7 +98,7 @@ nav{
       }
     
       #fusion_graphics {
-        width: 100%;
+        width: 430px;
         height: auto;
         display: flex;
         align-items: center;
