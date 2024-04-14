@@ -83,17 +83,17 @@ nav{
     z-index: 2;
 }
 
-@media only screen and (max-width: 932px) and (orientation: portrait) {
+@media only screen and (max-width: 430px) and (orientation: portrait) {
     body {
         background-color: aliceblue;
         font-family: 'Nunito Sans', sans-serif;
-    
+        max-width: 430px;
         margin: 0 auto;  
         justify-self: center;
         overflow-y: scroll;
     }
       #fusion_graphics {
-        max-width: 390px;
+        width: 430px;
         height: auto;
         display: flex;
         align-items: center;
@@ -103,7 +103,7 @@ nav{
     }
     #marmorato_graph {
         height: auto;
-        max-width: 390px;
+        max-width: 430px;
         display: flex;
         align-items: center;
         justify-content: center;
