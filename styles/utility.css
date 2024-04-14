@@ -265,3 +265,7 @@ nav{
         transform: translateX(-50%);
       }
   }
+  img{
+    width:396px;
+  }
+}
