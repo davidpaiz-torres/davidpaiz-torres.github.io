@@ -103,7 +103,11 @@ nav{
         align-content: center;
         margin: 0 auto;
     }
-    #marmorato_graph {
+    img{
+        width:432px;
+        height:auto;
+    }
+    /* #marmorato_graph {
         height: auto;
         max-width: 232px;
         display: flex;
@@ -111,7 +115,7 @@ nav{
         justify-content: center;
         align-content: center;
         margin: 0 auto;
-    } 
+    }  */
    
     .nav_1{
         color:orangered;
