@@ -94,8 +94,11 @@ nav{
         width:396px;
         
     }
+    #text-container{
+        display:none;
+    }
     h1{
-        font-size: 16px;
+        font-size: 12px;
         text-align: center;
     }
   
