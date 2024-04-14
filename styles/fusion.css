@@ -93,7 +93,7 @@ nav{
         overflow-y: scroll;
     }
   
-    svg#CD-4-Graph_unique {
+   #CD-4-Graph_unique {
         width: 430px;
         height: auto;
         display: flex;
