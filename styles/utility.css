@@ -50,7 +50,7 @@ body {
     color: orangered;
 }
 
-#text-overlay,  #text-overlay-2, #text-overlay-3, #text-overlay-4, #text-overlay-5, #text-overlay-6 {
+#text-overlay,  #text-overlay-2, #text-overlay-3, #text-overlay-4, #text-overlay-5, #text-overlay-6, #text-overlay-7 {
     background-color: rgba(0, 0, 0, 1.2);
     padding: 12px;
     border-radius: 2px;
@@ -62,7 +62,7 @@ body {
     bottom: 5px;
     left: 50%;
     transform: translateX(-50%);
-    max-width: calc(100% - 170px);
+    max-width: calc(60% - 450px);
     z-index: 2;
     scroll-behavior: smooth;
 }

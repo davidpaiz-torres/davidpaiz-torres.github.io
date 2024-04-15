@@ -7,7 +7,7 @@ yesButton.addEventListener("click", function() {
 });
 
 function promptForDistrict() {
-    const userInput = prompt("Enter an NYC Congressional District");
+    const userInput = prompt("Please Enter an NYC Congressional District");
     console.log(userInput); // Log the inputted data to the console
 
     if (userInput) {
@@ -31,14 +31,15 @@ function promptForDistrict() {
         const popup = document.createElement("div");
         popup.textContent = "Loading District Information";
         popup.style.position = "fixed";
-        popup.style.top = "50%";
+        popup.style.top = "26%";
         popup.style.left = "50%";
         popup.style.transform = "translate(-50%, -50%)";
         popup.style.padding = "10px";
-        popup.style.backgroundColor = "white";
+        popup.style.backgroundColor = "cornflowerblue";
         popup.style.border = "1px solid black";
         popup.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.5)";
         popup.style.zIndex = "9999";
+        
         document.body.appendChild(popup);
 
         // Remove the pop-up after 3 seconds
