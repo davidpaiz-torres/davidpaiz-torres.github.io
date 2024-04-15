@@ -6,7 +6,8 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     margin: 0 auto;
     scroll-behavior: smooth;
-   
+    max-width: 100%;
+    height: auto;
 }
 .button{
     border:none;
@@ -328,3 +329,26 @@ img{
 /* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW */
 /* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW */
 /* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW */
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+    body {
+        background-color: aliceblue;
+        font-family: 'Nunito Sans', sans-serif;
+        margin: 0 auto;
+        scroll-behavior: smooth;
+        max-width: 100%;
+        height: auto;
+    
+    }
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+    body {
+        background-color: aliceblue;
+        font-family: 'Nunito Sans', sans-serif;
+        margin: 0 auto;
+        scroll-behavior: smooth;
+        max-width: 100%;
+        height: auto;
+        background-image: url('US_Capitol_at_Night_3.svg');
+    }
+}
+}
