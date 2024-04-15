@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>What is Your Congressional District's Electoral History?</title>
+    <title>WIP - What is Your Congressional District's Electoral History?</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/utility.css">
     <link rel="icon" href="media/Icons/latest-news-newspaper-icon.svg" type="image/svg">
@@ -11,17 +11,17 @@
 </head>
 <body>
     <nav>
-        <a href="fusion_voting.html">
+        <a style="text-decoration: none;" href="fusion_voting.html">
             <div class="fusion_voting" 
             style=" color: cornflowerblue; 
-            
+            max-width: 100%;
             flex-direction: row;
             align-content: center;
             justify-content: space-around;
             background-color: black;
             display: flex;
             text-decoration: none;">
-                Fusion Voting(Custom Graphics Project)
+               Click Here for Fusion Voting Charts (Custom Graphics Project)
             </div>
         </a>
     </nav>
@@ -33,12 +33,13 @@
         <section id="text-overlay-1" style="margin-top: 0; position: absolute; top: 85%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
             <p>Scroll Up! </p>    
         </section>
-        <!-- <section id="text-overlay-0" style="margin-top: 0; position: absolute; top: 90%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
-            <button id="no-scroll">
-            <p>I don't want to scroll  </p>    
+ <!-- Skip The Scrolly Button -->
+        <section id="text-overlay-0" style="margin-top: 0; position: absolute; top:33%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+            <button id="no-scroll" style="background-color: cornflowerblue; color: white; border: none; padding: 8px 16px; font-size: 14px; border-radius: 4px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">
+                <a style="text-decoration: none; color: darkred;" href="#text-overlay-7">Don't Want to Scroll?</a> 
             </button>
-        </section> -->
-    </section>
+        </section>
+        </section>
     
     <br>  <br>
     <br>  <br>
@@ -76,7 +77,7 @@
     <br>  <br>
     <br>  <br>
             <section id ="text-overlay-2">
-                <h1> New York Sends 26 Members to the <br>United States Congress </h1>
+                <h1> Every 2 Years, <br> New Yorkers Elect 26 Members to Represent Them in the United States Congress </h1>
             </section>
 <br>  <br>
 <br>  <br>
@@ -162,7 +163,8 @@
                 <br>  <br>
                 <br>  <br>
             <section id="text-overlay-4">
-                    <h1 style="font-size:20px;"> Unless you live in one of <div id="rare"> <span  style="color: darkred; font-weight:bold;"> 5 rare districts,</span></div> your district is likely represented by the same person as<div id="rare"> <span style="color: darkred; font-weight:bold;">10 years ago.</span></div></h1>
+                    <h1 style="font-size:20px;"> Unless you live in one of <div id="rare"> <span  style="color: darkred; font-weight:bold;"> 5 rare NYC districts,</span></div> your district is likely represented by the same person as<div id="rare"> <span style="color: darkred
+                    ; font-weight:bold;">10 years ago.</span></div></h1>
             </section>
         <br>  <br>
         <br>  <br>
@@ -208,9 +210,9 @@
         <br>  <br>
         <br>  <br>
         <br>  <br>
-        <section id ="text-overlay-6">
+        <section id ="text-overlay-6" class="Enter_CD">
             <h1 style="font-size:20px;">Do you know your Congressional district?</h1>
-                <div class="button">
+                <div id="cd-button" class="button">
                     <button style = "color:cornflowerblue;" id="Yes">Yes</button>
                     <button  style = "color:orangered;" id="No">No</button>
                 </div>
