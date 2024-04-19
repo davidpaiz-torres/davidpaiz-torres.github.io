@@ -33,24 +33,7 @@ article{
 }
 
 
-/* #fusion_graphics{
-    height: auto;
-    max-width: 405px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px; 
-    align-content: center;
-    margin: 0 auto;
-}
 
-#image_container{
-    height: auto;
-    max-width: 405px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-gap: 10px; 
-    align-content: center;
-} */
 
 
 #intro_Grafs{
@@ -83,14 +66,15 @@ article{
         margin: 0 auto;
  }
 
-.current_reps, .current_reps h1, .last-rep{
+.current_reps, .current_reps h1{
+display:grid;
   text-align: center;
+  justify-content: center;
   margin: 0 auto;
-  width: 85%;
+  width: 100%;
   padding-top:10px;
   height:auto;
-  border-radius: 30px;
-  padding-bottom:10px;
+ 
   
 
 }
@@ -136,24 +120,25 @@ nav{
     color:black;
 }
 
-.first-half, .second-half, .final-half, .last-rep {
+.first-half, .second-half, .final-half{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 100%;
+    margin:0 auto;
+    grid-template-columns: auto auto auto auto;
     background-color: aliceblue;
-    grid-gap: 20px;
     justify-items: center;
     align-items: center;
-  }
-
+    grid-row: 2px;
+}
 
   
-  .first-half li, .second-half li, .final-half li, .last-rep li {
+  .first-half li, .second-half li,  .final-half li {
     /* background: aliceblue; */
     text-decoration: none;
     list-style:none;
     border-radius: 8px;
-    width: 200px;
     margin: 20px;
+
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease-in-out;
@@ -161,20 +146,20 @@ nav{
     border-top: solid darkblue;
   }
   
-  .first-half li:hover, .second-half li:hover,  .final-half li:hover, .last-rep li:hover {
+  .first-half li:hover, .second-half li:hover, .final-half li:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transform: translateY(-10px);
   }
   
-.first-half img,  .second-half img, .final-half img, .last-rep img {
-    width: 30%; /* Adjust the width value as desired */
+.first-half img,  .second-half img, .final-half img {
+    width: 30%; 
     height: auto;
     background:transparent;
     background-color: aliceblue;
     border-radius: 50%;
 }
 
-  .first-half p,  .second-half p, .final-half p, .last-rep p {
+  .first-half p,  .second-half p, .final-half p{
     margin-top: 10px;
     font-size: 18px;
     color: #333;
@@ -213,6 +198,17 @@ nav{
     max-width: 100%;
     align-items: center;
     align-content: center;
+}
+@media (max-width: 768px) {
+    .first-half, .second-half, .final-half {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .first-half, .second-half, .final-half {
+        grid-template-columns: auto;
+    }
 }
 
 }
