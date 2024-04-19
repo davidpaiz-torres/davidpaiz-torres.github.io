@@ -32,10 +32,6 @@ article{
     z-index: 1; */
 }
 
-
-
-
-
 #intro_Grafs{
     max-width: 100%;
     /* background-color:lightsteelblue; */
@@ -46,8 +42,6 @@ article{
     align-items: center;
     /* position: relative;
     z-index: 2; */
-   
-   
 }
 
 #intro_Grafs p{
@@ -71,12 +65,13 @@ display:grid;
   text-align: center;
   justify-content: center;
   margin: 0 auto;
-  width: 100%;
+  width: 75%;
   padding-top:10px;
   height:auto;
- 
-  
+}
 
+#torres{
+    width:70%;
 }
 
 #data-input{
@@ -165,9 +160,7 @@ nav{
     color: #333;
   }
 
-#torres{
-    width:80%;
-}
+
 
 /* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW */
 /* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW */
