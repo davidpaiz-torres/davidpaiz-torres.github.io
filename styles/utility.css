@@ -120,7 +120,7 @@ nav{
     color:black;
 }
 
-.first-half, .second-half, .final-half{
+.first-half, .second-half, .final-half, .last-rep{
     display: grid;
     max-width: 100%;
     margin:0 auto;
@@ -132,7 +132,7 @@ nav{
 }
 
   
-  .first-half li, .second-half li,  .final-half li {
+  .first-half li, .second-half li,  .final-half li, .last-rep li {
     /* background: aliceblue; */
     text-decoration: none;
     list-style:none;
@@ -159,12 +159,15 @@ nav{
     border-radius: 50%;
 }
 
-  .first-half p,  .second-half p, .final-half p{
+  .first-half p,  .second-half p, .final-half p, .last-rep p{
     margin-top: 10px;
     font-size: 18px;
     color: #333;
   }
 
+#torres{
+    width:80%;
+}
 
 /* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW */
 /* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW */
@@ -174,10 +177,14 @@ nav{
 /* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW */
 
 
-@media screen and (max-width: 700px) and (orientation:portrait) {
+@media screen and (max-width: 480px) and (orientation:portrait) {
 
     body{
         max-width:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
     }
 
  #intro_Grafs{
@@ -191,24 +198,28 @@ nav{
     align-items: center;
     align-content: center;
 }
-
+h1, h2, h3, h4, h5{
+    align-content: center;
+    /* width: 40px; */
+    text-align: center;
+    margin: 0 auto;
+}
 #intro_Grafs p{
     justify-content:center;
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 70%;
     align-items: center;
     align-content: center;
 }
-@media (max-width: 768px) {
-    .first-half, .second-half, .final-half {
-        grid-template-columns: auto auto;
-    }
+.first-half, .second-half, .final-half {
+    grid-template-columns: auto auto;
 }
 
+/* 
 @media (max-width: 480px) {
     .first-half, .second-half, .final-half {
-        grid-template-columns: auto;
+        grid-template-columns: auto 
     }
-}
+} */
 
 }
