@@ -191,6 +191,10 @@ nav{
 
 @media screen and (max-width: 700px) and (orientation:portrait) {
 
+    body{
+        max-width:100%;
+    }
+
  #intro_Grafs{
     display:flex;
     flex-direction: column;
@@ -201,7 +205,6 @@ nav{
     padding-bottom:40px;
     align-items: center;
     align-content: center;
-    background-color:floralwhite;
 }
 
 #intro_Grafs p{
