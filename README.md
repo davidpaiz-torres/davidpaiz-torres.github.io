@@ -1,5 +1,9 @@
+4/16/2024
+    ```Readme is outdated (from the scrolly version) ```
+    ```Links to resources used for help with development, icons, images, etc are all at the bottom```
+
 MAJOR WIP 
-    To Do:
+ To Do:
         1. Get the rest of photos (for US congress people)
         2. Create the stacked bar charts
         4. Write more Javascript
@@ -56,11 +60,22 @@ Deisgn & Guidelines:
 US CAPITOL - Photo Credits Information: 
     Link:https://www.flickr.com/photos/alchemist_x/32210923208/in/photolist-R5npfY-GDHW1y-ahxaTD-4EjNgb-29oueVz-2o2Wg7q-fNoLVb-2nhHit6-2ohhZpU-8KbcoC-8KbbVC-96UBpv-8qpnFs-8JBQMt-2ohn1ud-2o2cHkk-2kq1ikh-2oiHijG-spBcE3-5oUxrw-YTzBhL-e2YEEh-NZZjP5-2ohoaro-J82HRK-2i3LNm4-8JEStJ-SQm6z3-2o1UksF-qAWSr4-2kJ7umq-2mJE7C3-EMpsNp-2ocWMSW-2mKGW2K-2odC7Ub-2nWfJ6d-2o2XwUN-GbbrVH-2oGoDY6-2mKLYws-2kyo6X5-2oeyZcT-2mQbPf6-7efffX-YVMCYL-2od5hDW-2oh2yv7-g1dizS-2i7s4S3
 
+    04/16/2024
+    -Image Link:
+    https://www.flickr.com/photos/alchemist_x/53226765847/in/photolist-2p6t66r-NmF68K-o2SSSs-x7BQ56-2o7GwP5-2jvjH4G-2iLCg5Q-2p9dPVp-2nKVL4i-2iJLRGH-2nBa65m-2nL8hMZ-2kTXtLb-MUqCLA-MoVXW5-eSPUQx-MUqCFL-MoRPPk-JCxKVC-22VYB4-8addjS-eT26qS-5DkqT-2nKW8iD-2nfrGUi-2oQywMu-2oiHh7M-2oQtzqs-2o7E9pa-2p6m6s1-bj5Dk4-awke1x-wLJbke-64JvoG-2kDqhbH-JAFam-3rUx5-5LDsRZ-9QufH8-5girqS-2dg6RUk-bgy6T4-bwnvQR-2kT5FtC-3m78Y-2mRsKmV-f7nSHD-8YFWD1-2omA8A8-2ktVyU1
+
+    SVG Icon Links:
+    https://icons8.com/
+    https://uxwing.com/
 
 Congressional Photo's Source:
     https://bioguide.congress.gov/ 
+    https://www.govinfo.gov/collection/congressional-pictorial-directory?path=/gpo/Congressional%20Pictorial%20Directory/117th%20Congress/GPO-PICTDIR-117
 
-
-    Links from Stackoverflow:
+    Links for Development help:
     Custom Alertbox
     https://stackoverflow.com/questions/7853130/how-to-change-the-style-of-alert-box
+
+
+    SUNY Cortland (Window/Div Popup)
+    https://web.cortland.edu/flteach/mm-course/glossPopupDiv.html
