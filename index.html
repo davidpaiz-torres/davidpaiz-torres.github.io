@@ -27,23 +27,24 @@
     <h3 style ="text-align: center;"> 
         Find out how your Congressional District has voted historically. 
     </h3>
-
     <section id="data-input">
         <nav>
-            
+    
     <form>
-        <label style="border-bottom: solid purple;;width: 16px; vertical-align: middle; margin-left: 5px;" for="cd-Input">
+        <label for="cd-Input">
                 Enter a CD:</label>
 <!-- THE JS IN LINE (28) WILL MAKE IT SO THE INPUT BOX HAS "NYC ONLY" INSIDE THE BOX.
 ONCE THE USER GOES TO INPUT THEIR CD, IT DISAPPEARS. THIS IS TO LET THEM KNOW THIS ONLY WORKS FOR NYC DISTRICTS  -->
         <input id="cd-Input" name="cd-Input" type="text"value="NYC ONLY" class="faded-input" 
                 onfocus="if(this.value=='NYC ONLY') this.value='';" 
                 onblur="if(this.value=='') this.value='NYC ONLY';">
-        <input style="align-self: center; font-weight: bold; cursor: pointer; margin-right:20px;  height: 16px;" id="submit" type="image" src="media/Icons/find-icon.svg">
+        <input id="submit" type="image" src="media/Icons/find-icon.svg">
     </form>
-        <button style="cursor: pointer; border: none; background: none;" id="cdButton">
-            <label style="border-bottom: solid purple;; font-size:16px;">  Find Your Congressional District</label>
-            <img src="media/Icons/find-icon.svg" alt="Icon" style="width: 16px;  vertical-align: middle; margin-left: 5px;">
+
+
+        <button id="cdButton">
+            <label>  Find Your Congressional District</label>
+            <img class="btn-img" src="media/Icons/find-icon.svg" alt="Icon" style="width: 16px; margin-top:-15px; margin-left: 90px;">
         </button>
     </nav>
     </section>
@@ -52,8 +53,8 @@ ONCE THE USER GOES TO INPUT THEIR CD, IT DISAPPEARS. THIS IS TO LET THEM KNOW TH
         <article id="intro_Grafs">
             <h2> New York's Congressional Delegation:</h2>
             <p>
-                New York City makes up Half of New York's 26-member congressional delegation. NYC's delegation features prominent members such as Minority Leader Jeffries, 
-                Alexandria Ocasio Cortez, who rose to fame after her she unseated the 14th district's long-standing rep: Joe Crowley.
+                New York City makes up Half of New York's 26-member congressional delegation. NYC's delegation features prominent members such as Minority Leader Jeffries and 
+                Alexandria Ocasio Cortez. <br> <br> AOC rose to fame after her she unseated the 14th district's long-standing rep: Joe Crowley. <br> <br>
                 Also from NYC is Rep. Jerry Nadler, who served as the Chairman of the Judiciary comittee during Former President Trump's second impeachment trial. 
             <br>
             <br>
@@ -66,7 +67,7 @@ ONCE THE USER GOES TO INPUT THEIR CD, IT DISAPPEARS. THIS IS TO LET THEM KNOW TH
  
    <!-- <img id="header_img" src="media/US Capitol/capitol_close_up.jpg" alt="Picture of the US Capitol">  -->
 
-<section id class="current_reps">
+<section id="flex-container" class="current_reps">
     <h3> Current Members Representing NYC in the 118th Congress (2023-2025)</h3>
 <div class="first-half">
         <li>

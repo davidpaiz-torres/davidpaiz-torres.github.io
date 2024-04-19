@@ -3,13 +3,28 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
     font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
     margin: 0 auto;
     max-width: 100%;
   
 }
+#submit{
+    align-self: center; 
+    font-weight: bold; 
+    cursor: pointer; 
+    height: 16px;
+    margin-top:-15px;
+    margin-left:135px;
+}
 
+#cdButton{
+    margin-left:165px;
+    margin-left:-33px;
+    width: 16px;
+    background: none;
+}
 #footer{
     /* background-color: whitesmoke; */
     border-top: solid purple;
@@ -45,12 +60,8 @@ article{
 }
 
 #intro_Grafs p{
+    display:flex;
     flex-direction: column;
-    margin: 0 auto;
-    width:50%;
-    /* border-bottom:solid purple; */
-    justify-content:center;
-
 }
 
  #header h1  {
@@ -60,41 +71,42 @@ article{
         margin: 0 auto;
  }
 
+ #flex-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+ }
 .current_reps, .current_reps h1{
-display:grid;
+  display:grid;
   text-align: center;
   justify-content: center;
   margin: 0 auto;
-  width: 75%;
+  width: 1100px;
   padding-top:10px;
   height:auto;
 }
 
 #torres{
     width:70%;
+    
 }
 
 #data-input{
     font-size: 18px;
-    /* padding-top:30px; */
-    padding-bottom:20px;
+    padding-top:30px;
     border-radius: 30px;
 }
 
+
 input{
     caret-color:cornflowerblue;
+    
+    
 }
 
-.faded-input {
-    color: gray;
-}
 .faded-input:focus {
     color: black;
-}
-article {
-    margin: 0 auto;
-    scroll-behavior: smooth;
-    max-width: 100%;
 }
 .faded-input {
     color: gray;
@@ -106,13 +118,17 @@ nav{
     flex-direction: row;
     justify-content: space-evenly;
     margin:0 auto;
+
     width:70%;
     /* border-bottom: solid purple;; */
 }
 
-#cd-button, #submit, #cd-Input{
+#cdButton, #submit, #cd-Input{
     border:none;
     color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .first-half, .second-half, .final-half, .last-rep{
@@ -170,49 +186,78 @@ nav{
 /* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW */
 
 
-@media screen and (max-width: 480px) and (orientation:portrait) {
+@media screen and (max-width:430px) and (orientation:portrait) {
 
-    body{
-        max-width:100%;
-        display:flex;
+    body {
+        max-width: 100%;
+        display: flex;
+        margin: 0 auto;
         flex-direction: column;
         justify-content: center;
-        align-content: center;
     }
+ 
+
+
+    #data-input{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
+        width: 415px;
+        margin-left: -35px;
+    }
+
+
+  
+    
+#btn-img{
+        margin-right:85px;
+        cursor: pointer; 
+       
+    }
+
+#cd-Input{
+    width: 120px;
+    font-size:14px;
+}
+
 
  #intro_Grafs{
     display:flex;
     flex-direction: column;
     justify-content:center;
     margin: 0 auto;
-    width:auto;
     padding-top:40px;
     padding-bottom:40px;
     align-items: center;
     align-content: center;
 }
-h1, h2, h3, h4, h5{
-    align-content: center;
-    /* width: 40px; */
-    text-align: center;
-    margin: 0 auto;
-}
+
 #intro_Grafs p{
+    padding-top:30px;
     justify-content:center;
     margin: 0 auto;
-    max-width: 70%;
-    align-items: center;
-    align-content: center;
+    width:375px;
 }
-.first-half, .second-half, .final-half {
-    grid-template-columns: auto auto;
+h1, h2, h3, h4, h5{
+    align-content: center;
+    padding-bottom:10px;
+    padding-top:10px;
+    /* width: 40px; */
+    text-align: center;
+    width:325px;
+    margin: 0 auto;
 }
 
-/* 
-@media (max-width: 480px) {
-    .first-half, .second-half, .final-half {
-        grid-template-columns: auto 
-    }
-} */
+.first-half, .second-half, .final-half {
+    grid-template-columns: auto auto;
+    width:450px;
+}
+
+
+.current_reps:hover, .first-half li:hover, .second-half li:hover, .final-half li:hover {
+    box-shadow: none;
+    transform: none;
+  }
 
 }
