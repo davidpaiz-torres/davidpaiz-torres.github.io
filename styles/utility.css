@@ -12,9 +12,9 @@ body {
 }
 
 #btn-img{
-    width: 16px; 
-    margin-top:-15px; 
-     margin-left: 233px;
+    width: 16px;
+    margin-top: -18px;
+    margin-left: 128px;
 }
 
 label p {
@@ -145,6 +145,8 @@ nav{
     /* border-bottom: solid purple;; */
 }
 
+
+
 .btn-icon{
     border:none;
     font-size: 12px;
@@ -153,8 +155,8 @@ nav{
     flex-direction: column;  
     margin-top: -14px;
     margin-left: 91px;
-    margin-top: -17px;
-    margin-left: 102px;
+    margin-top: -15px;
+    margin-left: 112px;
     justify-content: center;
     align-self: center; 
     font-weight: bold; 
@@ -168,6 +170,7 @@ nav{
     color:black;
     display: flex;
     flex-direction: column;
+    
     justify-content: center;
 }
 
@@ -239,7 +242,7 @@ nav{
     }
 
     .btn-icon{
-        border:none;
+        /* border:none;
         font-size: 12px;
         color:black;
         display: flex;
@@ -250,8 +253,9 @@ nav{
         margin-left: 102px;
         justify-content: center;
         align-self: center; 
-        font-weight: bold; 
+        font-weight: bold;  */
         cursor: pointer; 
+        display:none;
         height: 16px;
     }
  
@@ -272,13 +276,16 @@ nav{
 #btn-img{
     width: 16px;
     margin-top: -18px;
-    margin-left: 183px;
+    margin-left: 244px;
+    width: 16px; 
+    margin-top:-15px; 
+     margin-left: 233px;
     }
 
     #find-cd{
         width: 200px;
         margin-top: -6px;
-        margin-left: 52px;
+        margin-left: 77px;
     }
     
        
@@ -287,6 +294,9 @@ nav{
 #cd-Input{
     width: 139px;
     font-size: 14px;
+    width: 139px;
+    font-size: 14px;
+    margin-left: -30px;
     margin-left: -46px;
 }
 label p {
