@@ -15,6 +15,7 @@ body {
     width: 16px;
     margin-top: -18px;
     margin-left: 128px;
+    cursor: pointer;
 }
 
 label p {
@@ -140,6 +141,7 @@ nav{
     flex-direction: row;
     justify-content: space-evenly;
     margin:0 auto;
+    margin-left: 195px;
 
     width:70%;
     /* border-bottom: solid purple;; */
@@ -231,7 +233,7 @@ nav{
 /* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW */
 
 
-@media screen and (max-width:430px) and (orientation:portrait) {
+@media screen and (max-width:850px) and (orientation:portrait) {
 
     body {
         max-width: 100%;
