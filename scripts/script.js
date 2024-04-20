@@ -94,3 +94,8 @@ cdButton.addEventListener("click", function() {
                 const popup = window.open("https://findmypollsite.vote.nyc", "_blank", "width=500,height=500");
         }, 3000);
 });
+
+
+
+
+
