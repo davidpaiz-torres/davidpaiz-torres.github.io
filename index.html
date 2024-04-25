@@ -11,7 +11,6 @@
          <meta charset="UTF-8">
 </head>
 <body>
-     <!-- <img id="header_img" src="media/US Capitol/capitol_close_up.jpg" alt="Picture of the US Capitol">  -->
 <section id="header">
     <header>
         <h5 style="text-align:center;"> Coding The News: Utility Project <img src="media/Icons/latest-news-newspaper-icon.svg" alt="Newspaper Icon"  style="width: 16px;  vertical-align: middle; margin-left: 5px"></h5>
@@ -39,10 +38,24 @@ ONCE THE USER GOES TO INPUT THEIR CD, IT DISAPPEARS. THIS IS TO LET THEM KNOW TH
         <input id="cd-Input" name="cd-Input" type="text"value="NYC ONLY" class="faded-input" 
                 onfocus="if(this.value=='NYC ONLY') this.value='';" 
                 onblur="if(this.value=='') this.value='NYC ONLY';">
-        <input class ="btn-icon" id="submit" type="image" src="media/Icons/find-icon.svg">
+        <input class ="btn-icon" id="submit" type="image" src="media/Icons/find-icon.svg" 
+        `style="border:none;
+        font-size: 12px;
+        color:black;
+        display: flex;
+        flex-direction: column;
+        margin-top: -17px;
+        margin-left: 102px
+        justify-content: center;
+        align-self: center; 
+        font-weight: bold; 
+        cursor: pointer; 
+        height: 16px;
+        margin-top:-15px;
+        margin-left:138px;">
     </form>
         <button id="cdButton">
-            <label id ="find-cd">  Find Your District</label>
+            <label id ="find-cd">  Find Your Congressional District</label>
             <img id="btn-img" src="media/Icons/find-icon.svg" alt="Icon">
         </button>
     </nav>
@@ -52,7 +65,7 @@ ONCE THE USER GOES TO INPUT THEIR CD, IT DISAPPEARS. THIS IS TO LET THEM KNOW TH
         <article id="intro_Grafs">
             <h2> New York's Congressional Delegation:</h2>
             <p>
-                New York City makes up Half of New York's 29-member congressional delegation. NYC's delegation features prominent members such as Minority Leader Jeffries and 
+                New York City makes up Half of New York's 26-member congressional delegation. NYC's delegation features prominent members such as Minority Leader Jeffries and 
                 Alexandria Ocasio Cortez. <br> <br> AOC rose to fame after her she unseated the 14th district's long-standing rep: Joe Crowley. <br> <br>
                 Also from NYC is Rep. Jerry Nadler, who served as the Chairman of the Judiciary comittee during Former President Trump's second impeachment trial. 
             <br>
@@ -63,18 +76,8 @@ ONCE THE USER GOES TO INPUT THEIR CD, IT DISAPPEARS. THIS IS TO LET THEM KNOW TH
             </p>
         </article>
 </section>
-
-<!-- <section id="sidebar">
-<aside margin-left>
-    <div id="2023-delegation">2023-2025</div>
-    <div id="2021-delegation">2021-2023</div>
-    <div id="2019-delegation">2019-2021</div>
-    <div id="2017-delegation">2017-2019</div>
-    <div id="2015-delegation">2015-2017</div>
-</aside>
-</section> -->
  
-
+   <!-- <img id="header_img" src="media/US Capitol/capitol_close_up.jpg" alt="Picture of the US Capitol">  -->
 
 <section id="flex-container" class="current_reps">
     <h3> Current Members Representing NYC in the 118th Congress (2023-2025)</h3>
@@ -82,6 +85,7 @@ ONCE THE USER GOES TO INPUT THEIR CD, IT DISAPPEARS. THIS IS TO LET THEM KNOW TH
         <li>
             <img src="media/current members/hakeem.jpeg" alt="Hakeem Jeffries">
             <div class="dem" id="district-8">Hakeem Jeffries <br> (D-8)</div>
+            <p></p>
         </li>
         <li>
             <img src="media/current members/aoc.png" alt="Alexandria Ocasio-Cortez">
@@ -90,10 +94,12 @@ ONCE THE USER GOES TO INPUT THEIR CD, IT DISAPPEARS. THIS IS TO LET THEM KNOW TH
         <li>
             <img src="media/current members/suozzi.png" alt="Tom Suozzi">
             <div class="dem" id="district-3"> Tom Suozzi <br> (D-3)</div>
+            <p></p>
         </li>
         <li>
             <img src="media/current members/nadler.png" alt="Jerrold Nadler"> 
             <div class="dem" id="district-12"> Jerrold Nadler <br> (D-12)</div>
+            <p></p>
         </li>   
  </div>
 

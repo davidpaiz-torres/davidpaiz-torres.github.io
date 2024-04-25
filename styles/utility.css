@@ -12,10 +12,9 @@ body {
 }
 
 #btn-img{
-    width: 16px;
-    margin-top: -18px;
-    margin-left: 128px;
-    cursor: pointer;
+    width: 16px; 
+    margin-top:-15px; 
+     margin-left: 233px;
 }
 
 label p {
@@ -87,10 +86,10 @@ article{
 }
 
  #header h1  {
-    justify-content: center;
-    text-align: center;
-    /* width: 50%; */
-    margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+        /* width: 50%; */
+        margin: 0 auto;
  }
 
  #flex-container{
@@ -105,14 +104,9 @@ article{
   text-align: center;
   justify-content: center;
   margin: 0 auto;
-
   width: 1100px;
   padding-top:10px;
   height:auto;
-}
-
-.current_reps:hover{
-    transform:
 }
 
 #torres{
@@ -146,38 +140,10 @@ nav{
     flex-direction: row;
     justify-content: space-evenly;
     margin:0 auto;
-    margin-left: 195px;
+
     width:70%;
     /* border-bottom: solid purple;; */
 }
-/* 
-#sidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background-color: none;
-    width: 40px;
-    padding: 20px;
-    position: fixed;
-    text-align: left;
-    top: 0;
-    left: 0;
-    height: 100%;
-}
-
-
-#sidebar div {
-    margin-bottom: 10px;
-    padding: -22px;
-    text-align: left;
-    background-color: none;
-    color: #333;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-}
- */
-
 
 .btn-icon{
     border:none;
@@ -187,8 +153,8 @@ nav{
     flex-direction: column;  
     margin-top: -14px;
     margin-left: 91px;
-    margin-top: -15px;
-    margin-left: 112px;
+    margin-top: -17px;
+    margin-left: 102px;
     justify-content: center;
     align-self: center; 
     font-weight: bold; 
@@ -202,7 +168,6 @@ nav{
     color:black;
     display: flex;
     flex-direction: column;
-    
     justify-content: center;
 }
 
@@ -216,9 +181,20 @@ nav{
     background-color: aliceblue;
     justify-items: center;
     align-items: center;
-    
     grid-row: 2px;
 }
+
+
+li{ 
+    width: 130px;
+    height:100px; /* I styled the 'li' element with absolute width and height values, because some of the 'cards' were uneven. 
+    These values will be revisited once more information is added to the cards*/
+}
+
+/* li div{ 
+line under the reps name looks kind've ugly, will revist this when information is added to their cards, but will likely keep this out.
+     border-bottom: solid darkblue; 
+} */
 
   
   .first-half li, .second-half li,  .final-half li, .last-rep li {
@@ -241,7 +217,6 @@ nav{
   
 .first-half img,  .second-half img, .final-half img {
     width: 30%; 
-    
     height: auto;
     background:transparent;
     background-color: aliceblue;
@@ -264,7 +239,7 @@ nav{
 /* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW */
 
 
-@media screen and (max-width:850px) and (orientation:portrait) {
+@media screen and (max-width:430px) and (orientation:portrait) {
 
     body {
         max-width: 100%;
@@ -274,8 +249,12 @@ nav{
         justify-content: center;
     }
 
+    li{ 
+        overflow-y: auto; /* consider styling for the cards on mobile screens */
+    }
+
     .btn-icon{
-        /* border:none;
+        border:none;
         font-size: 12px;
         color:black;
         display: flex;
@@ -286,9 +265,8 @@ nav{
         margin-left: 102px;
         justify-content: center;
         align-self: center; 
-        font-weight: bold;  */
+        font-weight: bold; 
         cursor: pointer; 
-        display:none;
         height: 16px;
     }
  
@@ -300,7 +278,7 @@ nav{
         justify-content: center;
         margin: 0 auto;
         width: 415px;
-        margin-left: -23px;
+        margin-left: -35px;
     }
 
 
@@ -309,16 +287,13 @@ nav{
 #btn-img{
     width: 16px;
     margin-top: -18px;
-    margin-left: 244px;
-    width: 16px; 
-     margin-top: -18px;
-     margin-left: 245px;
+    margin-left: 183px;
     }
 
     #find-cd{
         width: 200px;
         margin-top: -6px;
-        margin-left: 77px;
+        margin-left: 52px;
     }
     
        
@@ -327,9 +302,6 @@ nav{
 #cd-Input{
     width: 139px;
     font-size: 14px;
-    width: 139px;
-    font-size: 14px;
-    margin-left: -30px;
     margin-left: -46px;
 }
 label p {
@@ -341,6 +313,9 @@ label p {
 margin-left:-11px;
 
 }
+
+
+
 
  #intro_Grafs{
     display:flex;
@@ -381,3 +356,4 @@ h1, h2, h3, h4, h5{
   }
 
 }
+
