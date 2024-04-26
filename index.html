@@ -1,41 +1,158 @@
-<!doctype html>
-<html>
-    <head>
-            <title> David Paiz-Torres </title>
-            <link rel="stylesheet" type="text/css" href="css/home.css">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <script src="js/alert.js"></script>
-    </head>
-<!--End of MetaData -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Coding the News: Electoral History Tracker </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/utility.css">
+        <link rel="icon" href="media/Icons/latest-news-newspaper-icon.svg" type="image/svg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+         <meta charset="UTF-8">
+</head>
 <body>
-    <div class="header">
-        <a class="home_button" href="index.html">Home</a>
-        <a  class="resume_button" id = "resume"  href="sources/resume.pdf"> Resume </a>
-        <!-- <a class="github_button" id="github" href="https://github.com/try_again_later?tab=repositories">Github Repositories</a>  -->
-    </div>
-    <div class="home_contents">
-        <h1> About Me: </h1>
-            <p> 
-                David Paiz-Torres is dedicated journalist with a passion for data-driven storytelling. He is currently pursuing a Master of Arts in Journalism with a specialization in Data Journalism at the Craig Newmark Graduate School of Journalism in New York, expected to graduate in December 2024. </p>
-            <p>
-                While at the Newmark J-School, David has covered the impacts of inflation on Bronx residents, and union rallies following workplace layoffs. </p>
-            <p>
-            David also has basic data skills to clean, analyze, and aggregate datasets. His previous analysis found that the Bronx had the highest rate of maintenance-related inspection violations at child care facilities. </p>
-            <p>
-            David also has basic in HTML & CSS  skills which he is expanding on through courses at the J-School. </p>
-            <p>
-            Prior to his graduate studies, he earned my Bachelor's Degree in Media and Communications from the State University of New York at Old Westbury where he was a staff writer for the Old Westbury Catalyst. As a staff writer, he covered crime-related stories, and received recognition, including the Media Arts Celebration Award for Best News Story in 2023 and Best Opinion Article in 2022. </p>
-            <p>
-            Fluent in both English and Spanish, David possess technical skills in video and audio editing using tools such as Adobe Premiere, ProTools, and Adobe Audition.</p>
-            <p>
-            David is excited to bring his diverse skills and experiences to future journalistic endeavors, continuing to tell impactful stories with accuracy and depth.
-            <p> Explore his portfolio to learn more about his journey and the stories he has had the privilege to share. </p>
-    </div>
+<section id="header">
+    <header>
+        <h5 style="text-align:center;"> Coding The News: Utility Project <img src="media/Icons/latest-news-newspaper-icon.svg" alt="Newspaper Icon"  style="width: 16px;  vertical-align: middle; margin-left: 5px"></h5>
+        <!-- <nav>
+            <a style =" text-decoration: none;" href="fusion_voting.html">
+                <div style="color:cornflowerblue;">
+                    Click Here for Fusion Voting Charts (Custom Graphics Project)
+                </div >
+            </a>
+        </nav> -->
+       
+    </header>
+</section>
+
+<!-- Picutre Element is here -->
+
+
+    <h1 style ="justify-content: center;text-align:center; font-size: 23px;margin-bottom:0;"> 
+        Find out how your Congressional District has voted historically. 
+    </h1>
+        <nav>     
+    <form>
+    <label for="cd-Input">
+            <p> Enter a CD: </p> </label>
+        <input id="cd-Input" name="cd-Input" type="text" placeholder="NYC ONLY" class="faded-input">
+        <input class ="btn-icon" id="submit" type="image" src="media/Icons/find-icon.svg">
+    </form>
+        <button class="btn-img" style="padding-top:0px;" id="cdButton">
+            <label id ="find-cd">  Find Your Congressional District</label>
+            <img id="btn-img" src="media/Icons/find-icon.svg" alt="Icon">
+        </button>
+    </nav>
+</section>
+<!-- End of Buttons -->
 
 
 
+<section id="article">
+    <article style="padding-top:10px; padding-bottom:10px; background-color: lightgray" id="intro_Grafs">
+        <a href="https://www.ny.gov/">
+            <img src="media/Icons/ny-flag.svg" alt="Newspaper Icon" style="width: 130px; vertical-align: middle;" 
+            alt="Official Flag of the State of New York">
+        </a>
+        <h2 style="text-align: center; font-size: 19px; border-bottom: solid blue">New York's Congressional Delegation:</h2>
+        
+      
+        <p>
+            New York City makes up half of New York's 26-member congressional delegation. NYC's delegation features prominent members such as Minority Leader Jeffries and 
+            Alexandria Ocasio Cortez. <br> <br> AOC rose to fame after her she unseated the 14th district's long-standing rep: Joe Crowley. <br> <br>
+            Also from NYC is Rep. Jerry Nadler, who served as the Chairman of the Judiciary comittee during Former President Trump's second impeachment trial. 
+        <br>
+        <br>
+          However, with only a few rare exceptions, most of NYC's 13 districts are still represented by the same person as they were 10 years ago.
+          <br>
+        <br>
+        </p>
+    </article>
+</section>
 
- </body>
- </html>
+
+<section id="flex-container" class="current_reps">
+    <h3> Current Members Representing NYC in the 118th Congress (2023-2025)</h3>
+<div class="first-half">
+        <li>
+            <img src="media/current members/hakeem.jpeg" alt="Hakeem Jeffries">
+            <div class="dem" id="district-8">Hakeem Jeffries <br> (D-8)</div>
+            <p></p>
+        </li>
+        <li>
+            <img src="media/current members/aoc.png" alt="Alexandria Ocasio-Cortez">
+            <div class="dem" id="district-14"> Alexandria Ocasio-Cortez <br> (D-14)</div>
+        </li>
+        <li>
+            <img src="media/current members/suozzi.png" alt="Tom Suozzi">
+            <div class="dem" id="district-3"> Tom Suozzi <br> (D-3)</div>
+            <p></p>
+        </li>
+        <li>
+            <img src="media/current members/nadler.png" alt="Jerrold Nadler"> 
+            <div class="dem" id="district-12"> Jerrold Nadler <br> (D-12)</div>
+            <p></p>
+        </li>   
+ </div>
+
+ <div class="second-half">
+            <li>
+                <img src="media/current members/bowman.png" alt="Jamaal Bowman"> 
+                <div class="dem" id="district-16"> Jamaal Bowman <br> (D-16)</div>
+            </li>
+            <li>
+                <img src="media/current members/espaillat.png" alt="Adriano Espaillat"> 
+                <div class="dem" id="district-13"> Adriano Espaillat <br> (D-13)</div>
+            </li> 
+         
+            <li>
+                <img src="media/current members/malliotakis.png" alt="Nicole Malliotakis">
+                <div class="dem" id="district-11"> Nicole Malliotakis <br> (R-11)</div>
+            </li>
+              <li>
+                <img src="media/current members/meeks.png" alt="Gregory Meeks"> 
+                <div class="dem" id="district-5"> Gregory Meeks <br> (D-5)</div>
+            </li>
+          
+</div>
+<div class="final-half">
+            <li>
+                <img src="media/current members/clarke.png" alt="Yvette Clarke"> 
+                <div class="dem" id="district-9"> Yvette Clarke <br> (D-9)</div>
+            </li>
+            <li>
+                <img src="media/current members/goldman.png" alt="Dan Goldman"> 
+                <div class="dem" id="district-10">  Dan Goldman <br> (D-10)</div>
+            </li>
+            
+                <li>
+                    <img src="media/current members/nydia.png" alt="Nydia Velázquez"> 
+                    <div class="dem" id="district-7"> Nydia Velázquez <br> (D-7)</div>
+                </li>
+                <li>
+                    <img src="media/current members/meng.png" alt="Grace Meng"> 
+                    <div class="dem" id="district-6"> Grace Meng <br> (D-6)</div>
+                </li>
+</div>
+     <div class="final-half">
+      
+                <li>
+                    <img src="media/current members/torres.png" alt="Ritchie Torres"> 
+                    <div class="dem" id="district-15"> Ritchie Torres <br> (D-15)</div>
+                </li>
+            </div>
+</section>
+
+<section id="footer">
+    <footer>
+       <h5 style="text-align:center;"> Coding The News: Utility Project <img src="media/Icons/latest-news-newspaper-icon.svg" alt="Newspaper Icon"  style="width: 22px;  vertical-align: middle; margin-left: 5px">
+     
+    </footer>
+</section>
+
+
+
+</body>
+<script src="scripts/script.js"></script>
+</html>
+</section>

@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="CD-4-Graph" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 590.1 658">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: none;
+      }
+
+      .cls-1, .cls-5 {
+        stroke: #eee;
+        stroke-width: 1.5px;
+      }
+
+      .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-6, .cls-7, .cls-8, .cls-3, .cls-9, .cls-10, .cls-4, .cls-11, .cls-12, .cls-13, .cls-14 {
+        isolation: isolate;
+      }
+
+      .cls-6, .cls-7, .cls-8, .cls-3, .cls-4 {
+        font-family: Arial-BoldMT, Arial;
+        font-weight: 700;
+      }
+
+      .cls-6, .cls-8, .cls-3, .cls-4, .cls-11, .cls-14 {
+        font-size: 14px;
+      }
+
+      .cls-7 {
+        font-size: 22.4px;
+      }
+
+      .cls-7, .cls-14 {
+        fill: #333;
+      }
+
+      .cls-15 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-2, .cls-9, .cls-16, .cls-17 {
+        stroke-width: 0px;
+      }
+
+      .cls-8, .cls-11 {
+        fill: #000;
+      }
+
+      .cls-3 {
+        stroke: #1d0e7a;
+      }
+
+      .cls-3, .cls-4 {
+        stroke-width: 4.2px;
+      }
+
+      .cls-9 {
+        fill: #04027e;
+        opacity: .9;
+      }
+
+      .cls-16 {
+        fill: #c30101;
+      }
+
+      .cls-10 {
+        font-size: 13.8px;
+      }
+
+      .cls-10, .cls-11, .cls-12, .cls-14 {
+        font-family: ArialMT, Arial;
+      }
+
+      .cls-10, .cls-12 {
+        fill: #4a4a4a;
+      }
+
+      .cls-4 {
+        stroke: #430b2b;
+      }
+
+      .cls-18 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-19 {
+        clip-path: url(#clippath-4);
+      }
+
+      .cls-20 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-21 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-22 {
+        clip-path: url(#clippath-5);
+      }
+
+      .cls-17 {
+        fill: #6f0000;
+      }
+
+      .cls-12 {
+        font-size: 13.9px;
+      }
+
+      .cls-5 {
+        stroke-linecap: square;
+      }
+
+      .cls-23 {
+        opacity: 0;
+      }
+    </style>
+    <clipPath id="clippath">
+      <polyline class="cls-2" points="-83.1 655.2 -33.4 40.6 634.2 23.8 584.5 638.5"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <polyline class="cls-2" points="-83.1 655.2 -33.4 40.6 634.2 23.8 584.5 638.5"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <polyline class="cls-2" points="-83.1 655.2 -33.4 40.6 634.2 23.8 584.5 638.5"/>
+    </clipPath>
+    <clipPath id="clippath-3">
+      <polyline class="cls-2" points="-96 655.6 -46.3 41 621.3 24.2 571.6 638.8"/>
+    </clipPath>
+    <clipPath id="clippath-4">
+      <polyline class="cls-2" points="-96 655.6 -46.3 41 621.3 24.2 571.6 638.8"/>
+    </clipPath>
+    <clipPath id="clippath-5">
+      <polyline class="cls-2" points="-96 655.6 -46.3 41 621.3 24.2 571.6 638.8"/>
+    </clipPath>
+  </defs>
+  <g id="_CD-4-Group_" data-name=" CD-4-Group ">
+    <g>
+      <path class="cls-5" d="M-40.5,125.8"/>
+      <path class="cls-5" d="M-40.5,656.3"/>
+      <g>
+        <g class="cls-13">
+          <g class="cls-13">
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <g class="cls-13">
+                    <g class="cls-13">
+                      <g class="cls-13">
+                        <text class="cls-12" transform="translate(35.8 649.6) rotate(-44.6) skewX(.7)"><tspan x="0" y="0">0</tspan></text>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g>
+          <path class="cls-1" d="M18.2,351.2"/>
+          <path class="cls-1" d="M-32,366.9"/>
+          <g class="cls-13">
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <g class="cls-13">
+                    <g class="cls-13">
+                      <g class="cls-13">
+                        <g class="cls-13">
+                          <text class="cls-12" transform="translate(26 348.8) rotate(-46.2) skewX(.7)"><tspan x="0" y="0">80,000</tspan></text>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g>
+          <path class="cls-1" d="M18.2,423.6"/>
+          <path class="cls-1" d="M-32,439.4"/>
+          <g class="cls-13">
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <g class="cls-13">
+                    <g class="cls-13">
+                      <g class="cls-13">
+                        <g class="cls-13">
+                          <text class="cls-12" transform="translate(26 425.5) rotate(-45.1) skewX(.7)"><tspan x="0" y="0">60,000</tspan></text>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g>
+          <path class="cls-1" d="M18.2,495.9"/>
+          <path class="cls-1" d="M-32,511.7"/>
+          <g class="cls-13">
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <g class="cls-13">
+                    <g class="cls-13">
+                      <g class="cls-13">
+                        <g class="cls-13">
+                          <text class="cls-12" transform="translate(23.7 505.2) rotate(-44) skewX(.7)"><tspan x="0" y="0">40,000</tspan></text>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g>
+          <path class="cls-1" d="M18.2,568.2"/>
+          <path class="cls-1" d="M-32,584"/>
+          <g class="cls-13">
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <g class="cls-13">
+                    <g class="cls-13">
+                      <g class="cls-13">
+                        <g class="cls-13">
+                          <text class="cls-12" transform="translate(22.4 583.5) rotate(-46.7) skewX(.7)"><tspan x="0" y="0">20,000</tspan></text>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+        <path class="cls-1" d="M-32,656.3"/>
+        <g>
+          <path class="cls-1" d="M18.2,134.1"/>
+          <path class="cls-1" d="M-32,149.9"/>
+          <g class="cls-13">
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <g class="cls-13">
+                    <g class="cls-13">
+                      <g class="cls-13">
+                        <g class="cls-13">
+                          <text class="cls-12" transform="translate(24.3 141.8) rotate(-44.6) skewX(.7)"><tspan x="0" y="0">140,00</tspan></text>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g>
+          <path class="cls-1" d="M18.2,206.6"/>
+          <path class="cls-1" d="M-32,222.3"/>
+          <g class="cls-13">
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <g class="cls-13">
+                    <g class="cls-13">
+                      <g class="cls-13">
+                        <g class="cls-13">
+                          <text class="cls-12" transform="translate(20.6 200.1) rotate(-44.5) skewX(.7)"><tspan x="0" y="0">120,000</tspan></text>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g>
+          <path class="cls-1" d="M18.2,278.9"/>
+          <path class="cls-1" d="M-32,294.6"/>
+          <g class="cls-13">
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <g class="cls-13">
+                    <g class="cls-13">
+                      <g class="cls-13">
+                        <g class="cls-13">
+                          <text class="cls-12" transform="translate(18.2 281.5) rotate(-43.8) skewX(.7)"><tspan x="0" y="0">100,000</tspan></text>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g>
+      <g>
+        <path class="cls-1" d="M441.6,639.1"/>
+        <g class="cls-13">
+          <g class="cls-13">
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <g class="cls-13">
+                    <g class="cls-13">
+                      <g class="cls-13">
+                        <text class="cls-10" transform="translate(405.4 652.5)"><tspan x="0" y="0">Laura A. Gillen</tspan></text>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g>
+        <path class="cls-1" d="M134.4,646"/>
+        <path class="cls-1" d="M134.4,639.1"/>
+        <g class="cls-13">
+          <g class="cls-13">
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <g class="cls-13">
+                    <g class="cls-13">
+                      <g class="cls-13">
+                        <text class="cls-10" transform="translate(111.5 653.7)"><tspan x="0" y="0">Anthony P. D&apos;Esposito</tspan></text>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g id="Cd-4-data-points">
+    <g class="cls-15">
+      <path id="point-0-1" class="cls-9" d="M324.4,640h0V134h246.3v506"/>
+    </g>
+    <g class="cls-18">
+      <path id="point-1-0" class="cls-16" d="M58.5,638.5V141.7h246.3v496.8"/>
+    </g>
+    <g class="cls-21">
+      <path id="point-2-0" class="cls-17" d="M304.8,141.7H58.5v-59.6h246.3"/>
+    </g>
+  </g>
+  <g id="CD-4-data-point-labels">
+    <g class="cls-20">
+      <g>
+        <g class="cls-23" pointer-events="none">
+          <g class="cls-13">
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <g class="cls-13">
+                    <g class="cls-13">
+                      <g class="cls-13">
+                        <g class="cls-13">
+                          <text class="cls-8" transform="translate(114.4 110.7) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <g class="cls-13">
+                    <g class="cls-13">
+                      <g class="cls-13">
+                        <g class="cls-13">
+                          <text class="cls-4" transform="translate(114.4 110.7) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g class="cls-13">
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <g class="cls-13">
+                    <g class="cls-13">
+                      <g class="cls-13">
+                        <g class="cls-13">
+                          <text class="cls-6" transform="translate(114.4 110.7) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g pointer-events="none">
+          <g class="cls-13">
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <g class="cls-13">
+                    <g class="cls-13">
+                      <g class="cls-13">
+                        <g class="cls-13">
+                          <text class="cls-6" transform="translate(429 313.6)"><tspan x="0" y="0">130,871</tspan></text>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g class="cls-19">
+      <g>
+        <g pointer-events="none">
+          <g class="cls-13">
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <g class="cls-13">
+                    <g class="cls-13">
+                      <g class="cls-13">
+                        <g class="cls-13">
+                          <text class="cls-6" transform="translate(149.9 314.3)"><tspan x="0" y="0">129,353</tspan></text>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g class="cls-23" pointer-events="none">
+          <g class="cls-13">
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <g class="cls-13">
+                    <g class="cls-13">
+                      <g class="cls-13">
+                        <g class="cls-13">
+                          <text class="cls-8" transform="translate(422.2 148.2) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <g class="cls-13">
+                    <g class="cls-13">
+                      <g class="cls-13">
+                        <g class="cls-13">
+                          <text class="cls-3" transform="translate(422.2 148.2) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g class="cls-13">
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <g class="cls-13">
+                    <g class="cls-13">
+                      <g class="cls-13">
+                        <g class="cls-13">
+                          <text class="cls-6" transform="translate(422.2 148.2) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g class="cls-22">
+      <g>
+        <g pointer-events="none">
+          <g class="cls-13">
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <g class="cls-13">
+                    <g class="cls-13">
+                      <g class="cls-13">
+                        <g class="cls-13">
+                          <text class="cls-6" transform="translate(161.9 125.3)"><tspan x="0" y="0">11,269</tspan></text>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g class="cls-23" pointer-events="none">
+          <g class="cls-13">
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <g class="cls-13">
+                    <g class="cls-13">
+                      <g class="cls-13">
+                        <g class="cls-13">
+                          <text class="cls-8" transform="translate(422.2 148.2) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <g class="cls-13">
+                    <g class="cls-13">
+                      <g class="cls-13">
+                        <g class="cls-13">
+                          <text class="cls-3" transform="translate(425.9 165.9) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g class="cls-13">
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <g class="cls-13">
+                    <g class="cls-13">
+                      <g class="cls-13">
+                        <g class="cls-13">
+                          <text class="cls-6" transform="translate(425.9 165.9) rotate(-90)"><tspan x="0" y="0">0</tspan></text>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g id="_CD-4-Group_-2" data-name=" CD-4-Group -2" class="cls-13">
+    <g class="cls-13">
+      <g class="cls-13">
+        <g class="cls-13">
+          <g class="cls-13">
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <text class="cls-7" transform="translate(12.4 24.7)"><tspan x="0" y="0">Fusion Voting Brings Esposito Over the Edge in NY-4</tspan></text>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <circle id="_CD-4-Path_" data-name=" CD-4-Path " class="cls-16" cx="36" cy="38.3" r="5.2"/>
+  <circle id="_CD-4-Path_-2" data-name=" CD-4-Path -2" class="cls-9" cx="467.9" cy="35.1" r="5.2"/>
+  <g id="_CD-4-Group_-3" data-name=" CD-4-Group -3" class="cls-13">
+    <g class="cls-13">
+      <g class="cls-13">
+        <g class="cls-13">
+          <g class="cls-13">
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <text class="cls-14" transform="translate(43.1 43.1)"><tspan x="0" y="0">Republican Party</tspan></text>
+                </g>
+              </g>
+            </g>
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <text class="cls-14" transform="translate(43.1 59.9)"><tspan x="0" y="0">Votes</tspan></text>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g id="_CD-4-Group_-4" data-name=" CD-4-Group -4" class="cls-13">
+    <g class="cls-13">
+      <g class="cls-13">
+        <g class="cls-13">
+          <g class="cls-13">
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <text class="cls-14" transform="translate(478.2 39.9)"><tspan x="0" y="0">Democratic Party</tspan></text>
+                </g>
+              </g>
+            </g>
+            <g class="cls-13">
+              <g class="cls-13">
+                <g class="cls-13">
+                  <text class="cls-14" transform="translate(478.2 56.7)"><tspan x="0" y="0">Votes</tspan></text>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <circle id="_CD-4-Path_-3" data-name=" CD-4-Path -3" class="cls-17" cx="230.6" cy="36.4" r="5.2"/>
+  <g id="_CD-4-Group_-5" data-name=" CD-4-Group -5" class="cls-13">
+    <g class="cls-13">
+      <g class="cls-13">
+        <g class="cls-13">
+          <g class="cls-13">
+            <text class="cls-11" transform="translate(240.2 40.1)"><tspan x="0" y="0">Conservative Party</tspan></text>
+          </g>
+        </g>
+      </g>
+      <g class="cls-13">
+        <g class="cls-13">
+          <g class="cls-13">
+            <text class="cls-11" transform="translate(240.2 56.9)"><tspan x="0" y="0">Votes</tspan></text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
