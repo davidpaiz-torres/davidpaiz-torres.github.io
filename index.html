@@ -24,60 +24,52 @@
        
     </header>
 </section>
-    <h3 style ="text-align: center;"> 
+
+<!-- Picutre Element is here -->
+
+
+    <h1 style ="justify-content: center;text-align:center; font-size: 23px;margin-bottom:0;"> 
         Find out how your Congressional District has voted historically. 
-    </h3>
-    <section id="data-input">
-        <nav>
-    
+    </h1>
+        <nav>     
     <form>
-        <label for="cd-Input">
-               <p> Enter a CD: </p> </label>
-<!-- THE JS IN LINE (28) WILL MAKE IT SO THE INPUT BOX HAS "NYC ONLY" INSIDE THE BOX.
-ONCE THE USER GOES TO INPUT THEIR CD, IT DISAPPEARS. THIS IS TO LET THEM KNOW THIS ONLY WORKS FOR NYC DISTRICTS  -->
-        <input id="cd-Input" name="cd-Input" type="text"value="NYC ONLY" class="faded-input" 
-                onfocus="if(this.value=='NYC ONLY') this.value='';" 
-                onblur="if(this.value=='') this.value='NYC ONLY';">
-        <input class ="btn-icon" id="submit" type="image" src="media/Icons/find-icon.svg" 
-        `style="border:none;
-        font-size: 12px;
-        color:black;
-        display: flex;
-        flex-direction: column;
-        margin-top: -17px;
-        margin-left: 102px
-        justify-content: center;
-        align-self: center; 
-        font-weight: bold; 
-        cursor: pointer; 
-        height: 16px;
-        margin-top:-15px;
-        margin-left:138px;">
+    <label for="cd-Input">
+            <p> Enter a CD: </p> </label>
+        <input id="cd-Input" name="cd-Input" type="text" placeholder="NYC ONLY" class="faded-input">
+        <input class ="btn-icon" id="submit" type="image" src="media/Icons/find-icon.svg">
     </form>
-        <button id="cdButton">
+        <button class="btn-img" style="padding-top:0px;" id="cdButton">
             <label id ="find-cd">  Find Your Congressional District</label>
             <img id="btn-img" src="media/Icons/find-icon.svg" alt="Icon">
         </button>
     </nav>
-    </section>
-
-    <section>
-        <article id="intro_Grafs">
-            <h2> New York's Congressional Delegation:</h2>
-            <p>
-                New York City makes up Half of New York's 26-member congressional delegation. NYC's delegation features prominent members such as Minority Leader Jeffries and 
-                Alexandria Ocasio Cortez. <br> <br> AOC rose to fame after her she unseated the 14th district's long-standing rep: Joe Crowley. <br> <br>
-                Also from NYC is Rep. Jerry Nadler, who served as the Chairman of the Judiciary comittee during Former President Trump's second impeachment trial. 
-            <br>
-            <br>
-              However, with only a few rare exceptions, most of NYC's 13 districts are still represented by the same person as they were 10 years ago.
-              <br>
-            <br>
-            </p>
-        </article>
 </section>
- 
-   <!-- <img id="header_img" src="media/US Capitol/capitol_close_up.jpg" alt="Picture of the US Capitol">  -->
+<!-- End of Buttons -->
+
+
+
+<section id="article">
+    <article style="padding-top:10px; padding-bottom:10px; background-color: lightgray" id="intro_Grafs">
+        <a href="https://www.ny.gov/">
+            <img src="media/Icons/ny-flag.svg" alt="Newspaper Icon" style="width: 130px; vertical-align: middle;" 
+            alt="Official Flag of the State of New York">
+        </a>
+        <h2 style="text-align: center; font-size: 19px; border-bottom: solid blue">New York's Congressional Delegation:</h2>
+        
+      
+        <p>
+            New York City makes up half of New York's 26-member congressional delegation. NYC's delegation features prominent members such as Minority Leader Jeffries and 
+            Alexandria Ocasio Cortez. <br> <br> AOC rose to fame after her she unseated the 14th district's long-standing rep: Joe Crowley. <br> <br>
+            Also from NYC is Rep. Jerry Nadler, who served as the Chairman of the Judiciary comittee during Former President Trump's second impeachment trial. 
+        <br>
+        <br>
+          However, with only a few rare exceptions, most of NYC's 13 districts are still represented by the same person as they were 10 years ago.
+          <br>
+        <br>
+        </p>
+    </article>
+</section>
+
 
 <section id="flex-container" class="current_reps">
     <h3> Current Members Representing NYC in the 118th Congress (2023-2025)</h3>
@@ -143,13 +135,12 @@ ONCE THE USER GOES TO INPUT THEIR CD, IT DISAPPEARS. THIS IS TO LET THEM KNOW TH
                 </li>
 </div>
      <div class="final-half">
-        <div id="torres">
+      
                 <li>
                     <img src="media/current members/torres.png" alt="Ritchie Torres"> 
                     <div class="dem" id="district-15"> Ritchie Torres <br> (D-15)</div>
                 </li>
             </div>
-     </div>
 </section>
 
 <section id="footer">
@@ -158,6 +149,8 @@ ONCE THE USER GOES TO INPUT THEIR CD, IT DISAPPEARS. THIS IS TO LET THEM KNOW TH
      
     </footer>
 </section>
+
+
 
 </body>
 <script src="scripts/script.js"></script>
