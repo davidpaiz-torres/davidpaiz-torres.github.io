@@ -45,6 +45,7 @@ label p {
 #article{
     margin: 0 auto;
     width:60%;
+    max-width: 100%;
     margin-top:20px;
     margin-bottom:50px;
    
@@ -69,7 +70,8 @@ label p {
 
 #intro_Grafs p{
     display:flex;
-    width:650px;
+    width:inherit;
+    max-width: 90%;
     flex-direction: column;
 }
 
