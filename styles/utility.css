@@ -8,6 +8,10 @@ body {
     scroll-behavior: smooth;
     margin: 0 auto;
 }
+main{
+    display:flex;
+    flex-direction: column;
+}
 
 #btn-img{
     width: 16px; 
@@ -70,8 +74,12 @@ label p {
 
 #intro_Grafs p{
     display:flex;
+    align-items: center;
+    align-content:center;
     width:inherit;
-    max-width: 90%;
+    justify-content: center;
+    margin: 5px 34px 5px 34px;
+    max-width: 100%;
     flex-direction: column;
 }
 
@@ -147,13 +155,15 @@ nav{
 
 .first-half, .second-half, .final-half, .last-rep{
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px 10px 10px;
+    /* width: inherit; */
     max-width: 100%;
-    margin:0 auto;
-    grid-template-columns: auto auto auto auto;
+    margin: 0 auto;
     justify-items: center;
-    align-items: center;
-    grid-row: 2px;
+    align-items: stretch;
 }
+
 
 li{ 
     width: 130px;
