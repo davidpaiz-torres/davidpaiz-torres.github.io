@@ -12,7 +12,20 @@ main{
     display:flex;
     flex-direction: column;
 }
-
+#cdButton{
+    margin-left:-31px;
+    margin-bottom: -34px;
+  
+    background: none;
+    border:none;
+    font-size: 16px;
+    width:250px;
+    color:black;
+    display: flex;
+    cursor:pointer;
+    flex-direction: column;
+    justify-content: center;
+}
 #btn-img{
     width: 16px; 
     margin-top:-15px; 
@@ -31,20 +44,7 @@ label p {
     margin-bottom: 0;
 }
 
-#cdButton{
-    margin-left:-31px;
-    margin-bottom: -30px;
-    margin-top: 15px;
-    background: none;
-    border:none;
-    font-size: 16px;
-    width:250px;
-    color:black;
-    display: flex;
-    cursor:pointer;
-    flex-direction: column;
-    justify-content: center;
-}
+
 
 header h5{
     text-align:center;
