@@ -17,8 +17,15 @@ main{
     width: 16px; 
     margin-top:-15px; 
      margin-left: 233px; 
+     padding-top:0px;
 }
 
+#buttons h1{
+    justify-content: center;
+    text-align:center; 
+    font-size: 23px;
+    margin-bottom:0;
+}
 
 label p {
     margin-bottom: 0;
@@ -37,50 +44,68 @@ label p {
     cursor:pointer;
     flex-direction: column;
     justify-content: center;
-        
 }
 
-#footer{
+header h5{
+    text-align:center;
+}
+header img{
+    width: 16px;  
+    vertical-align: middle; 
+    margin-left: 5px
+}
+
+footer{
     border-top: solid purple;
     opacity: 90%;
+    text-align:center;
+}
+
+footer img{
+    width: 22px;
+    vertical-align: middle; 
+    margin-left: 5px
 }
 
 
-#article{
-    margin: 0 auto;
-    width:60%;
-    max-width: 100%;
-    margin-top:20px;
-    margin-bottom:50px;
-   
-}
 
-#header_img {
-    max-width: 90%;
-    margin: 0 auto;
-    height: auto;
-    position: relative;
-    z-index: 0;
-}
-
-#intro_Grafs{
+article#intro_Grafs{
     max-width: 100%;
     display:flex;
     flex-direction: column;
     justify-content:center;
-    padding-bottom:30px;
+    padding-top:10px; 
+    padding-bottom:10px; 
+    background-color: lightgray;
     align-items: center;
+    margin: 0 auto;
+    width:60%;
+    margin-top:20px;
+    margin-bottom:50px;
+}
+
+#intro_Grafs h2{
+    display:flex;
+    width:inherit;
+    justify-content: center;
+    text-align: center; 
+    font-size: 19px; 
+    border-bottom: solid blue
 }
 
 #intro_Grafs p{
     display:flex;
     align-items: center;
     align-content:center;
-    width:inherit;
+    width:80%;
     justify-content: center;
     margin: 5px 34px 5px 34px;
-    max-width: 100%;
     flex-direction: column;
+}
+
+#intro_Grafs img{
+    width: 130px; 
+    vertical-align: middle;
 }
 
  #header h1  {

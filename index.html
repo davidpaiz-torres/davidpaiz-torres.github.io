@@ -4,23 +4,30 @@
         <title>Coding the News: Electoral History Tracker </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Start of SEO Meta -->
+        <meta name = "description" content ="historical election tracker">
+        <meta name = "author" content ="David Paiz-Torres, Olivia Graffeo">
+        <!-- Start of Keywords Meta -->
+        <meta name="keywords" content = "Election Results, Historical Election Results, 
+        NYC Election Results, Electoral History Tracker, NYC Historical Election Tracker">
+        <!-- End of Keywords Meta -->
+    <!-- End of SEO MEta -->
         <link rel="stylesheet" href="styles/utility.css"> 
         <link rel="icon" href="media/Icons/latest-news-newspaper-icon.svg" type="image/svg">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-        
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"> 
 </head>
 <body>
 
 <section id="header">
     <header>
-        <h5 style="text-align:center;"> Coding The News: Utility Project <img src="media/Icons/latest-news-newspaper-icon.svg" alt="Newspaper Icon"  style="width: 16px;  vertical-align: middle; margin-left: 5px"></h5>
+        <h5> Coding The News: Utility Project <img src="media/Icons/latest-news-newspaper-icon.svg" alt="Newspaper Icon"></h5>
     </header>
 </section>
 <main>
 <section id="buttons">
-<h1 style ="justify-content: center;text-align:center; font-size: 23px;margin-bottom:0;"> 
+<h1> 
     Find out how your Congressional District has voted historically. 
  </h1>
         <nav>     
@@ -30,7 +37,7 @@
                 <input id="cd-Input" name="cd-Input" type="text" placeholder="NYC ONLY" class="faded-input">
                 <input class ="btn-icon" id="submit" type="image" src="media/Icons/find-icon.svg">
             </form>
-            <button class="btn-img" style="padding-top:0px;" id="cdButton">
+            <button class="btn-img" id="cdButton">
                 <label id ="find-cd">  Find Your Congressional District</label>
                 <img id="btn-img" src="media/Icons/find-icon.svg" alt="Icon">
             </button>
@@ -38,12 +45,12 @@
 </section>
 
 <section id="article">
-    <article style="padding-top:10px; padding-bottom:10px; background-color: lightgray" id="intro_Grafs">
+    <article id="intro_Grafs">
         <a href="https://www.ny.gov/">
-            <img src="media/Icons/ny-flag.svg" alt="Newspaper Icon" style="width: 130px; vertical-align: middle;" 
+            <img src="media/Icons/ny-flag.svg" alt="Newspaper Icon"
             alt="Official Flag of the State of New York">
         </a>
-        <h2 style="text-align: center; font-size: 19px; border-bottom: solid blue">New York's Congressional Delegation:</h2>
+        <h2>New York's Congressional Delegation:</h2>
         <p>
             New York City makes up half of New York's 26-member congressional delegation. NYC's delegation features prominent members such as Minority Leader Jeffries and 
             Alexandria Ocasio Cortez. <br> <br> AOC rose to fame after her she unseated the 14th district's long-standing rep: Joe Crowley. <br> <br>
@@ -59,7 +66,8 @@
 
 <section id="flex-container" class="current_reps">
     <h3> Current Members Representing NYC in the 118th Congress (2023-2025)</h3>
-<div class="first-half">
+<div>
+    <ul class="first-half">
         <li>
             <img src="media/current members/hakeem.jpeg" alt="Hakeem Jeffries">
             <div class="dem" id="district-8">Hakeem Jeffries <br> (D-8)</div>
@@ -78,10 +86,12 @@
             <img src="media/current members/nadler.png" alt="Jerrold Nadler"> 
             <div class="dem" id="district-12"> Jerrold Nadler <br> (D-12)</div>
             <p></p>
-        </li>   
+        </li>  
+    </ul> 
  </div>
 
- <div class="second-half">
+ <div>
+    <ul class="first-half">
             <li>
                 <img src="media/current members/bowman.png" alt="Jamaal Bowman"> 
                 <div class="dem" id="district-16"> Jamaal Bowman <br> (D-16)</div>
@@ -99,9 +109,10 @@
                 <img src="media/current members/meeks.png" alt="Gregory Meeks"> 
                 <div class="dem" id="district-5"> Gregory Meeks <br> (D-5)</div>
             </li>
-          
+        </ul>  
 </div>
-<div class="final-half">
+<div>
+    <ul class="final-half">
             <li>
                 <img src="media/current members/clarke.png" alt="Yvette Clarke"> 
                 <div class="dem" id="district-9"> Yvette Clarke <br> (D-9)</div>
@@ -119,22 +130,22 @@
                     <img src="media/current members/meng.png" alt="Grace Meng"> 
                     <div class="dem" id="district-6"> Grace Meng <br> (D-6)</div>
                 </li>
+    </ul>
 </div>
-     <div class="final-half">
-      
-                <li>
-                    <img src="media/current members/torres.png" alt="Ritchie Torres"> 
-                    <div class="dem" id="district-15"> Ritchie Torres <br> (D-15)</div>
-                </li>
-            </div>
+<div>
+     <ul class="final-half">
+        <li>
+            <img src="media/current members/torres.png" alt="Ritchie Torres"> 
+            <div class="dem" id="district-15"> Ritchie Torres <br> (D-15)</div>
+        </li>
+    </ul>
+</div>
 </section>
 </main>
 <section id="footer">
     <footer>
-       <h5 style="text-align:center;"> Coding The News: Utility Project
-        <img src="media/Icons/latest-news-newspaper-icon.svg"alt="Newspaper Icon" 
-        style="width: 22px;
-        vertical-align: middle; margin-left: 5px"> 
+       <h5> Coding The News: Utility Project
+        <img src="media/Icons/latest-news-newspaper-icon.svg"alt="Newspaper Icon"> 
     </footer>
 </section>
 </body>
