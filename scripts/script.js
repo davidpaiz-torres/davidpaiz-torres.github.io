@@ -38,7 +38,7 @@ const submitButton = document.getElementById("submit");
                 const popup = document.createElement("div");
                 popup.textContent = message;
                 popup.style.position = "fixed";
-                popup.style.top = "26%";
+                popup.style.top = "65%";
                 popup.style.left = "50%";
                 popup.style.transform = "translate(-50%, -50%)";
                 popup.style.padding = "10px";
@@ -66,7 +66,7 @@ cdButton.addEventListener("click", function() {
         const loadingPopup = document.createElement("div");
         loadingPopup.textContent = "Find My Election District Now Loading! A pop-up will soon appear.";
         loadingPopup.style.position = "fixed";
-        loadingPopup.style.top = "26%"; 
+        loadingPopup.style.top = "65%"; 
         loadingPopup.style.left = "50%";
         loadingPopup.style.transform = "translate(-50%, -50%)";
         loadingPopup.style.padding = "10px";
