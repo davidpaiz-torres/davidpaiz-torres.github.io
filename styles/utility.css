@@ -1,16 +1,21 @@
+
 body {
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
+    max-width: 100%;
     justify-content: center;
     align-content: center;
     font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
     margin: 0 auto;
+   
 }
 main{
     display:flex;
     flex-direction: column;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 #cdButton{
     border:none;
@@ -59,7 +64,6 @@ header img{
 }
 
 footer{
-    border-top: solid purple;
     opacity: 90%;
     text-align:center;
 }
@@ -70,21 +74,19 @@ footer img{
     margin-left: 5px
 }
 
-
-
 article#intro_Grafs{
     max-width: 100%;
     display:flex;
     flex-direction: column;
     justify-content:center;
-    padding-top:10px; 
+    margin-top:20px;
+    padding-top:30px; 
     padding-bottom:10px; 
+    width:65%;
     background-color: lightgray;
     align-items: center;
     margin: 0 auto;
-    width:60%;
-    margin-top:20px;
-    margin-bottom:50px;
+
 }
 
 #intro_Grafs h2{
@@ -92,6 +94,7 @@ article#intro_Grafs{
     width:inherit;
     justify-content: center;
     text-align: center; 
+    padding-top:20px; 
     font-size: 19px; 
     border-bottom: solid blue
 }
@@ -100,9 +103,10 @@ article#intro_Grafs{
     display:flex;
     align-items: center;
     align-content:center;
-    width:80%;
+    width:75%;
+    padding-top:5px; 
+    height:auto;
     justify-content: center;
-    margin: 5px 34px 5px 34px;
     flex-direction: column;
 }
 
@@ -123,13 +127,15 @@ article#intro_Grafs{
     justify-content: center;
     width:950px;
     max-width: 100%;
- 
  }
-.current_reps, .current_reps h1{
+#current_reps, .current_reps h3{
+    display: flex;
   text-align: center;
+  flex-direction:column;
   justify-content: center;
   margin: 0 auto;
-  width: 1100px;
+  width:1000px;
+  max-width: 100%;
   padding-top:10px;
   height:auto;
 }
@@ -179,7 +185,7 @@ nav{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px 10px 10px;
-    /* width: inherit; */
+    width: inherit;
     max-width: 100%;
     margin: 0 auto;
     justify-items: center;
@@ -235,7 +241,7 @@ li{
 /* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW *//* MEDIA QUERIES BELOW */
 
 
-@media screen and (max-width:430px) and (orientation:portrait) {
+@media screen and (max-width:900px) {
 
     body {
         max-width: 100%;
@@ -245,10 +251,28 @@ li{
         justify-content: center;
     }
 
-    li{  /* consider re-styling this (the cards on mobile screens) */
-        overflow-y: auto;
+    #flex-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 100%;
+     }
+     
+article#intro_Grafs{
+     max-width: 100%;
+     width:85%;
+     margin-left:70px;
+     margin-bottom:50px;
+}
+    #cdButton{
+        border: none;
+        background: none;
+        font-size: 16px;
+        width: inherit;
+        color: black;
+        cursor: pointer;
     }
-
     .btn-icon{
         border:none;
         font-size: 12px;
@@ -265,6 +289,8 @@ li{
         cursor: pointer; 
         height: 16px;
     }
+
+
     #data-input{
         display: flex;
         flex-direction: row;
@@ -273,17 +299,10 @@ li{
         width: 415px;
         margin-left: -35px;
     }
-#btn-img{
-    width: 16px;
-    margin-top: -18px;
-    margin-left: 183px;
+    form{
+        margin-left: 20px;
     }
 
- #find-cd{
-    width: 200px;
-    margin-top: -6px;
-    margin-left: 52px;
-}
 #cd-Input{
     width: 139px;
     font-size: 14px;
@@ -294,40 +313,30 @@ label p {
     margin-bottom: 3px;
 }
 
-#cdBtn{
-margin-left:-11px;
-}
 
- #intro_Grafs{
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
-    margin: 0 auto;
-    padding-top:40px;
-    padding-bottom:40px;
-    align-items: center;
+
+h1, h2, h4, h5{
     align-content: center;
-}
-
-#intro_Grafs p{
     padding-top:30px;
-    justify-content:center;
-    margin: 0 auto;
-    width:375px;
-}
-h1, h2, h3, h4, h5{
-    align-content: center;
-    padding-bottom:10px;
-    padding-top:10px;
     text-align: center;
     width:325px;
     margin: 0 auto;
 }
 
-.first-half, .second-half, .final-half {
-    grid-template-columns: auto auto;
-    width:450px;
+
+
+#current_reps,  .first-half, .second-half, .final-half, .last-rep{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    width:500px;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-items: center;
 }
+#current_reps h3{
+    margin-left:60px;
+}
+
 
 .current_reps:hover, .first-half li:hover, .second-half li:hover, .final-half li:hover {
     box-shadow: none;
@@ -335,3 +344,22 @@ h1, h2, h3, h4, h5{
   }
 }
 
+
+
+@media screen and (max-width:430px)  {
+    nav{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #current_reps{
+    margin-left:-35px;
+    }
+    #current_reps h3{
+        margin-left:38px;
+    }
+    article#intro_Grafs{
+        margin-left:35px;
+    }
+
+}
