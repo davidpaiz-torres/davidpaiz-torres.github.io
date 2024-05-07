@@ -345,15 +345,14 @@ h1, h2, h4, h5{
 }
 
 
-
-@media screen and (max-width:430px)  {
+@media screen and (max-width:590px)  {
     nav{
         display:flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
     #current_reps{
-    margin-left:-35px;
+    margin-left:-38px;
     }
     #current_reps h3{
         margin-left:38px;
