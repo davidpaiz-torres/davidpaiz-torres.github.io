@@ -128,7 +128,7 @@ article#intro_Grafs{
     width:950px;
     max-width: 100%;
  }
-#current_reps, .current_reps h3{
+#current_reps{
     display: flex;
   text-align: center;
   flex-direction:column;
@@ -139,7 +139,11 @@ article#intro_Grafs{
   padding-top:10px;
   height:auto;
 }
-
+#current_reps h3{
+    padding-top:30px;
+    margin-left:15px;
+    font-size:22px;
+}
 
 input{
     caret-color:cornflowerblue;
@@ -323,6 +327,10 @@ h1, h2, h4, h5{
     margin: 0 auto;
 }
 
+#current_reps h3{
+        padding-bottom:20px;
+        margin-left:25%;
+    }
 
 
 #current_reps,  .first-half, .second-half, .final-half, .last-rep{
@@ -333,9 +341,7 @@ h1, h2, h4, h5{
     margin: 0 auto;
     justify-items: center;
 }
-#current_reps h3{
-    margin-left:60px;
-}
+
 
 
 .current_reps:hover, .first-half li:hover, .second-half li:hover, .final-half li:hover {
