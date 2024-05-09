@@ -126,7 +126,7 @@ article#intro_Grafs{
     justify-content: center;
 }
 
-table {    
+#table {    
     height: auto;
     width: 580px;
     border-collapse: collapse;
@@ -135,8 +135,13 @@ table {
 
 th, td {
     padding: 5px;
-    text-align: center;
     height:2px;
+}
+td{
+      text-align: center;
+}
+th{
+text-align:center;
 }
 
 
@@ -147,7 +152,7 @@ td img {
     align-items: center;
     width: 50px;
     height: 50px; 
-    margin-right: 10px; 
+    margin-right: -60px; 
     border-radius: 50%; 
     object-fit: cover;
  }
@@ -223,9 +228,26 @@ nav{
         justify-content: center;
         margin: 0 auto;
         max-width: 100%;
-        width:85%;
-        max-width: 100%;
-        }
+    }
+
+    td img {
+        display: flex;
+        flex-direction:row;
+        margin: 0 auto;
+        align-items: center;
+        width: 50px;
+        height: 50px; 
+        margin-right: -5px; 
+        border-radius: 50%; 
+        object-fit: cover;
+     }
+
+    #table {    
+        height: auto;
+        border-collapse: collapse;
+        margin: 0 auto;
+    }
+
         
     article#intro_Grafs{
         max-width: 100%;
@@ -233,12 +255,14 @@ nav{
         margin-bottom:50px;
     }
     #cdButton{
-            border: none;
-            background: none;
-            font-size: 16px;
-            width: inherit;
-            color: black;
-            cursor: pointer;
+        border: none;
+        background: none;
+        font-size: 16px;
+        width: inherit;
+        margin-bottom: -47px;
+        color: black;
+        cursor: pointer;
+    }
         }
         .btn-icon{
             border:none;
@@ -273,10 +297,10 @@ nav{
     #cd-Input{
         width: 139px;
         font-size: 14px;
-        margin-left: -46px;
+        margin-left: -17px;
     }
-    label p {
-        margin-left: -12px;
+    label{
+        margin-left: -16px;
         margin-bottom: 3px;
     }
 
@@ -291,8 +315,9 @@ nav{
     #current_reps h3{
             padding-bottom:20px;
     }
+ 
 
-    }
+}
 
 
 @media screen and (max-width:590px)  {
@@ -302,8 +327,9 @@ nav{
         justify-content: space-evenly;
     }
 
+
+
     #flex-container{
-        width:85%;
         max-width: 100%;
     }
  
@@ -314,4 +340,23 @@ nav{
         margin-left:35px;
     }
 
+    #table {    
+        height: auto;
+        text-align: center;
+        width: 320px;
+        border-collapse: collapse;
+        margin: 0 auto;
+    }
+
+    td img {
+        display: flex;
+        flex-direction:row;
+        margin: 0 auto;
+        align-items: center;
+        width: 50px;
+        height: 50px; 
+        margin-right: -1px; 
+        border-radius: 50%; 
+        object-fit: cover;
+     }
 }
