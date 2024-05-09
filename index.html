@@ -11,6 +11,7 @@
         <meta name="keywords" content = "Election Results,Historical Election Results,NYC Election Results,Electoral History Tracker,NYC Historical Election Tracker,Elections,Politics">
     <!-- End of Keywords Meta -->
     <!-- End of SEO MEta -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="styles/utility.css"> 
         <link rel="icon" href="media/Icons/latest-news-newspaper-icon.svg" type="image/svg">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,31 +21,35 @@
 <body>
 <section id="header">
     <header>
-        <h5> Coding The News: Electoral History Tracker <img src="media/Icons/latest-news-newspaper-icon.svg" alt="Newspaper Icon"></h5>
+        Coding The News: Electoral History Tracker <img src="media/Icons/latest-news-newspaper-icon.svg" alt="Newspaper Icon">
     </header>
 </section>
 <main>
-<section id="buttons">
-<h1> 
-    Find out how your Congressional District has voted historically. 
-</h1>
-        <nav>     
-            <form>
-                <label for="cd-Input">
-                <p> Enter a CD: </p> </label>
-                <input id="cd-Input" name="cd-Input" type="text" placeholder="NYC ONLY" class="faded-input">
-                <input class ="btn-icon" id="submit" type="image" src="media/Icons/find-icon.svg">
-            </form>
-            <button  id="cdButton">
-                <label id ="find-cd">  Find Your <br> Congressional District</label>
-                <img id="btn-img" src="media/Icons/find-icon.svg" alt="Icon">
-            </button>
-        </nav>
+    <br>
+    <section id="buttons">
+        <h1> 
+            Find out how your Congressional District has voted historically. 
+        </h1>
+               <nav>     
+                    <form>
+                        <label for="cd-Input">
+                         Electoral History <br> by Congressional District:  </label>
+                        <input id="cd-Input" name="cd-Input" type="text" placeholder="NYC ONLY" class="faded-input">
+                        <input class ="btn-icon" id="submit" type="image" src="media/Icons/find-icon.svg">
+                    </form>
+            
+                    <button  id="cdButton">
+                        <label id ="find-cd">  Find Your <br> Congressional District</label>
+                        <img id="btn-img" src="media/Icons/find-icon.svg" alt="Icon">
+                    </button>
+                </nav>
+        </section>
 </section>
+
 <section id="article">
     <article id="intro_Grafs">
             <a href="https://www.ny.gov/">
-                <img src="media/Icons/ny-flag.svg" alt="Newspaper Icon"
+                <img src="media/Icons/ny-flag.svg" alt="Official flag of the State of New York"
                 alt="Official Flag of the State of New York">
             </a>
             <h2>New York's Congressional Delegation:</h2>
@@ -54,97 +59,121 @@
                     Also from NYC is Rep. Jerry Nadler, who served as the Chairman of the Judiciary comittee during Former President Trump's second impeachment trial. 
                     <br>
                     <br>
-                    However, with only a few rare exceptions, most of NYC's 13 districts are still represented by the same person as they were 10 years ago.
+                    With only a few rare exceptions, most of NYC's 13 districts are still represented by the same person as they were 10 years ago.
                     <br>
                     <br>
                 </p>
     </article>
 </section>
+
+
 <section id="current_reps"  class="current_reps">
-<div id="flex-container">
     <h3> Current NYC Representatives <br> 118th Congress (2023-2025)</h3>
-<div>
-    <ul class="first-half">
-        <li>
-            <img src="media/current members/hakeem.jpeg" alt="Hakeem Jeffries">
-            <div class="dem" id="district-8">Hakeem Jeffries <br> (D-8)</div>
-        </li>
-        <li>
-            <img src="media/current members/aoc.png" alt="Alexandria Ocasio-Cortez">
-            <div class="dem" id="district-14"> Alexandria Ocasio-Cortez <br> (D-14)</div>
-        </li>
-        <li>
-            <img src="media/current members/suozzi.png" alt="Tom Suozzi">
-            <div class="dem" id="district-3"> Tom Suozzi <br> (D-3)</div>
-            <p></p>
-        </li>
-        <li>
-            <img src="media/current members/nadler.png" alt="Jerrold Nadler"> 
-            <div class="dem" id="district-12"> Jerrold Nadler <br> (D-12)</div>
-            <p></p>
-        </li>  
-    </ul> 
- </div>
- <div>
-    <ul class="first-half">
-            <li>
-                <img src="media/current members/bowman.png" alt="Jamaal Bowman"> 
-                <div class="dem" id="district-16"> Jamaal Bowman <br> (D-16)</div>
-            </li>
-            <li>
-                <img src="media/current members/espaillat.png" alt="Adriano Espaillat"> 
-                <div class="dem" id="district-13"> Adriano Espaillat <br> (D-13)</div>
-            </li> 
-         
-            <li>
-                <img src="media/current members/malliotakis.png" alt="Nicole Malliotakis">
-                <div class="dem" id="district-11"> Nicole Malliotakis <br> (R-11)</div>
-            </li>
-              <li>
-                <img src="media/current members/meeks.png" alt="Gregory Meeks"> 
-                <div class="dem" id="district-5"> Gregory Meeks <br> (D-5)</div>
-            </li>
-        </ul>  
-</div>
-<div>
-    <ul class="final-half">
-            <li>
-                <img src="media/current members/clarke.png" alt="Yvette Clarke"> 
-                <div class="dem" id="district-9"> Yvette Clarke <br> (D-9)</div>
-            </li>
-            <li>
-                <img src="media/current members/goldman.png" alt="Dan Goldman"> 
-                <div class="dem" id="district-10">  Dan Goldman <br> (D-10)</div>
-            </li>
-            
-                <li>
-                    <img src="media/current members/nydia.png" alt="Nydia Velázquez"> 
-                    <div class="dem" id="district-7"> Nydia Velázquez <br> (D-7)</div>
-                </li>
-                <li>
-                    <img src="media/current members/meng.png" alt="Grace Meng"> 
-                    <div class="dem" id="district-6"> Grace Meng <br> (D-6)</div>
-                </li>
-    </ul>
-</div>
-<div>
-     <ul class="final-half">
-        <li>
-            <img src="media/current members/torres.png" alt="Ritchie Torres"> 
-            <div class="dem" id="district-15"> Ritchie Torres <br> (D-15)</div>
-        </li>
-    </ul>
-</div>
-</div>
+<div id="flex-container">
+    <table class ="table-borderless table-striped table-sm">
+        <thead class="table-dark">
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Representative</th>
+                <th scope="col">Party</th>
+                <th scope="col">District</th>
+            </tr>
+        </thead>  
+        <tbody>
+            <tr>
+                <td> <img src="media/current members/hakeem.png" alt="Hakeem Jeffries"></td>
+                <td class ="hakeem"> Hakeem Jeffries</td>
+                <td>D</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td class = "aoc"> <img src="media/current members/aoc.png" alt="Alexandria Ocasio-Cortez"></td>
+                  <td> Alexandria Ocasio-Cortez </td>
+                <td>D</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td class ="suozzi"><img src="media/current members/suozzi.png" alt="Tom Suozzi"> </td>
+                 <td> Tom Suozzi</td>
+                <td>D</td>
+                <td>3</td>
+            </tr>
+ 
+            <tr>
+                <td class="nadler"> <img src="media/current members/nadler.png" alt="Jerrold Nadler"> </td>
+                 <td> Jerrold Nadler</td>
+                <td>D</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td class ="bowman"> <img src="media/current members/bowman.png" alt="Jamaal Bowman"> </td>
+                 <td> Jamaal Bowman</td>
+                <td>D</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td class ="espaillat"> <img src="media/current members/espaillat.png" alt="Adriano Espaillat"></td>
+                     <td>Adriano Espaillat </td>
+                <td>D</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td class ="malliotakis"> <img src="media/current members/malliotakis.png" alt="Nicole Malliotakis"></td>
+                 <td> Nicole Malliotakis </td>
+                <td>R</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td class="meeks"> <img src="media/current members/meeks.png" alt="Gregory Meeks"></td>
+                 <td>Gregory Meeks </td>
+                <td>D</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td class ="clarke"> <img src="media/current members/clarke.png" alt="Yvette Clarke"></td>
+                <td>Yvette Clarke </td>
+                <td>D</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td class="goldman"> <img src="media/current members/goldman.jpeg" alt="Dan Goldman"></td>
+                <td> Dan Goldman</td>
+                <td>D</td>
+                <td>10</td>
+            </tr>
+        <tr>
+            <td class="Velázquez"> <img src="media/current members/Velázquez.png" alt="Nydia Velázquez"></td>
+                <td>Nydia Velázquez </td>
+            <td>D</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td class="meng"> <img src="media/current members/meng.png" alt="Grace Meng"></td>
+            <td> Grace Meng </td>
+            <td>D</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td class = "torres"> <img src="media/current members/torres.png" alt="Ritchie Torres"></td>
+            <td>  Ritchie Torres  </td>
+            <td>D</td>
+            <td>15</td>
+        </tr>
+   
+    </tbody>
+</table>
 </section>
 </main>
-<section id="footer">
-    <footer>
-       <h5> Coding The News: Electoral History Tracker
-        <img src="media/Icons/latest-news-newspaper-icon.svg"alt="Newspaper Icon"> 
-    </footer>
-</section>
+    <section id="footer">
+        <footer>
+         Coding The News: Electoral History Tracker
+            <img src="media/Icons/latest-news-newspaper-icon.svg"alt="Newspaper Icon"> 
+        </footer>
+    </section>
 </body>
 <script src="scripts/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </html>
 </section>
