@@ -225,6 +225,12 @@ nav{
         justify-content: center;
     }
 
+    #btn-img{
+        width: 11px;
+        margin-top: -52px;
+        margin-right: -63px;
+    }
+
     #home{
         margin-left: 34px;
         margin-top: -25px;
@@ -266,8 +272,8 @@ nav{
     }
 
     #find-cd{
-        margin-left: -31px;
-        margin-bottom: -8px;
+               margin-left: -31px;
+        margin-top: 11px;
     }
         
         .btn-icon{
