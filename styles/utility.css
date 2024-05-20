@@ -178,9 +178,10 @@ input{
 nav{
     display:flex;
     text-decoration: none;
+    align-items: center;
     text-align: center;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-top: 0;
     padding-bottom:25px;
     
