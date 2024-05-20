@@ -39,8 +39,8 @@ main{
 
 #btn-img{
         width: 11px;
-        margin-top: -1px;
-        margin-right: -80px;
+        /* margin-top: -1px;
+        margin-right: -80px; */
 }
 
 #buttons, form{
@@ -188,13 +188,8 @@ nav{
 }
 
 .btn-icon{
-    border:none;
-    display: flex;
-    margin-top: -17px;
-    margin-left: 102px;
-    align-self: center; 
+    display: none;
     cursor: pointer; 
-    width: 11px;
 }
 
 #cd-Input{
@@ -277,22 +272,7 @@ nav{
         margin-top: 11px;
     }
         
-        .btn-icon{
-            border:none;
-            font-size: 12px;
-            color:black;
-            display: flex;
-            flex-direction: column; 
-            margin-top: -46px;
-            margin-left: 86px;
-            justify-content: center;
-            align-self: center; 
-            font-weight: bold; 
-            cursor: pointer; 
-            height: 16px;
-        }
-
-
+    
         #data-input{
             display: flex;
             flex-direction: row;
@@ -339,6 +319,7 @@ nav{
 @media screen and (max-width:590px)  {
     nav{
         display: flex;
+        gap: 150px;
         flex-direction: row;
         justify-content: space-evenly;
         max-width: 100%;
