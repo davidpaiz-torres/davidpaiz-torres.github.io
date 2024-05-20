@@ -268,7 +268,7 @@ nav{
     }
 
     #find-cd{
-               margin-left: -31px;
+        margin-left: -132px;
         margin-top: 11px;
     }
         
@@ -286,11 +286,11 @@ nav{
         }
 
     #cd-Input{
-        width: 139px;
+        width: 105px;
         font-size: 14px;
     }
     label{
-        margin-left: -16px;
+        margin-left: -11px;
         margin-bottom: 3px;
     }
 
@@ -319,7 +319,7 @@ nav{
 @media screen and (max-width:590px)  {
     nav{
         display: flex;
-        gap: 150px;
+        gap: 120px;
         flex-direction: row;
         justify-content: space-evenly;
         max-width: 100%;
