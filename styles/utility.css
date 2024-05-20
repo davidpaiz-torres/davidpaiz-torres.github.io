@@ -11,28 +11,10 @@ body {
     margin: 0 auto;
    
 }
-
-
-
-
-#graphics{
-    display:none;
+#home{
+    margin-top:43px;
+    position: absolute;
 }
-
-.graphics_active{
-    padding-top:20px;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap:10px;
-    width: 70%;
-    height: auto;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-}
-
-
 
 main{
     display:flex;
@@ -56,9 +38,9 @@ main{
 
 
 #btn-img{
-     width: 11px;
-     margin-top: -3px;
-     padding-top: 0px;
+        width: 11px;
+        margin-top: -1px;
+        margin-right: -80px;
 }
 
 #buttons, form{
@@ -74,7 +56,7 @@ main{
     justify-content: center;
     text-align:center; 
     font-size: 22px;
-    margin-bottom:0;
+    margin-bottom:30px;
 }
 
 form {
@@ -143,11 +125,7 @@ article#intro_Grafs{
     width: 130px; 
     vertical-align: middle;
 }
-/* #flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-} */
+
 
 #table {    
     height: auto;
@@ -204,15 +182,15 @@ nav{
     flex-direction: row;
     justify-content: space-evenly;
     padding-top: 0;
-    padding-bottom:5px;
+    padding-bottom:25px;
     
 }
 
 .btn-icon{
     border:none;
     display: flex;
-    margin-top:-15px;
-    margin-left:102px;
+    margin-top: -17px;
+    margin-left: 102px;
     align-self: center; 
     cursor: pointer; 
     width: 11px;
@@ -247,13 +225,11 @@ nav{
         justify-content: center;
     }
 
-    /* #flex-container{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 auto;
-        max-width: 100%;
-    } */
+    #home{
+        margin-left:160px;
+        width:5%;
+        position: absolute;
+    }
 
     td img {
         display: flex;
@@ -284,9 +260,15 @@ nav{
         background: none;
         font-size: 16px;
         width: inherit;
-        margin-bottom: -47px;
+        margin-left: 143px;
+        margin-bottom: -30px;
         color: black;
         cursor: pointer;
+    }
+
+    #find-cd{
+        margin-left: 17px;
+        margin-bottom: -37px;
     }
         
         .btn-icon{
@@ -294,11 +276,9 @@ nav{
             font-size: 12px;
             color:black;
             display: flex;
-            flex-direction: column;  
-            margin-top: -14px;
-            margin-left: 91px;
-            margin-top: -17px;
-            margin-left: 102px;
+            flex-direction: column; 
+            margin-top: -46px;
+            margin-left: 86px;
             justify-content: center;
             align-self: center; 
             font-weight: bold; 
@@ -322,7 +302,7 @@ nav{
     #cd-Input{
         width: 139px;
         font-size: 14px;
-        margin-left: -17px;
+        margin-left: -165px;
     }
     label{
         margin-left: -16px;
@@ -356,6 +336,7 @@ nav{
         display:flex;
         flex-direction: row;
         justify-content: space-evenly;
+        width:50%;
     }
 
 
