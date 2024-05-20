@@ -35,6 +35,7 @@ function showPopup(message) {
 }
 
 // Check if all required elements exist
+// The exclamation point means they are not present 
 if (!cdInput || !submitButton || !introGrafs || !currentReps || !graphics) {
     console.error("Error: One or more required elements not found.");
 } else {
@@ -45,12 +46,6 @@ if (!cdInput || !submitButton || !introGrafs || !currentReps || !graphics) {
 submitButton.addEventListener("click", function(event) {
     event.preventDefault(); 
     enterDistrict();
-});
-
-// Add event listener for the submit button
-submitButton.addEventListener("click", function(event) {
-        event.preventDefault(); 
-        enterDistrict();
 });
 
 function enterDistrict() {
