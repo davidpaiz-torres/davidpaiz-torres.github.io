@@ -100,9 +100,11 @@ function enterDistrict() {
                 if (userDiv) {
                         console.log(`Element with ID "div-${districtNumber}" exists.`);
                         userDiv.style.display = "flex";
+                        userDiv.style.margin="0 auto";
                         userDiv.style.gap = "20px";
                         userDiv.style.width = "100%";
-                        userDiv.style.paddingTop = "30px;";
+                        userDiv.style.maxWidth = "100%";
+                        userDiv.style.paddingTop = "30px";
                         userDiv.classList.add("graphics");
                 } else {
                         console.error(`Error: Element with ID "div-${districtNumber}" not found.`);
