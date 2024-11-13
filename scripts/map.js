@@ -79,7 +79,7 @@ map.on('load', () => {
                     'orange',
                     5,
                     'orangered',
-                    350,
+                    150,
                     'darkred'
                 ],
                 'circle-radius': [
