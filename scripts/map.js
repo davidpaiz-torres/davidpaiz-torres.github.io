@@ -34,20 +34,18 @@ map.on('load', () => {
   
 // Map Title
     d3.select("#hed")
-    .text("Arrests for Sex Work Across NYC 2022-2024")
+    .text("Arrests for Sex Work Across NYC from 2022-2024")
     .style("top", "10px")
     .style("color", "gray")
     .style("text-align", "center") 
+    .style("font-size", "14px")
     
     d3.select("#map_byline")
     .text("By: David Paiz-Torres")
     .style("bottom", "20")  
+    .style("font-size", "14px")
     .style("color", "gray")
     .style("text-align", "center")
-    .style("padding", "10px")
-    
-    
-
         
 // Filter Arrest Data by year
     fetch('../data/coords.geojson')
