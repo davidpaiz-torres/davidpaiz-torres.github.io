@@ -27,8 +27,8 @@ map.on('load', () => {
             type: 'geojson',
             data: `../data/coords.geojson`,
             cluster:true,
-            clusterMaxZoom:14,
-            clusterRadius:50,
+            clusterMaxZoom:10,
+            clusterRadius:35,
         });
 
   
