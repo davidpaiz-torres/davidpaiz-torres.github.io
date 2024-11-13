@@ -1,0 +1,62 @@
+
+#hed_dek_byline, p #byline{
+    text-align:center;
+}   
+#hed_dek_byline h1{
+    font-size:40px;
+}
+#hed_dek_byline h2{
+      font-size:35px;
+}      
+#story_body{
+    margin-right:auto;
+    margin-left:auto;
+    max-width:650px;
+}
+#map{ /* https://www.jawg.io/docs/integration/maplibre-gl-js/change-style/ – styling resources */ 
+    min-height: 400px;
+    height: 100%;
+    margin-right:auto;
+    margin-left:auto;
+    max-width: 650px;
+}
+
+rect{
+    pointer-events:all;
+    fill-opacity:0;
+    stroke-opacity:0;
+    z-index:1;
+}
+
+.tooltip{
+    position:absolute;
+    padding:10px;
+    background-color:steelblue;
+    color:floralwhite;
+    border: 1px white;
+    border-radius: 10px;
+    display:none;
+    opacity:0.75;
+
+}
+
+
+@media (min-width: 2440px), screen and (orientation: portrait), not (orientation:landscape){
+    #story_body{
+    margin-right:auto;
+    margin-left:auto;
+    }
+    #map{ 
+        min-height: 400px;
+        height:100%;
+        margin-right:auto;
+        margin-left:auto;
+        max-width:650px;
+    }
+  #line_chart{
+        margin-left:auto;
+        margin-right:auto;
+        width:650px;
+        max-width:650px;
+    }
+}

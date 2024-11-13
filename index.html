@@ -1,254 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-        <title>Electoral History Tracker </title>
+    <head>
+        <title>TK TK TK</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Start of SEO Meta -->
-        <meta name = "description" content ="historical election tracker">
-        <meta name = "author" content ="David Paiz-Torres, Olivia Graffeo">
-    <!-- Start of Keywords Meta -->
-        <meta name="keywords" content = "Election Results,Historical Election Results,NYC Election Results,Electoral History Tracker,NYC Historical Election Tracker,Elections,Politics">
-    <!-- End of Keywords Meta -->
-    <!-- End of SEO MEta -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles/utility.css"> 
+        <meta name = "description" content ="Operation Restore Roosevelt">
+        <meta name = "author" content ="David Paiz-Torres, Mia hollie and Asad Jung">
+        <meta name="keywords" content = "Operation Restore Roosevelt, Sex Work, NYC Sex Work, Roosevelt Ave">
+        <link rel="stylesheet" href="styles/style.css">
         <link rel="icon" href="media/Icons/latest-news-newspaper-icon.svg" type="image/svg">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"> 
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src='https://unpkg.com/maplibre-gl@4.0.2/dist/maplibre-gl.js'>
+        </script>
+        <script src="https://cdn.maptiler.com/maplibre-gl-js/v2.4.0/maplibre-gl.js"></script>
+        <link href="https://cdn.maptiler.com/maplibre-gl-js/v2.4.0/maplibre-gl.css" rel="stylesheet">    
 </head>
-<body>
-<section id="header">
-    <header>
-        Electoral History Tracker <img src="media/Icons/latest-news-newspaper-icon.svg" alt="Newspaper Icon">
-    </header>
-</section>
-<main>
-    <br>
-    <section id="buttons">
-        <h1> 
-            Find out how your Congressional District has voted historically. 
-        </h1>
-               <nav>     
-                    <form>
-                        <label for="cd-Input">
-                         Enter Your <br> District:  </label>
-                        <input id="cd-Input" name="cd-Input" type="text" placeholder="NYC ONLY" class="faded-input">
-                        <input class ="btn-icon" id="submit" type="image" src="media/Icons/find-icon.svg">
-                    </form>
-                    <div id = home>
-                        <a href="index.html" class="btn btn-primary">Home</a>
+    <body>
+        <article>
+            
+            <section id="hed_dek_byline">
+                <h1>Hed: TK TK</h1>
+                <h2> Dek: TK TK</h2>
+                <p id ="byline"> 
+                    Mia Hollie, Asad Jung, David Paiz-Torres  
+                </p> 
+            </section>
+            <div id="map">
+                <script src="scripts/map.js"></script>
+            </div>
+            <section> 
+                <div id="story_body">
+                  
+                    <!-- <div id="barContainer">
+                        <script src ="scripts/bar_chart.js"></script>
+                     </div> -->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>                    
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+                    <div id="container">
+                        <script src ="scripts/line_chart.js"></script>
                     </div>
-                    <button  id="cdButton">
-                        <label id ="find-cd">  Find My <br> District</label>
-                        <img id="btn-img" src="media/Icons/find-icon.svg" alt="Icon">
-                    </button>
-                </nav>
-        </section>
-</section>
-
-<section id="article">
-    <article id="intro_Grafs">
-            <a href="https://www.ny.gov/">
-                <img src="media/Icons/ny-flag.svg" alt="Official flag of the State of New York"
-                alt="Official Flag of the State of New York">
-            </a>
-            <h2>New York's Congressional Delegation:</h2>
-                <p>
-                    New York City makes up half of New York's 26-member congressional delegation. NYC's delegation features prominent members such as Minority Leader Jeffries and 
-                    Alexandria Ocasio Cortez; who rose to fame after unseating long-standing democratic rep Joe Crowley. <br> <br>
-                    Also from the NYC delegation is Rep. Jerry Nadler, who served as the Chairman of the Judiciary comittee during Former President Trump's second impeachment trial. 
-                    <br>
-                    <br>
-                    With only a few exceptions, most of NYC's 13 districts are still represented by the same person as they were 10 years ago.
-                    <br>
-                    <br>
-                </p>
-    </article>
-</section>
- 
-
-<section id="graphics">
-    <div id ="districts">
-        <div id="div-3">
-            <div id="district-3" class="flourish-embed flourish-chart" data-src="visualisation/18026717"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-            <div id="district-3" class="flourish-embed flourish-chart" data-src="visualisation/18027745"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-            <div id="district-3" class="flourish-embed flourish-chart" data-src="visualisation/18027798"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-        </div>
-        <div id="div-5">
-                <div id="district-5" class="flourish-embed flourish-chart" data-src="visualisation/18026768"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-                <div id="district-5" class="flourish-embed flourish-chart" data-src="visualisation/18027750"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-                <div id="district-5" class="flourish-embed flourish-chart" data-src="visualisation/18027822"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-        </div>
-        <div id="div-6">
-                <div id="district-6" class="flourish-embed flourish-chart" data-src="visualisation/18026773"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-                <div id="district-6" class="flourish-embed flourish-chart" data-src="visualisation/18027753"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-                <div id="district-6" class="flourish-embed flourish-chart" data-src="visualisation/18027833"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-        </div>
-        <div id="div-7">
-                <div id="district-7" class="flourish-embed flourish-chart" data-src="visualisation/18026777"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-                <div id="district-7" class="flourish-embed flourish-chart" data-src="visualisation/18027756"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-                <div id="district-7" class="flourish-embed flourish-chart" data-src="visualisation/18027847"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-        </div>
-        <div id ="div-8">
-                <div id="district-8" class="flourish-embed flourish-chart" data-src="visualisation/18026785"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-                <div id="district-8" class="flourish-embed flourish-chart" data-src="visualisation/18027764"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-                <div id="district-8" class="flourish-embed flourish-chart" data-src="visualisation/18027851"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-        </div>
-        <div id ="div-9">
-                <div id="district-9" class="flourish-embed flourish-chart" data-src="visualisation/18027674"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-                <div id="district-9" class="flourish-embed flourish-chart" data-src="visualisation/18027772"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-                <div id="district-9" class="flourish-embed flourish-chart" data-src="visualisation/18027854"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-        </div>
-        <div id ="div-10">
-                <div id="district-10" class="flourish-embed flourish-chart" data-src="visualisation/18027686"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-                <div id="district-10" class="flourish-embed flourish-chart" data-src="visualisation/18027776"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-                <div id="district-10" class="flourish-embed flourish-chart" data-src="visualisation/18027862"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-        </div>
-        <div id = "div-11">
-                <div id="district-11" class="flourish-embed flourish-chart" data-src="visualisation/18027690"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-                <div id="district-11" class="flourish-embed flourish-chart" data-src="visualisation/18027780"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-                <div id="district-11" class="flourish-embed flourish-chart" data-src="visualisation/18027868"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-        </div>
-        <div id="div-12">
-                <div id="district-12" class="flourish-embed flourish-chart" data-src="visualisation/18027704"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-                <div id="district-12" class="flourish-embed flourish-chart" data-src="visualisation/18027782"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-                <div id="district-12" class="flourish-embed flourish-chart" data-src="visualisation/18027871"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-        </div>
-        <div id="div-13">
-                <div id="district-13" class="flourish-embed flourish-chart" data-src="visualisation/18027721"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-                <div id="district-13" class="flourish-embed flourish-chart" data-src="visualisation/18027786"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-                <div id="district-13" class="flourish-embed flourish-chart" data-src="visualisation/18027879"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-        </div>
-        <div id="div-14">
-                <div id="district-14" class="flourish-embed flourish-chart" data-src="visualisation/18027734"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-                <div id="district-14" class="flourish-embed flourish-chart" data-src="visualisation/18027789"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-                <div id="district-14" class="flourish-embed flourish-chart" data-src="visualisation/18027885"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-        </div>
-        <div id="div-15">
-            <div id="district-15" class="flourish-embed flourish-chart" data-src="visualisation/18027738"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-            <div id="district-15" class="flourish-embed flourish-chart" data-src="visualisation/18027795"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-            <div id="district-15" class="flourish-embed flourish-chart" data-src="visualisation/18027890"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-        </div>
-        <div id ="div-16">
-            <div id="district-16" class="flourish-embed flourish-chart" data-src="visualisation/18031281"><script src="https://public.flourish.studio/resources/embed.js"></script></div>         
-            <div id="district-16" class="flourish-embed flourish-chart" data-src="visualisation/18031328"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-            <div id="district-16" class="flourish-embed flourish-chart" data-src="visualisation/18031340"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-    </div>
-</section>
-
-
-<section id="current_reps"  class="current_reps">
-    <h3> Current NYC Representatives <br> 118th Congress (2023-2025)</h3>
-    <div id ="table"> 
-    <table class ="table table-borderless table-striped table-sm">
-        <thead>
-            <tr>
-                <th scope="col"></th>
-                <th scope="col">Representative</th>
-                <th scope="col">Party</th>
-                <th scope="col">District</th>
-            </tr>
-        </thead>  
-        <tbody>
-            <tr>
-                <td class="hakeem"> <img src="media/current members/hakeem.png" alt="Hakeem Jeffries"></td>
-                <td> Hakeem Jeffries </td>     
-                <td>D</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td class = "aoc"> <img src="media/current members/aoc.png" alt="Alexandria Ocasio-Cortez"></td>
-                  <td> Alexandria Ocasio-Cortez </td>
-                <td>D</td>
-                <td>14</td>
-            </tr>
-            <tr>
-                <td class ="suozzi"><img src="media/current members/suozzi.png" alt="Tom Suozzi"> </td>
-                 <td> Tom Suozzi</td>
-                <td>D</td>
-                <td>3</td>
-            </tr>
- 
-            <tr>
-                <td class="nadler"> <img src="media/current members/nadler.png" alt="Jerrold Nadler"> </td>
-                 <td> Jerrold Nadler</td>
-                <td>D</td>
-                <td>12</td>
-            </tr>
-            <tr>
-                <td class ="bowman"> <img src="media/current members/bowman.png" alt="Jamaal Bowman"> </td>
-                 <td> Jamaal Bowman</td>
-                <td>D</td>
-                <td>16</td>
-            </tr>
-            <tr>
-                <td class ="espaillat"> <img src="media/current members/espaillat.png" alt="Adriano Espaillat"></td>
-                     <td>Adriano Espaillat </td>
-                <td>D</td>
-                <td>13</td>
-            </tr>
-            <tr>
-                <td class ="malliotakis"> <img src="media/current members/malliotakis.png" alt="Nicole Malliotakis"></td>
-                 <td> Nicole Malliotakis </td>
-                <td>R</td>
-                <td>11</td>
-            </tr>
-            <tr>
-                <td class="meeks"> <img src="media/current members/meeks.png" alt="Gregory Meeks"></td>
-                 <td>Gregory Meeks </td>
-                <td>D</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td class ="clarke"> <img src="media/current members/clarke.png" alt="Yvette Clarke"></td>
-                <td>Yvette Clarke </td>
-                <td>D</td>
-                <td>9</td>
-            </tr>
-            <tr>
-                <td class="goldman"> <img src="media/current members/goldman.jpeg" alt="Dan Goldman"></td>
-                <td> Dan Goldman</td>
-                <td>D</td>
-                <td>10</td>
-            </tr>
-        <tr>
-            <td class="Velázquez"> <img src="media/current members/Velázquez.png" alt="Nydia Velázquez"></td>
-                <td>Nydia Velázquez </td>
-            <td>D</td>
-            <td>7</td>
-        </tr>
-        <tr>
-            <td class="meng"> <img src="media/current members/meng.png" alt="Grace Meng"></td>
-            <td> Grace Meng </td>
-            <td>D</td>
-            <td>6</td>
-        </tr>
-        <tr>
-            <td class = "torres"> <img src="media/current members/torres.png" alt="Ritchie Torres"></td>
-            <td>  Ritchie Torres  </td>
-            <td>D</td>
-            <td>15</td>
-        </tr>
-   
-    </tbody>
-</table>
-
-</div>
-</section>
-</main>
-    <section id="footer">
-        <footer>
-         Electoral History Tracker
-            <img src="media/Icons/latest-news-newspaper-icon.svg"alt="Newspaper Icon"> 
-        </footer>
-    </section>
-</body>
-
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+                        <p>Fusce posuere lacus id arcu condimentum, in ullamcorper quam facilisis. Etiam at mauris at ligula ullamcorper dignissim. Curabitur suscipit nulla libero, ac pharetra nunc egestas nec. Integer at nulla non nisl pharetra tincidunt non id quam. Vestibulum sed nibh nec dui dignissim ultrices.</p>
+                        <p>Suspendisse ut ex lacus. Vivamus vehicula eros vel massa hendrerit gravida. Nullam consequat justo eget eros laoreet, vitae hendrerit odio efficitur. Proin lacinia interdum nunc, ac tincidunt ex convallis sed. Etiam gravida ut purus vitae feugiat.</p>
+                        <p>Praesent volutpat ligula quis dui posuere, a convallis turpis tristique. Sed ac nisl velit. Curabitur laoreet nunc id est sodales, non sodales justo ornare. Integer eget nibh sed erat volutpat vestibulum. Nulla facilisi.</p>                   
+                        <p>Maecenas dictum orci sit amet elit fermentum aliquet. Aenean tincidunt sapien nec justo tincidunt, ut convallis ipsum consectetur. Integer mollis nibh id suscipit pharetra. Donec condimentum felis sit amet ante volutpat sagittis. In luctus vulputate leo ut mollis.</p>
+                    </div>
+            </section>
+        </article>
+    </body>
 </html>
-<script src="scripts/script.js"></script>
-</section>
