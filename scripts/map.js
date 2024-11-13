@@ -1,5 +1,6 @@
 const key = 'Mg7VoPbeXwKcbPfM9nJ5'
 
+
 // Sets the map boundaries
 const bounds = [
     [-74.2557, 40.3960], 
@@ -16,6 +17,7 @@ const map = new maplibregl.Map({
     maxBounds: bounds, // restricts the map from being zoomed out past the "bounds" 
     trackResize:true,
 }); 
+
 // Loads the map, then adds all the layers after it has loaded
 map.on('load', () => {
     map.loadImage('media/Icons/87952_handcuffs_icon.ico', function (error, image) {
@@ -26,8 +28,38 @@ map.on('load', () => {
             data: `../data/coords.geojson`,
             cluster:true,
             clusterMaxZoom:14,
-            clusterRadius:50
+            clusterRadius:50,
         });
+
+  
+// Map Title
+    d3.select("#hed")
+    .text("Arrests for Sex Work Across NYC in 2024")
+    .style("top", "10px")
+    .style("color", "gray")
+    .style("text-align", "center") 
+    
+    d3.select("#map_byline")
+    .text("By: David Paiz-Torres")
+    .style("bottom", "20")  
+    .style("color", "gray")
+    .style("text-align", "center")
+    .style("padding", "10px")
+    
+    
+
+        
+// Filter Arrest Data by year
+    fetch('../data/coords.geojson')
+    .then(response => response.json())
+    .then(data => {
+        const year = 2024; 
+        const filteredFeatures = data.features.filter(feature => feature.properties.Arrest_Year === year);
+        const filteredData = { ...data, features: filteredFeatures };
+        map.getSource('points').setData(filteredData);
+    });
+
+        
         map.addLayer({
             id: 'Points',
             type: 'symbol',
@@ -88,42 +120,7 @@ map.on('load', () => {
     });
 });
 
-// map.on('click','clusters', async (e) => {
-//     const features = map.queryRenderedFeatures(e.point, {
-//         layers:['clusters']
-//     });
-//     console.log(features[0].properties);
 
-//     const clusterId = features[0].properties.cluster_id;
-//     const zoom = await map.getSource('points').getClusterExpansionZoom(clusterId);
-//     map.easeTo({
-//         center:features[0].geometry.coordinates,
-//         zoom: zoom,
-//         duration: 100
-//     });
-// });
-
-// map.on('click', 'unclustered-point', (e) => {
-//     const coordinates = e.features[0].geometry.coordinates.slice();
-//     const mag = e.features[0].properties.mag;
-//     let OFNS_DESC;
-
-//     if (e.features[0].properties.arrest === 3) {
-//         OFNS_DESC = 'yes';
-//     } else {
-//         OFNS_DESC = 'no';
-//     }
-//     while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-//         coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-//     }
-
-//     new maplibregl.Popup()
-//         .setLngLat(coordinates)
-//         .setHTML(
-//             `magnitude: ${mag}<br>Was there a tsunami?: ${tsunami}`
-//         )
-//         .addTo(map);
-// });
 
 map.on('mouseenter', 'clusters', () => {
     map.getCanvas().style.cursor = 'pointer';

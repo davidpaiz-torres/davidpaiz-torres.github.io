@@ -30,7 +30,7 @@ d3.csv("data/overall_arrests.csv").then(data => {
 
     // SVG y-axis
     svg.append("g")
-        .call(d3.axisLeft(y));
+    .call(d3.axisLeft(y));
 
     // Add X grid lines
     const xAxisGrid = d3.axisBottom(x)
@@ -85,7 +85,6 @@ d3.csv("data/overall_arrests.csv").then(data => {
         .text("Arrests for Sex Work Offenses (2006-2024)");
     
         svg.append("text") 
-        // .attr("transform", "rotate(-90)")
         .attr("x", width  - 250)
         .attr("x", 330 - margin.left)
         .attr("y", height + margin.top - 345)
@@ -98,14 +97,14 @@ d3.csv("data/overall_arrests.csv").then(data => {
         .attr("x", width - 350)
         .attr("y", height + margin.bottom -24)
         .style("font-size", "12px")
-        .style("text-anchor", "middle")
+        .style("text-align", "center")
         .style("fill","#777")
         .text("Source: NYPD/NYC Open Data");
 
         svg.append("text")
         .style("font-size", "12px")
         .attr("x", width - 325)
-        .style("text-anchor", "middle")
+        .style("text-align", "center")
         .style("fill","#777")
         .attr("y", height + margin.bottom -8)
         .text("By:David Paiz-Torres")
@@ -116,7 +115,6 @@ d3.csv("data/overall_arrests.csv").then(data => {
       .append("div")
       .attr("class", "tooltip");
     
-
     const circle = svg.append("circle")
     .attr("r", 0)
     .attr("fill","steelblue")

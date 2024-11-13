@@ -1,5 +1,5 @@
 
-#hed_dek_byline, p #byline{
+#hed_dek_byline{
     text-align:center;
 }   
 #hed_dek_byline h1{
@@ -13,6 +13,20 @@
     margin-left:auto;
     max-width:650px;
 }
+
+#byline{
+    text-align:center;
+    margin-bottom:60px;
+}
+/* .x path, .y path .x line, .y line {
+    display: none;
+} */
+
+#map-container{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+ 
 #map{ /* https://www.jawg.io/docs/integration/maplibre-gl-js/change-style/ – styling resources */ 
     min-height: 400px;
     height: 100%;
