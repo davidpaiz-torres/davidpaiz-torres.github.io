@@ -34,7 +34,7 @@ map.on('load', () => {
   
 // Map Title
     d3.select("#hed")
-    .text("Arrests for Sex Work Across NYC in 2024")
+    .text("Arrests for Sex Work Across NYC 2022-2024")
     .style("top", "10px")
     .style("color", "gray")
     .style("text-align", "center") 
@@ -53,8 +53,8 @@ map.on('load', () => {
     fetch('../data/coords.geojson')
     .then(response => response.json())
     .then(data => {
-        const year = 2024; 
-        const filteredFeatures = data.features.filter(feature => feature.properties.Arrest_Year === year);
+        const years = [2024, 2023, 2022];
+        const filteredFeatures = data.features.filter(feature => years.includes(feature.properties.Arrest_Year));
         const filteredData = { ...data, features: filteredFeatures };
         map.getSource('points').setData(filteredData);
     });
