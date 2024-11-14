@@ -109,16 +109,14 @@ map.on('load', () => {
             source: 'points',
             filter:['!',['has','point_count']],
             paint:{
-                'circle-color': '#11b4da',
-                'circle-radius':3,
+                'circle-color': 'darkred',
+                'circle-radius':2.5,
                 'circle-stroke-width':1,
                 'circle-stroke-color': '#fff'
             }
         });
     });
 });
-
-
 
 map.on('mouseenter', 'clusters', () => {
     map.getCanvas().style.cursor = 'pointer';
