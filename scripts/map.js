@@ -27,14 +27,14 @@ map.on('load', () => {
             type: 'geojson',
             data: `../data/coords.geojson`,
             cluster:true,
-            clusterMaxZoom:10,
-            clusterRadius:35,
+            clusterMaxZoom:14,
+            clusterRadius:80,
         });
 
   
 // Map Title
     d3.select("#hed")
-    .text("Arrests for Sex Work Across NYC from 2022-2024")
+    .text("Arrests for Sex Work Across NYC from 2014-2024")
     .style("top", "10px")
     .style("color", "gray")
     .style("text-align", "center") 
@@ -46,12 +46,14 @@ map.on('load', () => {
     .style("font-size", "14px")
     .style("color", "gray")
     .style("text-align", "center")
+
+    
         
 // Filter Arrest Data by year
     fetch('../data/coords.geojson')
     .then(response => response.json())
     .then(data => {
-        const years = [2024, 2023, 2022];
+        const years = [2024];
         const filteredFeatures = data.features.filter(feature => years.includes(feature.properties.Arrest_Year));
         const filteredData = { ...data, features: filteredFeatures };
         map.getSource('points').setData(filteredData);
@@ -126,8 +128,23 @@ map.on('mouseleave', 'clusters', () => {
     map.getCanvas().style.cursor = '';
 });
 
-map.on('mouseenter', 'unclustered-point', () => {
+map.on('mouseenter', 'unclustered-point', (e) => {
     map.getCanvas().style.cursor = 'pointer';
+    const tooltip = d3.select('.tooltip')
+        .style("left", (e.originalEvent.pageX + 10) + "px")
+        .style("top", (e.originalEvent.pageY + 10) + "px")
+        .style("opacity", 1) 
+        .html(`
+    <strong>Borough:</strong> ${e.features[0].properties.ARREST_BORO} <br>
+    <strong>Date:</strong> ${e.features[0].properties.Arrest_Year} <br>
+    <strong>Race:</strong> ${e.features[0].properties.PERP_RACE} <br>
+    <strong>Age Group:</strong> ${e.features[0].properties.AGE_GROUP}
+  `);
+});
+
+map.on('mouseleave', 'unclustered-point', () => {
+    map.getCanvas().style.cursor = '';
+    d3.select('.tooltip').style("opacity", 0); 
 });
 
 map.on('mouseleave', 'unclustered-point', () => {
