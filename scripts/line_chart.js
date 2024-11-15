@@ -9,6 +9,19 @@ const svg = d3.select("#container").append("svg")
   .append("g")
   .attr("transform", `translate(${margin.left},${margin.top})`);
 
+
+// Append the tooltip to the body
+const lineTip = d3.select("body")
+  .append("div")
+  .attr("class", "tooltip")
+  .style("position", "absolute")
+  .style("padding", "8px")
+  .style("background", "rgba(0, 0, 0, 0.7)")
+  .style("color", "white")
+  .style("border-radius", "4px")
+  .style("pointer-events", "none") 
+  .style("opacity", 0);
+
 d3.csv("data/overall_arrests.csv").then(data => {
   data.forEach(d => {
     d.arrest_year = new Date (d.arrest_year);  
@@ -26,7 +39,7 @@ d3.csv("data/overall_arrests.csv").then(data => {
     // SVG x-axis
     svg.append("g")
         .attr("transform", `translate(0,${height})`)
-        .call(d3.axisBottom(x));
+        .call(d3.axisBottom(x).tickFormat(d3.timeFormat("%Y")));
 
     // SVG y-axis
     svg.append("g")
@@ -72,7 +85,28 @@ d3.csv("data/overall_arrests.csv").then(data => {
         .attr("cy", d => y(d.total_arrests))
         .attr("r", 2.5)
         .attr("stroke", "black")
-        .attr("fill", "darkred");
+        .attr("fill", "darkred")
+
+    .on("mouseenter", (event, d) => {
+      lineTip.transition().duration(200).style("opacity", 0.9);
+      lineTip.html(`
+        <strong>Year:</strong> ${d.arrest_year.getFullYear()}<br>
+        <strong>Total Arrests:</strong> ${d.total_arrests}<br>
+      
+      `)
+      .style("left", (event.pageX + 10) + "px")
+      .style("top", (event.pageY - 28) + "px");
+    })
+    .on("mousemove", (event) => {
+    
+      lineTip.style("left", (event.pageX + 10) + "px")
+            .style("top", (event.pageY - 28) + "px");
+    })
+    .on("mouseleave", () => {
+
+      lineTip.transition().duration(200).style("opacity", 0);
+    });
+
 
         svg.append("text") 
         .attr("transform", "rotate(-90)")
@@ -108,27 +142,5 @@ d3.csv("data/overall_arrests.csv").then(data => {
         .style("fill","#777")
         .attr("y", height + margin.bottom -8)
         .text("By:David Paiz-Torres")
-
-
-// BEGINING OF INTERACTIVITY // BEGINING OF INTERACTIVITY // BEGINING OF INTERACTIVITY // BEGINING OF INTERACTIVITY // BEGINING OF INTERACTIVITY // BEGINING OF INTERACTIVITY // BEGINING OF INTERACTIVITY // BEGINING OF INTERACTIVITY // BEGINING OF INTERACTIVITY 
-    const tooltip = d3.select("body")
-      .append("div")
-      .attr("class", "tooltip");
-    
-    const circle = svg.append("circle")
-    .attr("r", 0)
-    .attr("fill","steelblue")
-    .style("stroke", "white")
-    .attr("opacity", .70)
-    .style("pointer-events", "none");
-
-    const listeningRect = svg.append("rect")
-    .attr("width", width)
-    .attr("height", height);
-
-    listeningRect.on("mousemove", function(event){
-      const [xCoord] = d3.pointer(event, this);
-  
-    })
 
 });
