@@ -34,7 +34,7 @@ map.on('load', () => {
   
 // Map Title
     d3.select("#hed")
-    .text("Arrests for Sex Work Across NYC from 2014-2024")
+    .text("Arrests for Sex Work Across NYC from 2024")
     .style("top", "10px")
     .style("color", "gray")
     .style("text-align", "center") 
