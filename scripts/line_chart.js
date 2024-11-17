@@ -1,5 +1,5 @@
 
-const margin = {top: 30, right: 60, bottom: 60, left: 60},
+const margin = {top: 40, right: 60, bottom: 60, left: 60},
       width = 650 - margin.left - margin.right,
       height = 400 - margin.top - margin.bottom;
 
@@ -21,8 +21,7 @@ const lineTip = d3.select("body")
   .style("pointer-events", "none") 
   .style("opacity", 0);
 
-// Year Formatting – This is important, I was using the wrong time format and my tooltip was misaligned with both the x and y axis'
-const parseYear = d3.timeParse("%Y");
+const parseYear = d3.timeParse("%Y"); // I was using the wrong time format before and it cause my tooltip to be misaligned on both axis'
 
   d3.csv("data/overall_arrests.csv").then(data => {
       data.forEach(d => {
@@ -80,15 +79,13 @@ const parseYear = d3.timeParse("%Y");
     .call(g => g.select(".domain").remove());  // removes grid line from y-axis
     
     svg.selectAll(".grid line")
-    .style("stroke", "#777")
+    .style("stroke", "darkslategray")
     .style("stroke-dasharray", "1,1");
 
     svg.selectAll("line")
     .style("stroke-dasharray", "1,1")
-    .style("stroke", "#777")
+    .style("stroke", "darkslategray")
     
-    
-
 // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // 
 const dataLine = d3.line()
   .x(d => x(d.arrest_year))
@@ -99,7 +96,6 @@ svg.append("path")
   .attr("stroke", "darkred")
   .attr("stroke-width", 2.5)
   .attr("d", dataLine);
-
 
 // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine // 
 svg.selectAll("path")
@@ -147,12 +143,12 @@ svg.selectAll("path").style("pointer-events", "stroke")
     });
 // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // 
 
-  //Circle Transitions – DONT MOVE THIS – IT WILL BREAK THE MOUSE EVENTS IF IT GOES BEFORE THEM // //Circle Transitions – DONT MOVE THIS – IT WILL BREAK THE MOUSE EVENTS IF IT GOES BEFORE THEM //    //Circle Transitions – DONT MOVE THIS – IT WILL BREAK THE MOUSE EVENTS IF IT GOES BEFORE THEM //   
+//Circle Transitions – DONT MOVE THIS – IT WILL BREAK THE MOUSE EVENTS IF IT GOES BEFORE THEM // //Circle Transitions – DONT MOVE THIS – IT WILL BREAK THE MOUSE EVENTS IF IT GOES BEFORE THEM //    //Circle Transitions – DONT MOVE THIS – IT WILL BREAK THE MOUSE EVENTS IF IT GOES BEFORE THEM //   
   svg.selectAll("circle")
   .style("opacity", 0)
   .transition()
-  .duration(4000)
-  .delay((d, i) => i * 30)
+  .duration(3000)
+  .delay((d, i) => i * 500)
   .style("opacity", 1)
 // End of Circle Transitions // // End of Circle Transitions // // End of Circle Transitions // // End of Circle Transitions // // End of Circle Transitions // // End of Circle Transitions // 
 
@@ -163,32 +159,33 @@ svg.selectAll("path").style("pointer-events", "stroke")
         .attr("x", 0 - (height / 2))
         .attr("dy", "1em")
         .style("text-anchor", "middle")
-        .style("fill","#777")
+        .style("fill","darkslategray")
         .style("font-size", "14px")
-        .html(`<a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/about_data"> Arrests for Sex Work Offenses (2006-2024)</a>`);
+        .html(`<a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/about_data"> Arrests for All Offenses Related to Sex Work (2006-2024)</a>`);
     
         svg.append("text") 
         .attr("x", width  - 250)
-        .attr("x", 330 - margin.left)
-        .attr("y", height + margin.top - 345)
+        .attr("x", 330 - margin.left - 10)
+        .attr("y", height + margin.top - 360)
         .style("text-anchor", "middle")
-        .style("fill","#777")
+        .style("text-align", "center")
+        .style("fill","darkslategray")
         .style("font-size", "14px")
-        .html(`<a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/about_data"> Decrease in Arrests for Sex Work Related Offenses (2006-2024)</a>`);
+        .html(`<a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/about_data"> Decrease in Arrests for All Offenses Related to Sex Work (2006-2024)</a>`);
 
         svg.append("text")
         .attr("x", width - 350)
         .attr("y", height + margin.bottom -24)
         .style("font-size", "12px")
         .style("text-align", "center")
-        .style("fill","#777")
+        .style("fill","darkslategray")
         .html(`<a href="https://docs.google.com/spreadsheets/d/11Ge52fU1DwHbgF7b2fVX_7G5akqe3DsdU5l4bmEUKJo/edit?usp=sharing">Source: NYPD/NYC Open Data</a>`);
 
         svg.append("text")
         .style("font-size", "12px")
         .attr("x", width - 325)
         .style("text-align", "center")
-        .style("fill","#777")
+        .style("fill","darkslategray")
         .attr("y", height + margin.bottom -8)
         .html(`<a href="https://www.linkedin.com/in/david-paiz-torres-494b3614a/">By:David Paiz-Torres</a>`);
 });
