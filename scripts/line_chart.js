@@ -39,7 +39,7 @@ const parseYear = d3.timeParse("%Y");
         .domain([0, d3.max(data, d => d.total_arrests)])
         .range([height, 0]);
         
-
+// setting up the line chart's axis'
     // SVG x-axis
     svg.append("g")
         .attr("transform", `translate(0,${height})`)
@@ -52,29 +52,32 @@ const parseYear = d3.timeParse("%Y");
     .call(d3.axisLeft(y))
     .call(g => g.select(".domain").remove()) // Removes the y-axis line for a more sleek design
     .style("stroke", "none");
-  
+
+// Setting up the line chart's grid lines
     // Add X grid lines
     const xAxisGrid = d3.axisBottom(x)
     .tickSize(-height) 
     .tickFormat("")
- 
+
+  // append the x-grid lines 
     svg.append("g")
     .attr("class", "x grid")
     .attr("transform", `translate(0,${height})`)
     .call(xAxisGrid)
     .style("stroke", "none")
-    .call(g => g.select(".domain").remove())
+    .call(g => g.select(".domain").remove()) // removes grid line from x-axis
 
 
     // Add Y grid lines
     const yAxisGrid = d3.axisLeft(y)
     .tickSize(-width)    
     .tickFormat("") 
-    
+
+    // append the y-grid lines 
     svg.append("g")
     .attr("class", "y grid")
     .call(yAxisGrid)
-    .call(g => g.select(".domain").remove());
+    .call(g => g.select(".domain").remove());  // removes grid line from y-axis
     
     svg.selectAll(".grid line")
     .style("stroke", "#777")
@@ -93,11 +96,12 @@ const dataLine = d3.line()
 svg.append("path")
   .datum(data)
   .attr("fill", "none")
-  .attr("stroke", "steelblue")
+  .attr("stroke", "darkred")
   .attr("stroke-width", 2.5)
-  .attr("d", dataLine)
-  .attr("pointer-events","stroke");
+  .attr("d", dataLine);
 
+
+// Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine // 
 svg.selectAll("path")
   .attr('stroke-dasharray', function() {
     const length = this.getTotalLength();
@@ -109,9 +113,10 @@ svg.selectAll("path").style("pointer-events", "stroke")
     return length;
   })
   .transition()
-  .duration(4000)
-  .attr('stroke-dashoffset', 0);
-  
+  .duration(12000)
+  .attr('stroke-dashoffset', 0)
+  .attr("stroke","steelblue");
+//End of Transitions for DataLine // //End of Transitions for DataLine // //End of Transitions for DataLine // //End of Transitions for DataLine // //End of Transitions for DataLine // //End of Transitions for DataLine // //End of Transitions for DataLine // 
 // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // 
     svg.selectAll("circle")
         .data(data)
