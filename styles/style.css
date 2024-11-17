@@ -1,6 +1,7 @@
 
 body{
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
+    color:darkslategray;
 }
 #hed_dek_byline{
     text-align:center;
@@ -21,9 +22,6 @@ body{
     text-align:center;
     margin-bottom:30px;
 }
-/* .x path, .y path .x line, .y line {
-    display: none;
-} */
 
 #map-container{
     margin-top:30px;
@@ -39,6 +37,17 @@ body{
     max-width: 650px;
 }
 
+#hed{
+    font-size:28px;
+    margin-top:30px;
+    padding-top:30px;
+    margin-bottom:0;
+}
+#dek{
+    font-size: 20px;
+}
+    
+        
 rect{
     pointer-events:all;
     fill-opacity:0;
