@@ -9,6 +9,7 @@ const svg = d3.select("#container").append("svg")
   .append("g")
   .attr("transform", `translate(${margin.left},${margin.top})`);
 
+ 
 
 // Append the tooltip to the body
 const lineTip = d3.select("body")
@@ -94,6 +95,7 @@ svg.append("path")
   .attr("stroke", "steelblue")
   .attr("stroke-width", 2.5)
   .attr("d", line);
+  
 
     svg.selectAll("circle")
         .data(data)
