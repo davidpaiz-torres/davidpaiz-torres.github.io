@@ -161,7 +161,7 @@ svg.selectAll("path").style("pointer-events", "stroke")
         .style("text-anchor", "middle")
         .style("fill","#777")
         .style("font-size", "14px")
-        .html(`<a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/about_data"> Arrests for Sex Work Offenses (2006-2024)</a>`);
+        .html(`<a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/about_data"> Arrests for All Offenses Related to Sex Work (2006-2024)</a>`);
     
         svg.append("text") 
         .attr("x", width  - 250)
@@ -171,7 +171,7 @@ svg.selectAll("path").style("pointer-events", "stroke")
         .style("text-align", "center")
         .style("fill","#777")
         .style("font-size", "14px")
-        .html(`<a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/about_data"> Decrease in Arrests for Sex Work Related Offenses (2006-2024)</a>`);
+        .html(`<a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/about_data"> Decrease in Arrests for All Offenses Related to Sex Work (2006-2024)</a>`);
 
         svg.append("text")
         .attr("x", width - 350)
