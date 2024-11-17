@@ -33,7 +33,7 @@ map.on('load', () => {
 
   
 // Map Title
-    d3.select("#hed")
+    d3.select("#map_hed")
     .text("Arrests for Sex Work Across NYC from 2024")
     .style("top", "10px")
     .style("color", "gray")
