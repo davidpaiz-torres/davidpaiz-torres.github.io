@@ -9,10 +9,6 @@ const svg = d3.select("#container").append("svg")
   .append("g")
   .attr("transform", `translate(${margin.left},${margin.top})`);
 
-  
-
- 
-
 // Append the tooltip to the body
 const lineTip = d3.select("body")
   .append("div")
@@ -25,8 +21,7 @@ const lineTip = d3.select("body")
   .style("pointer-events", "none") 
   .style("opacity", 0);
 
-  
-
+// Year Formatting – This is important, I was using the wrong time format and my tooltip was misaligned with both the x and y axis'
 const parseYear = d3.timeParse("%Y");
 
   d3.csv("data/overall_arrests.csv").then(data => {
@@ -35,11 +30,11 @@ const parseYear = d3.timeParse("%Y");
           d.total_arrests = +d.total_arrests;
       });
       
-    
-      const x = d3.scaleTime()
+    // Time Scale
+    const x = d3.scaleTime()
       .domain([d3.min(data, d => d.arrest_year), d3.max(data, d => d.arrest_year)])
       .range([0, width]);
-
+    // Linear Scale
     const y = d3.scaleLinear()
         .domain([0, d3.max(data, d => d.total_arrests)])
         .range([height, 0]);
@@ -50,12 +45,12 @@ const parseYear = d3.timeParse("%Y");
         .attr("transform", `translate(0,${height})`)
         .call(d3.axisBottom(x))
         .style("stroke", "none")
-        .call(g => g.select(".domain").remove());
+        .call(g => g.select(".domain").remove()); // Removes the x-axis grid line for a more sleek design
 
-    // SVG y-axis
+    // SVG y-axis 
     svg.append("g")
     .call(d3.axisLeft(y))
-    .call(g => g.select(".domain").remove())
+    .call(g => g.select(".domain").remove()) // Removes the y-axis line for a more sleek design
     .style("stroke", "none");
   
     // Add X grid lines
@@ -76,7 +71,6 @@ const parseYear = d3.timeParse("%Y");
     .tickSize(-width)    
     .tickFormat("") 
     
-  
     svg.append("g")
     .attr("class", "y grid")
     .call(yAxisGrid)
@@ -90,9 +84,10 @@ const parseYear = d3.timeParse("%Y");
     .style("stroke-dasharray", "1,1")
     .style("stroke", "#777")
     
+    
 
-
-const line = d3.line()
+// Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // 
+const dataLine = d3.line()
   .x(d => x(d.arrest_year))
   .y(d => y(d.total_arrests));
 svg.append("path")
@@ -100,26 +95,35 @@ svg.append("path")
   .attr("fill", "none")
   .attr("stroke", "steelblue")
   .attr("stroke-width", 2.5)
-  .attr("d", line)
+  .attr("d", dataLine)
+  .attr("pointer-events","stroke");
 
-
-
+svg.selectAll("path")
+  .attr('stroke-dasharray', function() {
+    const length = this.getTotalLength();
+    return length + ' ' + length;
+  })
+svg.selectAll("path").style("pointer-events", "stroke")
+  .attr('stroke-dashoffset', function() {
+    const length = this.getTotalLength();
+    return length;
+  })
+  .transition()
+  .duration(4000)
+  .attr('stroke-dashoffset', 0);
+  
+// End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // 
     svg.selectAll("circle")
         .data(data)
         .enter()
         .append("circle")
         .attr("cx", d => x(d.arrest_year))
         .attr("cy", d => y(d.total_arrests))
-        .attr("r", 4.25)
+        .attr("r", 3.25)
         .attr("stroke", "whitesmoke")
         .attr("fill", "black")
-
-        .on("mouseenter", (event, d, i) => {
-          console.log("d:", d);
-          console.log("Year:", d.arrest_year.getFullYear());
-          console.log("x(d.arrest_year):", x(d.arrest_year));
-          console.log("y(d.total_arrests):", y(d.total_arrests));
-        
+  // Tooltip Mouse Events //   // Tooltip Mouse Events //   // Tooltip Mouse Events //   // Tooltip Mouse Events //   // Tooltip Mouse Events //   // Tooltip Mouse Events //   // Tooltip Mouse Events //   // Tooltip Mouse Events //   // Tooltip Mouse Events // 
+        .on("mouseenter", (event, d) => {
           lineTip.transition().duration(200).style("opacity", 0.9);
           lineTip.html(`
             <strong>Year:</strong> ${d.arrest_year.getFullYear()}<br>
@@ -136,7 +140,19 @@ svg.append("path")
     .on("mouseleave", () => {
       lineTip.transition().duration(200).style("opacity", 0);
     });
-        svg.append("text") 
+// End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // 
+
+  //Circle Transitions – DONT MOVE THIS – IT WILL BREAK THE MOUSE EVENTS IF IT GOES BEFORE THEM // //Circle Transitions – DONT MOVE THIS – IT WILL BREAK THE MOUSE EVENTS IF IT GOES BEFORE THEM //    //Circle Transitions – DONT MOVE THIS – IT WILL BREAK THE MOUSE EVENTS IF IT GOES BEFORE THEM //   
+  svg.selectAll("circle")
+  .style("opacity", 0)
+  .transition()
+  .duration(4000)
+  .delay((d, i) => i * 30)
+  .style("opacity", 1)
+// End of Circle Transitions // // End of Circle Transitions // // End of Circle Transitions // // End of Circle Transitions // // End of Circle Transitions // // End of Circle Transitions // 
+
+// Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // 
+    svg.append("text") 
         .attr("transform", "rotate(-90)")
         .attr("y", 0 - margin.left)
         .attr("x", 0 - (height / 2))
@@ -170,6 +186,5 @@ svg.append("path")
         .style("fill","#777")
         .attr("y", height + margin.bottom -8)
         .html(`<a href="https://www.linkedin.com/in/david-paiz-torres-494b3614a/">By:David Paiz-Torres</a>`);
-
 });
-
+// End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // 
