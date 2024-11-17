@@ -83,18 +83,17 @@ const parseYear = d3.timeParse("%Y");
     svg.selectAll("line")
     .style("stroke-dasharray", "1,1")
     .style("stroke", "#777")
-  
 
-    for (let i = 0; i < data.length - 1; i++) {
-        svg.append("line")
-        .attr("x1", x(data[i].arrest_year))
-        .attr("y1", y(data[i].total_arrests))
-        .attr("x2", x(data[i + 1].arrest_year))
-        .attr("y2", y(data[i + 1].total_arrests))
-        .attr("stroke", "darkred")
-        .attr("stroke-width", 1.75);
-    }
-    
+
+const line = d3.line()
+  .x(d => x(d.arrest_year))
+  .y(d => y(d.total_arrests));
+svg.append("path")
+  .datum(data)
+  .attr("fill", "none")
+  .attr("stroke", "steelblue")
+  .attr("stroke-width", 2.5)
+  .attr("d", line);
 
     svg.selectAll("circle")
         .data(data)
@@ -102,9 +101,9 @@ const parseYear = d3.timeParse("%Y");
         .append("circle")
         .attr("cx", d => x(d.arrest_year))
         .attr("cy", d => y(d.total_arrests))
-        .attr("r", 3.5)
+        .attr("r", 4.25)
         .attr("stroke", "whitesmoke")
-        .attr("fill", "darkred")
+        .attr("fill", "black")
 
         .on("mouseenter", (event, d, i) => {
           console.log("d:", d);
