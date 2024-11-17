@@ -27,7 +27,6 @@ body{
     margin-top:30px;
     margin-bottom:30px;
 }
-
  
 #map{ /* https://www.jawg.io/docs/integration/maplibre-gl-js/change-style/ – styling resources */ 
     min-height: 400px;
