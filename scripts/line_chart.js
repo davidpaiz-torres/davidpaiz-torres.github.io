@@ -79,12 +79,12 @@ const parseYear = d3.timeParse("%Y"); // I was using the wrong time format befor
     .call(g => g.select(".domain").remove());  // removes grid line from y-axis
     
     svg.selectAll(".grid line")
-    .style("stroke", "#777")
+    .style("stroke", "darkslategray")
     .style("stroke-dasharray", "1,1");
 
     svg.selectAll("line")
     .style("stroke-dasharray", "1,1")
-    .style("stroke", "#777")
+    .style("stroke", "darkslategray")
     
 // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // 
 const dataLine = d3.line()
@@ -159,7 +159,7 @@ svg.selectAll("path").style("pointer-events", "stroke")
         .attr("x", 0 - (height / 2))
         .attr("dy", "1em")
         .style("text-anchor", "middle")
-        .style("fill","#777")
+        .style("fill","darkslategray")
         .style("font-size", "14px")
         .html(`<a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/about_data"> Arrests for All Offenses Related to Sex Work (2006-2024)</a>`);
     
@@ -169,7 +169,7 @@ svg.selectAll("path").style("pointer-events", "stroke")
         .attr("y", height + margin.top - 360)
         .style("text-anchor", "middle")
         .style("text-align", "center")
-        .style("fill","#777")
+        .style("fill","darkslategray")
         .style("font-size", "14px")
         .html(`<a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/about_data"> Decrease in Arrests for All Offenses Related to Sex Work (2006-2024)</a>`);
 
@@ -178,14 +178,14 @@ svg.selectAll("path").style("pointer-events", "stroke")
         .attr("y", height + margin.bottom -24)
         .style("font-size", "12px")
         .style("text-align", "center")
-        .style("fill","#777")
+        .style("fill","darkslategray")
         .html(`<a href="https://docs.google.com/spreadsheets/d/11Ge52fU1DwHbgF7b2fVX_7G5akqe3DsdU5l4bmEUKJo/edit?usp=sharing">Source: NYPD/NYC Open Data</a>`);
 
         svg.append("text")
         .style("font-size", "12px")
         .attr("x", width - 325)
         .style("text-align", "center")
-        .style("fill","#777")
+        .style("fill","darkslategray")
         .attr("y", height + margin.bottom -8)
         .html(`<a href="https://www.linkedin.com/in/david-paiz-torres-494b3614a/">By:David Paiz-Torres</a>`);
 });
