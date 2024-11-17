@@ -1,4 +1,7 @@
 
+body{
+    background-color: whitesmoke;
+}
 #hed_dek_byline{
     text-align:center;
 }   
@@ -42,6 +45,7 @@ rect{
     stroke-opacity:0;
     z-index:1;
 }
+
 
 
 
