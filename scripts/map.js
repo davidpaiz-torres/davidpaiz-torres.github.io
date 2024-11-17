@@ -32,9 +32,7 @@ map.on('load', () => {
             });
 
        
-     
-
-
+    
             
 // Map Title
     d3.select("#map_hed")
