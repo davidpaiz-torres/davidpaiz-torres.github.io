@@ -9,6 +9,8 @@ const svg = d3.select("#container").append("svg")
   .append("g")
   .attr("transform", `translate(${margin.left},${margin.top})`);
 
+  
+
  
 
 // Append the tooltip to the body
@@ -23,6 +25,8 @@ const lineTip = d3.select("body")
   .style("pointer-events", "none") 
   .style("opacity", 0);
 
+  
+
 const parseYear = d3.timeParse("%Y");
 
   d3.csv("data/overall_arrests.csv").then(data => {
@@ -30,6 +34,7 @@ const parseYear = d3.timeParse("%Y");
           d.arrest_year = parseYear(d.arrest_year);
           d.total_arrests = +d.total_arrests;
       });
+      
     
       const x = d3.scaleTime()
       .domain([d3.min(data, d => d.arrest_year), d3.max(data, d => d.arrest_year)])
@@ -84,6 +89,7 @@ const parseYear = d3.timeParse("%Y");
     svg.selectAll("line")
     .style("stroke-dasharray", "1,1")
     .style("stroke", "#777")
+    
 
 
 const line = d3.line()
@@ -94,8 +100,9 @@ svg.append("path")
   .attr("fill", "none")
   .attr("stroke", "steelblue")
   .attr("stroke-width", 2.5)
-  .attr("d", line);
-  
+  .attr("d", line)
+
+
 
     svg.selectAll("circle")
         .data(data)
@@ -165,3 +172,4 @@ svg.append("path")
         .html(`<a href="https://www.linkedin.com/in/david-paiz-torres-494b3614a/">By:David Paiz-Torres</a>`);
 
 });
+
