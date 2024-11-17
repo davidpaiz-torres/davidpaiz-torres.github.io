@@ -23,29 +23,40 @@ map.on('load', () => {
     map.loadImage('media/Icons/87952_handcuffs_icon.ico', function (error, image) {
         if (error) throw error;
         map.addImage('icon', image);
-        map.addSource('points', {
-            type: 'geojson',
-            data: `../data/coords.geojson`,
-            cluster:true,
-            clusterMaxZoom:14,
-            clusterRadius:80,
-        });
+            map.addSource('points', {
+                type: 'geojson',
+                data: `../data/coords.geojson`,
+                cluster:true,
+                clusterMaxZoom:14,
+                clusterRadius:80,
+            });
 
-  
+       
+    
+            
 // Map Title
     d3.select("#map_hed")
     .text("Arrests for Sex Work Across NYC from 2024")
     .style("top", "10px")
-    .style("color", "gray")
+    .style("color", "darkslategray")
     .style("text-align", "center") 
     .style("font-size", "14px")
+ 
     
     d3.select("#map_byline")
     .text("By: David Paiz-Torres")
     .style("bottom", "20")  
     .style("font-size", "14px")
-    .style("color", "gray")
+    .style("color", "darkslategray")
     .style("text-align", "center")
+    
+    // d3.select("#map_button")
+    // .html("<input id=\"search-box\" type=\"text\" placeholder=\"Search for an address in NYC\" />" +
+    // "<button id=\"search-button\">Search</button>")
+    // .attr("class", "map_button")
+    // .style("color", "darkslategray")
+    // .style("top", "10px")
+    // .style("font-size", "14px");
 
     
         
@@ -114,7 +125,7 @@ map.on('load', () => {
                 'circle-color': 'darkred',
                 'circle-radius':2.5,
                 'circle-stroke-width':1,
-                'circle-stroke-color': '#fff'
+                'circle-stroke-color': 'darkslategray'
             }
         });
     });
@@ -151,5 +162,3 @@ map.on('mouseleave', 'unclustered-point', () => {
     map.getCanvas().style.cursor = '';
 });
 
-// Add zoom and rotation controls to the map.
-map.addControl(new maplibregl.NavigationControl());

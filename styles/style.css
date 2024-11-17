@@ -3,6 +3,10 @@ body{
     background-color: #f5f5f5;
     color:darkslategray;
 }
+a{
+    color:darkslategray;
+    text-decoration: none;
+}
 #hed_dek_byline{
     text-align:center;
 }   
@@ -27,7 +31,6 @@ body{
     margin-top:30px;
     margin-bottom:30px;
 }
-
  
 #map{ /* https://www.jawg.io/docs/integration/maplibre-gl-js/change-style/ – styling resources */ 
     min-height: 400px;
@@ -54,7 +57,6 @@ rect{
     stroke-opacity:0;
     z-index:1;
 }
-
 
 
 
