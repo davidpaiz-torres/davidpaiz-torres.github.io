@@ -3,6 +3,10 @@ body{
     background-color: #f5f5f5;
     color:darkslategray;
 }
+a{
+    color:darkslategray;
+    text-decoration: none;
+}
 #hed_dek_byline{
     text-align:center;
 }   
