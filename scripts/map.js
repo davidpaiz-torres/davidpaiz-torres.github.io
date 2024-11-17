@@ -38,7 +38,7 @@ map.on('load', () => {
     d3.select("#map_hed")
     .text("Arrests for Sex Work Across NYC from 2024")
     .style("top", "10px")
-    .style("color", "gray")
+    .style("color", "darkslategray")
     .style("text-align", "center") 
     .style("font-size", "14px")
  
@@ -47,14 +47,14 @@ map.on('load', () => {
     .text("By: David Paiz-Torres")
     .style("bottom", "20")  
     .style("font-size", "14px")
-    .style("color", "gray")
+    .style("color", "darkslategray")
     .style("text-align", "center")
     
     // d3.select("#map_button")
     // .html("<input id=\"search-box\" type=\"text\" placeholder=\"Search for an address in NYC\" />" +
     // "<button id=\"search-button\">Search</button>")
     // .attr("class", "map_button")
-    // .style("color", "gray")
+    // .style("color", "darkslategray")
     // .style("top", "10px")
     // .style("font-size", "14px");
 
@@ -125,7 +125,7 @@ map.on('load', () => {
                 'circle-color': 'darkred',
                 'circle-radius':2.5,
                 'circle-stroke-width':1,
-                'circle-stroke-color': '#fff'
+                'circle-stroke-color': 'darkslategray'
             }
         });
     });
