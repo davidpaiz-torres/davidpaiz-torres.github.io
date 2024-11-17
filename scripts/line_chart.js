@@ -22,18 +22,14 @@ const lineTip = d3.select("body")
   .style("pointer-events", "none") 
   .style("opacity", 0);
 
-
-
-
-
-  const parseYear = d3.timeParse("%Y");
+const parseYear = d3.timeParse("%Y");
 
   d3.csv("data/overall_arrests.csv").then(data => {
       data.forEach(d => {
           d.arrest_year = parseYear(d.arrest_year);
           d.total_arrests = +d.total_arrests;
       });
-
+    
       const x = d3.scaleTime()
       .domain([d3.min(data, d => d.arrest_year), d3.max(data, d => d.arrest_year)])
       .range([0, width]);
@@ -41,38 +37,53 @@ const lineTip = d3.select("body")
     const y = d3.scaleLinear()
         .domain([0, d3.max(data, d => d.total_arrests)])
         .range([height, 0]);
+        
 
     // SVG x-axis
     svg.append("g")
         .attr("transform", `translate(0,${height})`)
-        .call(d3.axisBottom(x));
+        .call(d3.axisBottom(x))
+        .style("stroke", "none")
+        .call(g => g.select(".domain").remove());
 
     // SVG y-axis
     svg.append("g")
-    .call(d3.axisLeft(y));
-
+    .call(d3.axisLeft(y))
+    .call(g => g.select(".domain").remove())
+    .style("stroke", "none");
+  
     // Add X grid lines
     const xAxisGrid = d3.axisBottom(x)
     .tickSize(-height) 
-    .tickFormat("")     
-
+    .tickFormat("")
+ 
     svg.append("g")
     .attr("class", "x grid")
     .attr("transform", `translate(0,${height})`)
-    .call(xAxisGrid);
+    .call(xAxisGrid)
+    .style("stroke", "none")
+    .call(g => g.select(".domain").remove())
+
 
     // Add Y grid lines
     const yAxisGrid = d3.axisLeft(y)
     .tickSize(-width)    
     .tickFormat("") 
-
+    
+  
     svg.append("g")
     .attr("class", "y grid")
-    .call(yAxisGrid);
+    .call(yAxisGrid)
+    .call(g => g.select(".domain").remove());
     
     svg.selectAll(".grid line")
     .style("stroke", "#777")
     .style("stroke-dasharray", "1,1");
+
+    svg.selectAll("line")
+    .style("stroke-dasharray", "1,1")
+    .style("stroke", "#777")
+  
 
     for (let i = 0; i < data.length - 1; i++) {
         svg.append("line")
@@ -81,16 +92,18 @@ const lineTip = d3.select("body")
         .attr("x2", x(data[i + 1].arrest_year))
         .attr("y2", y(data[i + 1].total_arrests))
         .attr("stroke", "darkred")
-        .attr("stroke-width", 1.5);
+        .attr("stroke-width", 1.75);
     }
+    
+
     svg.selectAll("circle")
         .data(data)
         .enter()
         .append("circle")
         .attr("cx", d => x(d.arrest_year))
         .attr("cy", d => y(d.total_arrests))
-        .attr("r", 2.5)
-        .attr("stroke", "black")
+        .attr("r", 3.5)
+        .attr("stroke", "whitesmoke")
         .attr("fill", "darkred")
 
         .on("mouseenter", (event, d, i) => {
@@ -113,11 +126,8 @@ const lineTip = d3.select("body")
             .style("top", (event.pageY) + "px");
     })
     .on("mouseleave", () => {
-
       lineTip.transition().duration(200).style("opacity", 0);
     });
-
-  
         svg.append("text") 
         .attr("transform", "rotate(-90)")
         .attr("y", 0 - margin.left)
@@ -126,7 +136,7 @@ const lineTip = d3.select("body")
         .style("text-anchor", "middle")
         .style("fill","#777")
         .style("font-size", "14px")
-        .text("Arrests for Sex Work Offenses (2006-2024)");
+        .html(`<a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/about_data"> Arrests for Sex Work Offenses (2006-2024)</a>`);
     
         svg.append("text") 
         .attr("x", width  - 250)
@@ -135,7 +145,7 @@ const lineTip = d3.select("body")
         .style("text-anchor", "middle")
         .style("fill","#777")
         .style("font-size", "14px")
-        .text("Decrease in Arrests for Sex Work Related Offenses (2006-2024)");
+        .html(`<a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/about_data"> Decrease in Arrests for Sex Work Related Offenses (2006-2024)</a>`);
 
         svg.append("text")
         .attr("x", width - 350)
@@ -143,7 +153,7 @@ const lineTip = d3.select("body")
         .style("font-size", "12px")
         .style("text-align", "center")
         .style("fill","#777")
-        .text("Source: NYPD/NYC Open Data");
+        .html(`<a href="https://docs.google.com/spreadsheets/d/11Ge52fU1DwHbgF7b2fVX_7G5akqe3DsdU5l4bmEUKJo/edit?usp=sharing">Source: NYPD/NYC Open Data</a>`);
 
         svg.append("text")
         .style("font-size", "12px")
@@ -151,6 +161,6 @@ const lineTip = d3.select("body")
         .style("text-align", "center")
         .style("fill","#777")
         .attr("y", height + margin.bottom -8)
-        .text("By:David Paiz-Torres")
+        .html(`<a href="https://www.linkedin.com/in/david-paiz-torres-494b3614a/">By:David Paiz-Torres</a>`);
 
 });
