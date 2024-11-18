@@ -30,9 +30,6 @@ map.on('load', () => {
                 clusterMaxZoom:14,
                 clusterRadius:80,
             });
-
-       
-    
             
 // Map Title
     d3.select("#map_hed")
@@ -45,7 +42,7 @@ map.on('load', () => {
     
     d3.select("#map_byline")
     .text("By: David Paiz-Torres")
-    .style("bottom", "20")  
+    .style("bottom", "20")
     .style("font-size", "14px")
     .style("color", "darkslategray")
     .style("text-align", "center")
