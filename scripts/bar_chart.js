@@ -8,6 +8,18 @@ const bar_margin = {top: 40, right: 60, bottom: 60, left: 60},
       .append("g")
       .attr("transform", `translate(${bar_margin.left},${bar_margin.top})`); 1 
       
-      d3.csv("data/arrests_by_demographics.csv").then(data => {
-        
-      });
+ d3.csv("data/arrests_by_demographics.csv").then(loadedData => {
+
+  data.forEach(d => {
+    ageGroup = +d.AGE_GROUP,
+    sex = +d.PERP_SEX,
+    race = +d.PERP_RACE,
+    year = +d.ARREST_YEAR,
+    description = +d.PD_DESC
+});
+
+
+
+
+  createBarChart(data);
+});
