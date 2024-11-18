@@ -35,9 +35,9 @@ d3.csv("data/demographics.csv").then(function(data){
       d.arrest_year = parseYear(d.arrest_year);
     });
 
-  const maxCount = d3.max(data, d => d.count);
+
   const barLength = d3.scaleLinear()
-    .domain([0, 21000])
+    .domain([0, 21025])
     .range([0, bar_width]);
 
   barChart.selectAll('rect')
@@ -63,6 +63,9 @@ d3.csv("data/demographics.csv").then(function(data){
 //     .attr("fill", "orangered");
 
 // });
+
+
+
 
 // Tooltip on hover
   .on("mouseenter", (event, d) => {
