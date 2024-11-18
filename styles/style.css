@@ -10,12 +10,7 @@ a{
 #hed_dek_byline{
     text-align:center;
 }   
-#hed_dek_byline h1{
-    font-size:40px;
-}
-#hed_dek_byline h2{
-      font-size:35px;
-}      
+
 #story_body{
     margin-right:auto;
     margin-left:auto;
@@ -51,13 +46,6 @@ a{
 }
     
         
-rect{
-    pointer-events:all;
-    fill-opacity:0;
-    stroke-opacity:0;
-    z-index:1;
-}
-
 
 
 @media (min-width: 2440px), screen and (orientation: portrait), not (orientation:landscape){
