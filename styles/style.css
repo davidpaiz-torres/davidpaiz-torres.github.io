@@ -8,17 +8,19 @@ a{
     text-decoration: none;
 }
 #hed_dek_byline{
-    text-align:center;
+    text-align: center;
 }   
 
 #story_body{
     margin-right:auto;
     margin-left:auto;
     max-width:650px;
+    
 }
 
 #byline{
     text-align:center;
+    margin-top:10px;
     margin-bottom:30px;
 }
 
