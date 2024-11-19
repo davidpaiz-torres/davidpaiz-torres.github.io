@@ -80,10 +80,10 @@ const parseYear = d3.timeParse("%Y"); // I was using the wrong time format befor
     
     svg.selectAll(".grid line")
     .style("stroke", "darkslategray")
-    .style("stroke-dasharray", "1,1");
+    .style("stroke-dasharray", "1.25,5"); //first draft was set to "1,1"
 
     svg.selectAll("line")
-    .style("stroke-dasharray", "1,1")
+    .style("stroke-dasharray", "1.25,5") //first draft was set to "1,1"
     .style("stroke", "darkslategray")
     
 // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // 
@@ -182,11 +182,11 @@ svg.selectAll("path").style("pointer-events", "stroke")
         .html(`<a href="https://docs.google.com/spreadsheets/d/11Ge52fU1DwHbgF7b2fVX_7G5akqe3DsdU5l4bmEUKJo/edit?usp=sharing">Source: NYPD/NYC Open Data</a>`);
 
         svg.append("text")
-        .style("font-size", "12px")
         .attr("x", width - 325)
+        .attr("y", height + margin.bottom -8)
+        .style("font-size", "12px")
         .style("text-align", "center")
         .style("fill","darkslategray")
-        .attr("y", height + margin.bottom -8)
         .html(`<a href="https://www.linkedin.com/in/david-paiz-torres-494b3614a/">By:David Paiz-Torres</a>`);
 });
 // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // 
