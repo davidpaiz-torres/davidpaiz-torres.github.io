@@ -61,7 +61,7 @@ map.on('load', () => {
     fetch('../data/coords.geojson')
     .then(response => response.json())
     .then(data => {
-        const years = [2024];
+        const years = [2024]; //Leaving this at 2024 for now, will likely create a button so you can swap between years
         const filteredFeatures = data.features.filter(feature => years.includes(feature.properties.Arrest_Year));
         const filteredData = { ...data, features: filteredFeatures };
         map.getSource('points').setData(filteredData);
