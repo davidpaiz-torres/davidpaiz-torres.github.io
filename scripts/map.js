@@ -30,9 +30,6 @@ map.on('load', () => {
                 clusterMaxZoom:14,
                 clusterRadius:80,
             });
-
-       
-    
             
 // Map Title
     d3.select("#map_hed")
@@ -45,7 +42,7 @@ map.on('load', () => {
     
     d3.select("#map_byline")
     .text("By: David Paiz-Torres")
-    .style("bottom", "20")  
+    .style("bottom", "20")
     .style("font-size", "14px")
     .style("color", "darkslategray")
     .style("text-align", "center")
@@ -64,7 +61,7 @@ map.on('load', () => {
     fetch('../data/coords.geojson')
     .then(response => response.json())
     .then(data => {
-        const years = [2024];
+        const years = [2024]; //Leaving this at 2024 for now, will likely create a button so you can swap between years
         const filteredFeatures = data.features.filter(feature => years.includes(feature.properties.Arrest_Year));
         const filteredData = { ...data, features: filteredFeatures };
         map.getSource('points').setData(filteredData);
