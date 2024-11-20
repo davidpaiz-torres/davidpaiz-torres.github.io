@@ -1,5 +1,11 @@
 const key = 'Mg7VoPbeXwKcbPfM9nJ5'
 
+// Function to add a random offset to coordinates
+function addRandomOffset(coordinates) {
+    const offset = Math.random() * 0.0003;``
+    const [lng, lat] = coordinates;
+    return [lng + offset, lat + offset];
+}
 
 // Sets the map boundaries
 const bounds = [
@@ -13,7 +19,7 @@ const map = new maplibregl.Map({
     container: 'map',
     style: `https://api.maptiler.com/maps/hybrid/style.json?key=${key}`,
     center: [-73.867081, 40.749497],
-    zoom: 0,
+    zoom: 3,
     maxBounds: bounds, // restricts the map from being zoomed out past the "bounds" 
     trackResize:true,
 }); 
@@ -39,23 +45,12 @@ map.on('load', () => {
     .style("text-align", "center") 
     .style("font-size", "14px")
  
-    
     d3.select("#map_byline")
     .text("By: David Paiz-Torres")
     .style("bottom", "20")
     .style("font-size", "14px")
     .style("color", "darkslategray")
     .style("text-align", "center")
-    
-    // d3.select("#map_button")
-    // .html("<input id=\"search-box\" type=\"text\" placeholder=\"Search for an address in NYC\" />" +
-    // "<button id=\"search-button\">Search</button>")
-    // .attr("class", "map_button")
-    // .style("color", "darkslategray")
-    // .style("top", "10px")
-    // .style("font-size", "14px");
-
-    
         
 // Filter Arrest Data by year
     fetch('../data/coords.geojson')
@@ -64,19 +59,17 @@ map.on('load', () => {
         const years = [2024]; //Leaving this at 2024 for now, will likely create a button so you can swap between years
         const filteredFeatures = data.features.filter(feature => years.includes(feature.properties.Arrest_Year));
         const filteredData = { ...data, features: filteredFeatures };
+
+        // Add random offset to coordinates
+        filteredData.features.forEach(feature => {
+            feature.geometry.coordinates = addRandomOffset(feature.geometry.coordinates);
+        });
+
         map.getSource('points').setData(filteredData);
     });
 
         
-        map.addLayer({
-            id: 'Points',
-            type: 'symbol',
-            source: 'points',
-            layout: {
-                'icon-image': 'icon',
-                'icon-size': 0.005,
-            }
-        });
+     
         map.addLayer({
             id:'clusters',
             type:'circle',
@@ -87,9 +80,9 @@ map.on('load', () => {
                     'step',
                     ['get', 'point_count'],
                     'orange',
-                    5,
+                    100,
                     'orangered',
-                    150,
+                    750,
                     'darkred'
                 ],
                 'circle-radius': [
@@ -120,7 +113,7 @@ map.on('load', () => {
             filter:['!',['has','point_count']],
             paint:{
                 'circle-color': 'darkred',
-                'circle-radius':2.5,
+                'circle-radius':4,
                 'circle-stroke-width':1,
                 'circle-stroke-color': 'darkslategray'
             }
@@ -146,7 +139,9 @@ map.on('mouseenter', 'unclustered-point', (e) => {
     <strong>Borough:</strong> ${e.features[0].properties.ARREST_BORO} <br>
     <strong>Date:</strong> ${e.features[0].properties.Arrest_Year} <br>
     <strong>Race:</strong> ${e.features[0].properties.PERP_RACE} <br>
-    <strong>Age Group:</strong> ${e.features[0].properties.AGE_GROUP}
+    <strong>Sex:</strong> ${e.features[0].properties.PERP_SEX} <br>
+    <strong>Age Group:</strong> ${e.features[0].properties.AGE_GROUP} <br>
+    <strong>Arrest Key:</strong> ${e.features[0].properties.ARREST_KEY}
   `);
 });
 
@@ -158,4 +153,3 @@ map.on('mouseleave', 'unclustered-point', () => {
 map.on('mouseleave', 'unclustered-point', () => {
     map.getCanvas().style.cursor = '';
 });
-
