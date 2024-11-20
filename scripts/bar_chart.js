@@ -30,12 +30,12 @@ d3.csv("data/demographics.csv").then(function(data) {
 // get counts for the datappints + sort them in descending order
   const raceCounts = d3.rollup(data, v => v.length, d => d.PERP_RACE);
   const raceCountArray = Array.from(raceCounts.entries())
-    .sort((a, b) => b[1] - a[1]); 
-
+    .sort((a, b) => b[1] - a[1]); // sort the data in descending order 
+ 
   // scales
   const x = d3.scaleLinear()
     .domain([0, d3.max(raceCountArray, d => d[1])])
-    .range([0, bar_width]);
+    .range([5, bar_width]);
 
   const y = d3.scaleBand()
     .range([0, bar_height])
@@ -83,3 +83,28 @@ d3.csv("data/demographics.csv").then(function(data) {
   barChart.append("g")
     .call(d3.axisLeft(y));
 });
+
+barChart.append("text") 
+.attr("x", 330 - bar_margin.left - 50)
+.attr("y", bar_height + bar_margin.top - 333)
+.style("text-align", "center")
+.style("fill","darkslategray")
+.style("font-size", "14px")
+.html(`<a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/about_data"> Demographics Arrested at Highest Rate for Prostitution (2006-2024)</a>`);
+
+
+barChart.append("text")
+.attr("x", bar_width - 330)
+.attr("y", bar_height + bar_margin.bottom -30)
+.style("font-size", "12px")
+.style("text-align", "center")
+.style("fill","darkslategray")
+.html(`<a href="https://docs.google.com/spreadsheets/d/11Ge52fU1DwHbgF7b2fVX_7G5akqe3DsdU5l4bmEUKJo/edit?usp=sharing">Source: NYPD/NYC Open Data</a>`);
+
+barChart.append("text")
+  .attr("x", bar_width - 300)
+  .attr("y", bar_height + bar_margin.bottom -15)
+  .style("font-size", "12px")
+  .style("text-align", "center")
+  .style("fill","darkslategray")
+  .html(`<a href="https://www.linkedin.com/in/david-paiz-torres-494b3614a/">By:David Paiz-Torres</a>`);
