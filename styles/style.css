@@ -9,6 +9,12 @@ a{
     color:darkslategray;
     text-decoration: none;
 }
+
+#filter-container{
+   display:flex;
+   margin-top:1px;
+   justify-content: center;
+}
 #hed_dek_byline{
     text-align: center;
 }   
