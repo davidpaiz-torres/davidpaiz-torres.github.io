@@ -75,13 +75,28 @@ d3.csv("data/demographics.csv").then(function(data) {
   barChart.append("g")
     .attr("transform", `translate(0,${bar_height})`)
     .call(d3.axisBottom(x))
+    
     .selectAll("text")
       .attr("transform", "translate(0,0)rotate(-45)")
       .style("text-anchor", "end");
 
   // Y axis
   barChart.append("g")
-    .call(d3.axisLeft(y));
+    .call(d3.axisLeft(y))
+    .call(g => g.select(".domain").remove());
+
+    barChart.selectAll("line.vertical-grid")
+    .data(x.ticks(4))
+    .enter()
+    .append("line")
+    .attr("class", "vertical-grid")
+    .attr("x1", function (d) { return x(d); })
+    .attr("y1", 30) // Reduces height of gridlines from top so they don't go past the bars.
+    .attr("x2", function (d) { return x(d); })
+    .attr("y2", bar_height )
+    .style("stroke", "gray")
+    .style("stroke-width", 0.5)
+    .style("stroke-dasharray", "2 2");
 });
 
 barChart.append("text") 
