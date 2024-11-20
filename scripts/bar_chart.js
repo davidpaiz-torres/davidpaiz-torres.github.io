@@ -56,7 +56,7 @@ d3.csv("data/demographics.csv").then(function(data) {
     .on("mouseenter", (event, d) => {
       barTip.transition().duration(200).style("opacity", 0.9);
       barTip.html(`
-        <strong>Race Count:</strong> ${d[1]}<br>
+        <strong>Total Arrests:</strong> ${d[1]}<br>
       `)
         .style("top", (event.pageY - 28) + "px")
         .style("left", (event.pageX + 10) + "px");
