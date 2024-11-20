@@ -80,10 +80,10 @@ const parseYear = d3.timeParse("%Y"); // I was using the wrong time format befor
     
     svg.selectAll(".grid line")
     .style("stroke", "darkslategray")
-    .style("stroke-dasharray", "1.25,5"); //first draft was set to "1,1"
+    .style("stroke-dasharray", "1,1"); //first draft was set to "1,1"
 
     svg.selectAll("line")
-    .style("stroke-dasharray", "1.25,5") //first draft was set to "1,1"
+    .style("stroke-dasharray", "1,1") //first draft was set to "1,1"
     .style("stroke", "darkslategray")
     
 // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // // Start of DataLine  // 
