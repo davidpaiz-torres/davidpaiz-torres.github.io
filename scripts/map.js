@@ -2,7 +2,7 @@ const key = 'Mg7VoPbeXwKcbPfM9nJ5'
 
 // Function to add a random offset to coordinates
 function addRandomOffset(coordinates) {
-    const offset = Math.random() * 0.0003;``
+    const offset = Math.random() * 0.0007;``
     const [lng, lat] = coordinates;
     return [lng + offset, lat + offset];
 }
