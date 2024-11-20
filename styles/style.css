@@ -19,6 +19,12 @@ a{
     max-width:650px;
 }
 
+#bar_container{
+    margin-right:auto;
+    margin-left:auto;
+    display: flex;
+    justify-content: center;
+}
 #adams_clip{
     display: flex;
     justify-content: center;
