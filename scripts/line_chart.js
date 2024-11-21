@@ -1,9 +1,10 @@
 
+
 const margin = {top: 40, right: 60, bottom: 60, left: 60},
       width = 650 - margin.left - margin.right,
       height = 400 - margin.top - margin.bottom;
 
-const svg = d3.select("#container").append("svg")
+const lineChart = d3.select("#container").append("svg")
   .attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
   .append("g")
@@ -21,13 +22,15 @@ const lineTip = d3.select("body")
   .style("pointer-events", "none") 
   .style("opacity", 0);
 
-const parseYear = d3.timeParse("%Y"); // I was using the wrong time format before and it cause my tooltip to be misaligned on both axis'
+  
+const parseYear = d3.timeParse("%Y"); // I was using the wrong time format before and it caused my tooltip to be misaligned on both axis'
 
   d3.csv("data/overall_arrests.csv").then(data => {
       data.forEach(d => {
           d.arrest_year = parseYear(d.arrest_year);
           d.total_arrests = +d.total_arrests;
       });
+      
       
     // Time Scale
     const x = d3.scaleTime()
@@ -40,14 +43,14 @@ const parseYear = d3.timeParse("%Y"); // I was using the wrong time format befor
         
 // setting up the line chart's axis'
     // SVG x-axis
-    svg.append("g")
+    lineChart.append("g")
         .attr("transform", `translate(0,${height})`)
         .call(d3.axisBottom(x))
         .style("stroke", "none")
         .call(g => g.select(".domain").remove()); // Removes the x-axis grid line for a more sleek design
 
-    // SVG y-axis 
-    svg.append("g")
+  // SVG y-axis 
+    lineChart.append("g")
     .call(d3.axisLeft(y))
     .call(g => g.select(".domain").remove()) // Removes the y-axis line for a more sleek design
     .style("stroke", "none");
@@ -59,7 +62,7 @@ const parseYear = d3.timeParse("%Y"); // I was using the wrong time format befor
     .tickFormat("")
 
   // append the x-grid lines 
-    svg.append("g")
+    lineChart.append("g")
     .attr("class", "x grid")
     .attr("transform", `translate(0,${height})`)
     .call(xAxisGrid)
@@ -73,16 +76,16 @@ const parseYear = d3.timeParse("%Y"); // I was using the wrong time format befor
     .tickFormat("") 
 
     // append the y-grid lines 
-    svg.append("g")
+    lineChart.append("g")
     .attr("class", "y grid")
     .call(yAxisGrid)
     .call(g => g.select(".domain").remove());  // removes grid line from y-axis
     
-    svg.selectAll(".grid line")
+    lineChart.selectAll(".grid line")
     .style("stroke", "darkslategray")
     .style("stroke-dasharray", "1,1"); //first draft was set to "1,1"
 
-    svg.selectAll("line")
+    lineChart.selectAll("line")
     .style("stroke-dasharray", "1,1") //first draft was set to "1,1"
     .style("stroke", "darkslategray")
     
@@ -90,31 +93,31 @@ const parseYear = d3.timeParse("%Y"); // I was using the wrong time format befor
 const dataLine = d3.line()
   .x(d => x(d.arrest_year))
   .y(d => y(d.total_arrests));
-svg.append("path")
+lineChart.append("path")
   .datum(data)
   .attr("fill", "none")
-  .attr("stroke", "darkred")
+  .attr("stroke", "steelblue")
   .attr("stroke-width", 2.5)
   .attr("d", dataLine);
 
 // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine // 
-svg.selectAll("path")
-  .attr('stroke-dasharray', function() {
-    const length = this.getTotalLength();
-    return length + ' ' + length;
-  })
-svg.selectAll("path").style("pointer-events", "stroke")
-  .attr('stroke-dashoffset', function() {
-    const length = this.getTotalLength();
-    return length;
-  })
-  .transition()
-  .duration(12000)
-  .attr('stroke-dashoffset', 0)
-  .attr("stroke","steelblue");
+// lineChart.selectAll("path")
+//   .attr('stroke-dasharray', function() {
+//     const length = this.getTotalLength();
+//     return length + ' ' + length;
+//   })
+// lineChart.selectAll("path").style("pointer-events", "stroke")
+//   .attr('stroke-dashoffset', function() {
+//     const length = this.getTotalLength();
+//     return length;
+//   })
+//   .transition()
+//   .duration(12000)
+//   .attr('stroke-dashoffset', 0)
+//   .attr("stroke","steelblue");
 //End of Transitions for DataLine // //End of Transitions for DataLine // //End of Transitions for DataLine // //End of Transitions for DataLine // //End of Transitions for DataLine // //End of Transitions for DataLine // //End of Transitions for DataLine // 
 // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // 
-    svg.selectAll("circle")
+    lineChart.selectAll("circle")
         .data(data)
         .enter()
         .append("circle")
@@ -144,16 +147,16 @@ svg.selectAll("path").style("pointer-events", "stroke")
 // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // 
 
 //Circle Transitions – DONT MOVE THIS – IT WILL BREAK THE MOUSE EVENTS IF IT GOES BEFORE THEM // //Circle Transitions – DONT MOVE THIS – IT WILL BREAK THE MOUSE EVENTS IF IT GOES BEFORE THEM //    //Circle Transitions – DONT MOVE THIS – IT WILL BREAK THE MOUSE EVENTS IF IT GOES BEFORE THEM //   
-  svg.selectAll("circle")
-  .style("opacity", 0)
-  .transition()
-  .duration(3000)
-  .delay((d, i) => i * 500)
-  .style("opacity", 1)
+  // lineChart.selectAll("circle")
+  // .style("opacity", 0)
+  // .transition()
+  // .duration(3000)
+  // .delay((d, i) => i * 500)
+  // .style("opacity", 1)
 // End of Circle Transitions // // End of Circle Transitions // // End of Circle Transitions // // End of Circle Transitions // // End of Circle Transitions // // End of Circle Transitions // 
 
 // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // 
-    svg.append("text") 
+    lineChart.append("text") 
         .attr("transform", "rotate(-90)")
         .attr("y", 0 - margin.left)
         .attr("x", 0 - (height / 2))
@@ -163,7 +166,7 @@ svg.selectAll("path").style("pointer-events", "stroke")
         .style("font-size", "14px")
         .html(`<a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/about_data"> Arrests for All Offenses Related to Sex Work (2006-2024)</a>`);
     
-        svg.append("text") 
+        lineChart.append("text") 
         .attr("x", width  - 250)
         .attr("x", 330 - margin.left - 10)
         .attr("y", height + margin.top - 360)
@@ -173,7 +176,7 @@ svg.selectAll("path").style("pointer-events", "stroke")
         .style("font-size", "14px")
         .html(`<a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/about_data"> Decrease in Arrests for All Offenses Related to Sex Work (2006-2024)</a>`);
 
-        svg.append("text")
+        lineChart.append("text")
         .attr("x", width - 350)
         .attr("y", height + margin.bottom -24)
         .style("font-size", "12px")
@@ -181,12 +184,14 @@ svg.selectAll("path").style("pointer-events", "stroke")
         .style("fill","darkslategray")
         .html(`<a href="https://docs.google.com/spreadsheets/d/11Ge52fU1DwHbgF7b2fVX_7G5akqe3DsdU5l4bmEUKJo/edit?usp=sharing">Source: NYPD/NYC Open Data</a>`);
 
-        svg.append("text")
+        lineChart.append("text")
         .attr("x", width - 325)
         .attr("y", height + margin.bottom -8)
         .style("font-size", "12px")
         .style("text-align", "center")
         .style("fill","darkslategray")
         .html(`<a href="https://www.linkedin.com/in/david-paiz-torres-494b3614a/">By:David Paiz-Torres</a>`);
+        
 });
 // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // 
+
