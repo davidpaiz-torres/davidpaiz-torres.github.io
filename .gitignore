@@ -6,3 +6,4 @@ python
 *.ipynb
 pandas_stuff/data.ipynb
 bar_chart_backup.js
+demographic_rates.csv
