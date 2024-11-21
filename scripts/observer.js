@@ -1,6 +1,5 @@
 const line_observe = document.querySelector("#container");
 let hasAnimated = false;
-
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting && !hasAnimated) {
@@ -20,7 +19,6 @@ const observer = new IntersectionObserver(entries => {
                 .on("end", () => {
                     isAnimating = true;
                 });
-
             lineChart.selectAll("circle")
                 .style("opacity", 0)
                 .transition()
@@ -31,5 +29,4 @@ const observer = new IntersectionObserver(entries => {
         }
     });
 });
-
 observer.observe(line_observe);
