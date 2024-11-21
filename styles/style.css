@@ -5,6 +5,7 @@ body{
     margin-right:auto;
     margin-left:auto;
 }
+
 a{
     color:darkslategray;
     text-decoration: none;
@@ -15,6 +16,7 @@ a{
    margin-top:1px;
    justify-content: center;
 }
+
 #hed_dek_byline{
     text-align: center;
 }   
@@ -31,6 +33,7 @@ a{
     display: flex;
     justify-content: center;
 }
+
 #adams_clip{
     display: flex;
     justify-content: center;
@@ -43,7 +46,6 @@ a{
     max-width:650px;
 }
 
-
 #byline{
     text-align:center;
     margin-top:10px;
@@ -54,13 +56,12 @@ a{
     margin-top:30px;
     margin-bottom:30px;
 }
- 
+
 #map{ /* https://www.jawg.io/docs/integration/maplibre-gl-js/change-style/ – styling resources */ 
     min-height: 400px;
     height: 100%;
     margin-right:auto;
     margin-left:auto;
-    max-width: 650px;
 }
 
 #hed{
@@ -69,12 +70,10 @@ a{
     padding-top:30px;
     margin-bottom:0;
 }
+
 #dek{
     font-size: 20px;
 }
-    
-        
-
 
 @media (min-width: 2440px), screen and (orientation: portrait), not (orientation:landscape){
     #story_body{

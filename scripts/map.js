@@ -1,8 +1,8 @@
-const key = 'Mg7VoPbeXwKcbPfM9nJ5'
+const key = 'Mg7VoPbeXwKcbPfM9nJ5' // I wish I could hide this in a .env like you can with python :/
 
 // Function to add a random offset to coordinates
 function addRandomOffset(coordinates) {
-    const offset = Math.random() * 0.0003;``
+    const offset = Math.random() * 0.0007;``
     const [lng, lat] = coordinates;
     return [lng + offset, lat + offset];
 }
@@ -36,7 +36,7 @@ map.on('load', () => {
                 clusterMaxZoom:14,
                 clusterRadius:80,
             });
-            
+
 // Map Title
     d3.select("#map_hed")
     .text("Arrests for Sex Work Across NYC from 2024")
@@ -67,9 +67,6 @@ map.on('load', () => {
 
         map.getSource('points').setData(filteredData);
     });
-
-        
-     
         map.addLayer({
             id:'clusters',
             type:'circle',
@@ -120,6 +117,7 @@ map.on('load', () => {
         });
     });
 });
+
 
 map.on('mouseenter', 'clusters', () => {
     map.getCanvas().style.cursor = 'pointer';

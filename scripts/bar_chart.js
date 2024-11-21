@@ -105,7 +105,7 @@ barChart.append("text")
 .style("text-align", "center")
 .style("fill","darkslategray")
 .style("font-size", "14px")
-.html(`<a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/about_data"> Demographics Arrested at Highest Rate for Prostitution (2006-2024)</a>`);
+.html(`<a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/about_data"> Demographics With the Most Arrests for Prostitution (2006-2024)</a>`);
 
 
 barChart.append("text")
