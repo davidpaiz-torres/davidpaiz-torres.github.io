@@ -118,7 +118,6 @@ map.on('load', () => {
     });
 });
 
-
 map.on('mouseenter', 'clusters', () => {
     map.getCanvas().style.cursor = 'pointer';
 });
@@ -128,7 +127,6 @@ map.on('mouseleave', 'clusters', () => {
 });
 
 map.on('mouseenter', 'unclustered-point', (e) => {
-    map.getCanvas().style.cursor = 'pointer';
     const tooltip = d3.select('.tooltip')
         .style("left", (e.originalEvent.pageX + 10) + "px")
         .style("top", (e.originalEvent.pageY + 10) + "px")
@@ -140,7 +138,8 @@ map.on('mouseenter', 'unclustered-point', (e) => {
     <strong>Sex:</strong> ${e.features[0].properties.PERP_SEX} <br>
     <strong>Age Group:</strong> ${e.features[0].properties.AGE_GROUP} <br>
     <strong>Arrest Key:</strong> ${e.features[0].properties.ARREST_KEY}
-  `);
+  `) ; // Arrest Key is listed here to show that each arrest is unique, 
+        //since some of the points may appear to be duplicates at first glance 
 });
 
 map.on('mouseleave', 'unclustered-point', () => {
