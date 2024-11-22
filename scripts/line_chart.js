@@ -21,7 +21,6 @@ const lineTip = d3.select("body")
   .style("border-radius", "4px")
   .style("pointer-events", "none") 
   .style("opacity", 0);
-
   
 const parseYear = d3.timeParse("%Y"); // I was using the wrong time format before and it caused my tooltip to be misaligned on both axis'
 
@@ -30,7 +29,6 @@ const parseYear = d3.timeParse("%Y"); // I was using the wrong time format befor
           d.arrest_year = parseYear(d.arrest_year);
           d.total_arrests = +d.total_arrests;
       });
-      
       
     // Time Scale
     const x = d3.scaleTime()
@@ -99,22 +97,8 @@ lineChart.append("path")
   .attr("stroke", "steelblue")
   .attr("stroke-width", 2.5)
   .attr("d", dataLine);
+// line transitions were here before intersection observer
 
-// Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine //   // Transitions for DataLine // 
-// lineChart.selectAll("path")
-//   .attr('stroke-dasharray', function() {
-//     const length = this.getTotalLength();
-//     return length + ' ' + length;
-//   })
-// lineChart.selectAll("path").style("pointer-events", "stroke")
-//   .attr('stroke-dashoffset', function() {
-//     const length = this.getTotalLength();
-//     return length;
-//   })
-//   .transition()
-//   .duration(12000)
-//   .attr('stroke-dashoffset', 0)
-//   .attr("stroke","steelblue");
 //End of Transitions for DataLine // //End of Transitions for DataLine // //End of Transitions for DataLine // //End of Transitions for DataLine // //End of Transitions for DataLine // //End of Transitions for DataLine // //End of Transitions for DataLine // 
 // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // // End of DataLine  // 
     lineChart.selectAll("circle")
@@ -147,12 +131,7 @@ lineChart.append("path")
 // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // // End of Tooltip Mouse Events // 
 
 //Circle Transitions – DONT MOVE THIS – IT WILL BREAK THE MOUSE EVENTS IF IT GOES BEFORE THEM // //Circle Transitions – DONT MOVE THIS – IT WILL BREAK THE MOUSE EVENTS IF IT GOES BEFORE THEM //    //Circle Transitions – DONT MOVE THIS – IT WILL BREAK THE MOUSE EVENTS IF IT GOES BEFORE THEM //   
-  // lineChart.selectAll("circle")
-  // .style("opacity", 0)
-  // .transition()
-  // .duration(3000)
-  // .delay((d, i) => i * 500)
-  // .style("opacity", 1)
+    // Circle Transitions go here //
 // End of Circle Transitions // // End of Circle Transitions // // End of Circle Transitions // // End of Circle Transitions // // End of Circle Transitions // // End of Circle Transitions // 
 
 // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // // Graphic Bylines+Sourcing  // 
