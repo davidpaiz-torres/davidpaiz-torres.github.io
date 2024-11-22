@@ -21,7 +21,6 @@ const lineTip = d3.select("body")
   .style("border-radius", "4px")
   .style("pointer-events", "none") 
   .style("opacity", 0);
-
   
 const parseYear = d3.timeParse("%Y"); // I was using the wrong time format before and it caused my tooltip to be misaligned on both axis'
 
@@ -30,7 +29,6 @@ const parseYear = d3.timeParse("%Y"); // I was using the wrong time format befor
           d.arrest_year = parseYear(d.arrest_year);
           d.total_arrests = +d.total_arrests;
       });
-      
       
     // Time Scale
     const x = d3.scaleTime()
