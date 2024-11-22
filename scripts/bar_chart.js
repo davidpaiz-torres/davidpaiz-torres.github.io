@@ -56,7 +56,7 @@ d3.csv("data/demographics.csv").then(function(data) {
     .on("mouseenter", (event, d) => {
       barTip.transition().duration(200).style("opacity", 0.9);
       barTip.html(`
-        <strong>Arrest as a Percentage:</strong> ${(d[1] / 21052 * 100).toFixed(2)}%<br>
+        <strong>Arrest as a Percentage:</strong> ${(d[1] / 21025 * 100).toFixed(2)}%<br>
         <strong>Total Arrests:</strong> ${(d[1])}<br>
       `)
         .style("top", (event.pageY - 28) + "px")
