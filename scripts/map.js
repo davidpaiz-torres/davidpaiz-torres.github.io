@@ -127,7 +127,9 @@ map.on('mouseleave', 'clusters', () => {
 });
 
 map.on('mouseenter', 'unclustered-point', (e) => {
+    map.getCanvas().style.cursor = 'pointer'
     const tooltip = d3.select('.tooltip')
+
         .style("left", (e.originalEvent.pageX + 10) + "px")
         .style("top", (e.originalEvent.pageY + 10) + "px")
         .style("opacity", 1) 
