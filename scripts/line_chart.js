@@ -94,7 +94,7 @@ const dataLine = d3.line()
 lineChart.append("path")
   .datum(data)
   .attr("fill", "none")
-  .attr("stroke", "steelblue")
+  .attr("stroke", "#2171b5")
   .attr("stroke-width", 2.5)
   .attr("d", dataLine);
 // line transitions were here before intersection observer
@@ -108,7 +108,7 @@ lineChart.append("path")
         .attr("cx", d => x(d.arrest_year))
         .attr("cy", d => y(d.total_arrests))
         .attr("r", 3.25)
-        .attr("stroke", "whitesmoke")
+        .attr("stroke","#bdbdbd") 
         .attr("fill", "black")
   // Tooltip Mouse Events //   // Tooltip Mouse Events //   // Tooltip Mouse Events //   // Tooltip Mouse Events //   // Tooltip Mouse Events //   // Tooltip Mouse Events //   // Tooltip Mouse Events //   // Tooltip Mouse Events //   // Tooltip Mouse Events // 
         .on("mouseenter", (event, d) => {
