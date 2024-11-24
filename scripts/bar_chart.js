@@ -11,7 +11,6 @@ const barChart = bar_container.append('barChart')
   .attr("height", bar_height + bar_margin.top + bar_margin.bottom)
   .append("g")
   .attr("transform", `translate(${bar_margin.left},${bar_margin.top})`); 1 
-
 // Tooltip
 const barTip = d3.select("body")
   .append("div")
@@ -51,7 +50,7 @@ d3.csv("data/demographics.csv").then(function(data) {
     .attr("y", d => y(d[0]))
     .attr("width", d => x(d[1]))
     .attr("height", y.bandwidth())
-    .attr("fill", "steelblue")
+    .attr("fill","#2171b5",)
     
     .on("mouseenter", (event, d) => {
       barTip.transition().duration(200).style("opacity", 0.9);
@@ -124,3 +123,4 @@ barChart.append("text")
   .style("text-align", "center")
   .style("fill","darkslategray")
   .html(`<a href="https://www.linkedin.com/in/david-paiz-torres-494b3614a/">By:David Paiz-Torres</a>`);
+
