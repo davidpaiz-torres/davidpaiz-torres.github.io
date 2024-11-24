@@ -77,7 +77,7 @@ function myFunction() {
                     window.location.href = url;
                 }, 3850); 
             } else {
-                showPopup("This link is not valid. Please check back later!");
+                showPopup("This link is not available yet. Please check back later!");
             }
         });
     });
