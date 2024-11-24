@@ -1,101 +1,121 @@
+body {
+    background-color: whitesmoke;
+    font-family: 'Nunito Sans', sans-serif;
+    height:200vh;
+}
 
-body{
-    background-color: #f5f5f5;
-    color:darkslategray;
+
+#headshot{
+    display:flex;
+    float:left;
+    /* margin-left: 125px; */
+    max-width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    overflow: hidden;
     margin-right:auto;
-    margin-left:auto;
+    border: steelblue solid;
 }
 
-a{
-    color:darkslategray;
-    text-decoration: none;
+
+
+.test{
+    display:flex;
+    justify-self: center;
+    margin: 1em auto;
+    width: 650px;
+    height:auto;
 }
 
-#filter-container{
-   display:flex;
-   margin-top:1px;
-   justify-content: center;
-}
-
-svg text{
-    font-size: 9px;  
-}
-
-#hed_dek_byline{
-    text-align: center;
-}   
-
-#story_body{
-    margin-right:auto;
-    margin-left:auto;
-    max-width:650px;
-}
-
-#bar_container{
-    margin-right:auto;
-    margin-left:auto;
+.container {
     display: flex;
-    justify-content:center;
-
-}
-
-#adams_clip{
-    display: flex;
+    flex-direction: column;
+    align-content: center;
     justify-content: center;
-    margin-top:30px;
-    border-radius: 2px;
-    border: 1px solid steelblue;
-    margin-bottom:30px;
-    margin-right:auto;
-    margin-left:auto;
-    max-width:650px;
+    align-items: center; 
+    max-width: 650px; 
+    margin: 1em auto; 
 }
 
-#byline{
+header{
     text-align:center;
-    margin-top:10px;
-    margin-bottom:30px;
 }
 
-#map-container{
-    margin-top:30px;
-    margin-bottom:30px;
+header, nav, footer{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    padding-top:20px;
+    padding-bottom:20px;
+
+}
+nav{
+    position:fixed;
 }
 
-#map{ /* https://www.jawg.io/docs/integration/maplibre-gl-js/change-style/ – styling resources */ 
-    min-height: 400px;
-    height: 100%;
-    margin-right:auto;
-    margin-left:auto;
+
+.home_button, .github_button, .project_button, .bluesky_button, .dropbtn, .linkedIn_button {
+    color: black; 
+    margin: 0px 10px; 
+    transition: background-color 0.23s ease; 
+    background-color: whitesmoke;
+    align-content:center;
+    width: fit-content;
+    min-height: 40px;
+    padding: 10px 16px;
+    border:none;
+    font-size:16px;
 }
 
-#hed{
-    font-size:28px;
-    margin-top:30px;
-    padding-top:30px;
-    margin-bottom:0;
+.home_button:hover, .github_button:hover, .project_button:hover, .bluesky_button:hover,   .dropbtn:hover, .linkedIn_button:hover {
+    color: #ff6347; 
+    transform: scale(1.1); 
+    cursor: pointer;
 }
 
-#dek{
-    font-size: 20px;
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 80%;
+    left: 425px; 
+}
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    width:150px;
+    text-decoration: none;
+    display: block;
+  }
+  
+
+  
+
+  .show {display:block;}
+/* bounce animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
 }
 
-@media (min-width: 2440px), screen and (orientation: portrait), not (orientation:landscape){
-    #story_body{
-    margin-right:auto;
-    margin-left:auto;
-    }
-    #map{ 
-        min-height: 400px;
-        height:100%;
-        margin-right:auto;
-        margin-left:auto;
-        max-width:650px;
-    }
-  #line_chart{
-        margin-left:auto;
-        margin-right:auto;
-        width:650px;
-        max-width:650px;
-    }
+/* Apply the bounce animation on hover
+.home_button:hover, .resume_button:hover {
+    animation: bounce 1s infinite;
 }
+
+
+.home_button, .resume_button{
+        animation: rotateBorder 8s linear infinite;
+} */
+
+
