@@ -86,7 +86,7 @@ d3.csv("data/demographics.csv").then(function(data) {
     .call(g => g.select(".domain").remove());
 
     barChart.selectAll("line.vertical-grid")
-    .data(x.ticks(4))
+    .data(x.ticks(0))
     .enter()
     .append("line")
     .attr("class", "vertical-grid")
