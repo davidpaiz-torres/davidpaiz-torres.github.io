@@ -11,8 +11,9 @@ function createPopup(message) {
     popup.style.padding = "10px";
     popup.style.backgroundColor = "#2171b5";
     popup.style.color ="black";
+    popup.style.fontWeight="bold";
     popup.style.border = "1px solid black";
-    popup.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.5)";
+    popup.style.boxShadow = "0 0 12px rgba(2, 4, 6, 2.5)";
     popup.style.zIndex = "9999";
     popup.style.textAlign ="center";
     document.body.appendChild(popup);
