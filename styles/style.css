@@ -48,7 +48,8 @@ svg text{
     margin-bottom:30px;
     margin-right:auto;
     margin-left:auto;
-    max-width:650px;
+    height:315px;
+    width: 550px
 }
 
 #byline{
@@ -99,3 +100,31 @@ svg text{
         max-width:650px;
     }
 }
+
+
+@media (max-width: 450px), screen and (orientation: portrait), not (orientation:landscape){
+    #story_body {
+      max-width:450px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    #nav{
+        margin-left:auto;
+        margin-right:auto;
+        text-align:center;
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content:center;
+        padding-top:10px;
+        padding-bottom:20px;
+    }
+    #container, #bar_container, #adams_clip, #map{
+        display: flex;
+        justify-content: center;
+        margin-left:auto;
+        margin-right:auto;
+        width: 100%;
+    }
+
+  }

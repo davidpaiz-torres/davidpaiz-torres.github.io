@@ -2,7 +2,10 @@
 
 const margin = {top: 40, right: 60, bottom: 60, left: 60},
       width = 650 - margin.left - margin.right,
+      // width = document.body.clientWidth - 80;
       height = 400 - margin.top - margin.bottom;
+
+
 
 const lineChart = d3.select("#container").append("svg")
   .attr("width", width + margin.left + margin.right)
@@ -147,7 +150,7 @@ lineChart.append("path")
     
         lineChart.append("text") 
         .attr("x", width  - 250)
-        .attr("x", 330 - margin.left - 10)
+        .attr("x", 330 - margin.left - 100)
         .attr("y", height + margin.top - 360)
         .style("text-anchor", "middle")
         .style("text-align", "center")
@@ -173,4 +176,5 @@ lineChart.append("path")
         
 });
 // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // 
+
 

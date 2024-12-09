@@ -1,5 +1,6 @@
 const bar_margin = { top: 80, right: 240, bottom: 80, left: 240 },
   bar_width = 950 - bar_margin.left - bar_margin.right,
+  // bar_width = document.body.clientWidth + 120;
   bar_height = 400 - bar_margin.top - bar_margin.bottom;
 
 const bar_container = d3.select('#bar_container');
