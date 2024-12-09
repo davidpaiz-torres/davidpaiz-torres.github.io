@@ -8,7 +8,7 @@ body{
 
 a{
     color:darkslategray;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 #filter-container{
