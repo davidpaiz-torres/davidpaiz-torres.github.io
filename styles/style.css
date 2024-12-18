@@ -50,8 +50,10 @@ svg text{
     margin-bottom:30px;
     margin-right:auto;
     margin-left:auto;
-    max-width:650px;
+    height:315px;
+    width: 550px
 }
+
 
 #byline{
     text-align:center;
