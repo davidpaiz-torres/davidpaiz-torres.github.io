@@ -119,12 +119,12 @@ svg text{
         padding-top:10px;
         padding-bottom:20px;
     }
-    #container, #bar_container, #adams_clip, #map{
-        display: flex;
-        justify-content: center;
+    /* #container, #bar_container, #adams_clip, #map{
         margin-left:auto;
         margin-right:auto;
+        height:auto;
         width: 100%;
-    }
+        max-width:450px;
+    } */
 
   }
