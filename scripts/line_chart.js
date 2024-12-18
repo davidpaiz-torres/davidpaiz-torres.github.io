@@ -2,10 +2,7 @@
 
 const margin = {top: 40, right: 60, bottom: 60, left: 60},
       width = 650 - margin.left - margin.right,
-      // width = document.body.clientWidth - 80;
       height = 400 - margin.top - margin.bottom;
-
-
 
 const lineChart = d3.select("#container").append("svg")
   .attr("width", width + margin.left + margin.right)
@@ -150,7 +147,7 @@ lineChart.append("path")
     
         lineChart.append("text") 
         .attr("x", width  - 250)
-        .attr("x", 330 - margin.left - 100)
+        .attr("x", 330 - margin.left - 10)
         .attr("y", height + margin.top - 360)
         .style("text-anchor", "middle")
         .style("text-align", "center")
@@ -178,3 +175,17 @@ lineChart.append("path")
 // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // 
 
 
+  // // // Media Query 
+  // const mediaQuery = window.matchMedia('(max-width: 450px), only screen and (orientation: portrait), not (orientation:landscape)');
+  // if (mediaQuery.matches) {
+  //   // alert('Media Query Matched!')//the alert is a placeholder to make sure the matchMedia method is working
+
+  //   const newWidth = document.body.clientWidth - 360;
+  //   const newHeight = 400 - margin.top - margin.bottom;
+    
+  //   width = newWidth;
+  //   height = newHeight;
+    
+  //   lineChart.attr("width", width + margin.left + margin.right)
+  //     .attr("height", height + margin.top + margin.bottom);
+  // }
