@@ -151,3 +151,8 @@ map.on('mouseleave', 'unclustered-point', () => {
 map.on('mouseleave', 'unclustered-point', () => {
     map.getCanvas().style.cursor = '';
 });
+
+// const mapQuery = window.matchMedia('(max-width: 450px)')
+// if (mapQuery.matches){
+//   alert('Map Query Matched!')
+// }

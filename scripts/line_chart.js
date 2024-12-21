@@ -174,3 +174,18 @@ lineChart.append("path")
 });
 // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // // End of Graphic Bylines+Sourcing  // 
 
+
+  // // // Media Query 
+  // const mediaQuery = window.matchMedia('(max-width: 450px), only screen and (orientation: portrait), not (orientation:landscape)');
+  // if (mediaQuery.matches) {
+  //   // alert('Media Query Matched!')//the alert is a placeholder to make sure the matchMedia method is working
+
+  //   const newWidth = document.body.clientWidth - 360;
+  //   const newHeight = 400 - margin.top - margin.bottom;
+    
+  //   width = newWidth;
+  //   height = newHeight;
+    
+  //   lineChart.attr("width", width + margin.left + margin.right)
+  //     .attr("height", height + margin.top + margin.bottom);
+  // }

@@ -1,5 +1,6 @@
 const bar_margin = { top: 80, right: 240, bottom: 80, left: 240 },
   bar_width = 950 - bar_margin.left - bar_margin.right,
+  // bar_width = document.body.clientWidth + 120;
   bar_height = 400 - bar_margin.top - bar_margin.bottom;
 
 const bar_container = d3.select('#bar_container');
@@ -55,7 +56,7 @@ d3.csv("data/demographics.csv").then(function(data) {
     .on("mouseenter", (event, d) => {
       barTip.transition().duration(200).style("opacity", 0.9);
       barTip.html(`
-        <strong>Arrest as a Percentage:</strong> ${(d[1] / 21025 * 100).toFixed(2)}%<br>
+        <strong>Arrest as a Percentage:</strong> ${(d[1] / 186 * 100).toFixed(2)}%<br>
         <strong>Total Arrests:</strong> ${(d[1])}<br>
       `)
         .style("top", (event.pageY - 28) + "px")
@@ -105,8 +106,7 @@ barChart.append("text")
 .style("text-align", "center")
 .style("fill","darkslategray")
 .style("font-size", "14px")
-.html(`<a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/about_data">Arrest Rates for Prostitution by Race/Ethnicity in Queens (2006-2024)</a>`);
-
+.html(`<a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/about_data">Arrest Rates for Prostitution by Race/Ethnicity in Queens (2021-2024)</a>`);
 
 
 barChart.append("text")
@@ -125,3 +125,7 @@ barChart.append("text")
   .style("fill","darkslategray")
   .html(`<a href="https://www.linkedin.com/in/david-paiz-torres-494b3614a/">By:David Paiz-Torres</a>`);
 
+  // const barQuery = window.matchMedia('(max-width: 450px)')
+  // if (barQuery.matches){
+  //   alert('Bar Query Matched!') //the alert is a placeholder to make sure the matchMedia method is working
+  // }
