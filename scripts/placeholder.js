@@ -20,12 +20,12 @@ function createPopup(message) {
     return popup;
 }
 window.addEventListener("load", function(){
-    const test = document.getElementById("body");
+    const test = document.getElementById("story_body");
     test.style.display = 'none';
     function showPopup(message) {
         const popup = createPopup(message);    
     }
-    showPopup("This story is currently being redrafted. Please contact me for access to the graphics");
+    showPopup("This story is currently under embargo and is being redrafted. It will be published here in 6 months. For access to the graphics, please David Paiz-Torres at daptorz@gmail.com");
        
 });
 
