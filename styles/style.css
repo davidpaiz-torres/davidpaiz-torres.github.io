@@ -1,42 +1,81 @@
 body {
     background-color: whitesmoke;
     font-family: 'Nunito Sans', sans-serif;
-    height:200vh;
+    /* height:200vh; */
 }
 
 
 #headshot{
-    display:flex;
-    float:left;
-    /* margin-left: 125px; */
     max-width: 200px;
+    display:flex;
     height: 200px;
     border-radius: 100%;
     overflow: hidden;
-    margin-right:auto;
+    object-fit: cover;
+    border: 3px solid #ff6347;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border: steelblue solid;
 }
 
 
-
-.test{
-    display:flex;
-    justify-self: center;
-    margin: 1em auto;
-    width: 650px;
-    height:auto;
-}
-
 .container {
     display: flex;
-    flex-direction: column;
-    align-content: center;
+    flex-direction: row;
     justify-content: center;
     align-items: center; 
-    max-width: 650px; 
+    padding: 20px;
+    max-width: 850px;
     margin: 1em auto; 
+} 
+
+.contact_button {
+    padding: 20px;
+    max-width: 850px;
+    margin: 1em auto; 
+} 
+
+
+#description{
+    display: flex;
+    flex:1;
+}
+a{
+    text-decoration: none;
+    color: steelblue;
 }
 
+#name{
+    font-size:1.85em;
+    color:#007acc;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+#title{
+    font-size:1.25em;
+    color:#007acc;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+
+.contact_button {
+    all: unset;
+    padding: 10px;
+    background-color: #007acc;
+    color: white;
+    border-radius: 6px;
+    font-weight: 60;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.contact_button:hover {
+    background-color: #005fa3;
+    color:orange;
+    font-weight: bold;
+  }
+  
 header{
     text-align:center;
 }
@@ -51,6 +90,7 @@ header, nav, footer{
 }
 nav{
     position:fixed;
+    margin-top:-35px;
 }
 
 
@@ -59,7 +99,6 @@ nav{
     margin: 0px 10px; 
     transition: background-color 0.23s ease; 
     background-color: rgba(255, 255, 255, 0.0);
-    /* background-color: whitesmoke; */
     align-content:center;
     width: fit-content;
     min-height: 40px;
@@ -89,7 +128,7 @@ nav{
     left: 425px; 
 }
   
-  /* Links inside the dropdown */
+
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -97,26 +136,13 @@ nav{
     text-decoration: none;
     display: block;
   }
-  
-
-  
 
   .show {display:block;}
+  
 /* bounce animation */
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
     40% {transform: translateY(-30px);}
     60% {transform: translateY(-15px);}
 }
-
-/* Apply the bounce animation on hover
-.home_button:hover, .resume_button:hover {
-    animation: bounce 1s infinite;
-}
-
-
-.home_button, .resume_button{
-        animation: rotateBorder 8s linear infinite;
-} */
-
 

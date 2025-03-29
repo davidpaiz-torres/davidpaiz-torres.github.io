@@ -23,12 +23,35 @@ function showPopup(message) {
     }, 2850);
 }
 document.addEventListener('DOMContentLoaded', function() {
+    const base = window.location.origin + '/davidpaiz-torres.github.io/';
+    
     const buttonActions = {
         github: 'https://github.com/davidpaiz-torres',
         linkedIn: 'https://www.linkedin.com/in/david-paiz-torres-494b3614a/',
-        bsky: 'https://bsky.app/profile/daptorz.bsky.social',
-        home: '/index.html',
+        bsky: 'https://bsky.app/profile/davidpaiz-torres.bsky.social',
+        home: '/davidpaiz-torres.github.io/index.html',
+      
     };
+
+    if (window.location.href === "davidpaiz-torres.github.io/index.html") {
+         buttonActions ={
+            home: 'index.html',
+        }
+    }
+  
+    
+    const projectLinks = {
+        roosevelt: 'davidpaiz-torres.github.io/page_2/roosevelt.html',
+        toh: 'davidpaiz-torres.github.io/page_4/taste_of_home.html',
+        // eht: 'page_3/electoral_history_tracker.html', 
+        // rrc: '../restaurant_report_card.html'  
+      };
+
+      Object.entries(projectLinks).forEach(([id, url]) => {
+        const el = document.getElementById(id);
+        if (el) el.setAttribute('href', url);
+      });
+    
 
     Object.keys(buttonActions).forEach(function(buttonId) {
         const button = document.getElementById(buttonId);
@@ -50,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 // Drop Down Menu Studd
-function myFunction() {
+function dropDown() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
   // Close the dropdown if the user clicks outside of it

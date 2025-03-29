@@ -7,36 +7,47 @@
             <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <script src="scripts/alert.js"></script>
-            <script src="scripts/script.js"></script>
     </head>
 <!--End of MetaData -->
 <body>
 <header>
     <nav id ="nav">
         <button  class="github_button" id = "github">Github</button>
-        <button class ="linkedIn_button" id="linkedIn" href="">LinkedIn</button>
+        <button class ="linkedIn_button" id="linkedIn">LinkedIn</button>
         <button class="home_button" id="home">Home</button> 
-        <button class ="bluesky_button" id="bsky" href="">Bluesky</button>
-        <button class="dropbtn" id="dropbtn" onclick="myFunction()">Interactive Projects
+        <button class ="bluesky_button" id="bsky">Bluesky</button>
+        <button class="dropbtn" id="dropbtn" onclick="dropDown()">Interactive Projects
             <i class="fa fa-caret-down"></i>
           </button>
               <div class="dropdown-content" id="myDropdown">
-                <a id ="roosevelt" href="#page_2/roosevelt.html"> Operation Restore Roosevelt Ave</a>
-                <a id="toh" href="#page_4/taste_of_home.html">A Taste of Home</a>
-                <a id="eht" href="#">Electoral History Tracker</a>
-                <a id = "rrc" href="#">Restuarant Report Card</a>
+                <!-- <a id ="roosevelt">Operation Restore Roosevelt</a> -->
+                <a id="toh">A Taste of Home</a>
+                <!-- <a id="eht">Electoral History Tracker</a>
+                <a id = "rrc">Restuarant Report Card</a> -->
               </div>
     </nav>
 </header>
-<aside id="aside_hs">
-    <figure>
-        <img id ="headshot"
-            src="media/headshot/David_Paiz_Torres_1.jpg"
-            alt="David Paiz-Torres"/>
-    </figure>
-</aside>
 <section class = "container">
+    <aside id="aside_hs">
+        <figure>
+            <img id ="headshot"
+                src="media/headshot/David_Paiz_Torres_1.jpg"
+                alt="David Paiz-Torres"/>
+        </figure>
+    </aside>
     <main>
+        <h1 id="name">David Paiz-Torres</h1>
+        <h2 id="title">Freelance Journalist</h2>
+        <button class="contact_button" id="contact">Contact Me</button>
+        
+        <p id="description">David Paiz-Torres is a freelance journalist who specializes in data visualization. 
+        He has a passion for using data to tell compelling stories and make complex information accessible to a wide audience.  David is skilled in data analysis, visualization, and storytelling, and has a knack for reading any story that incorporates scrollytelling.</p>
+        <p id="description_2">
+        David is a recent graduate from the Craig Newmark Graduate School of Journalism, with a Master's degree in Journalism, where he 
+        specialized in Local Accountability Reporting and Data Visualization. David has bylines in Tech Poliy Press and PCMag, 
+        which can be found <a href=https://muckrack.com/david-paiz-torres?> here</a>. </p>
+ 
+        
     </main>  
 </section>   
  </body>
