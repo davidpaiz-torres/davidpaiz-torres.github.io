@@ -146,3 +146,67 @@ nav{
     60% {transform: translateY(-15px);}
 }
 
+/* iphone media query */
+@media (max-width: 650px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    #headshot {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 15px;
+    }
+  
+    #name {
+      font-size: 1.5em;
+      text-align: center;
+    }
+  
+    #title {
+      font-size: 1.1em;
+      text-align: center;
+    }
+  
+    #description {
+      flex-direction: column;
+      padding: 0 10px;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 0;
+      position: static;
+    }
+  
+    .home_button, .github_button, .project_button, .bluesky_button, .dropbtn, .linkedIn_button {
+      font-size: 14px;
+      padding: 8px 12px;
+      min-height: unset;
+    }
+  
+    .dropdown-content {
+      position: static;
+      width: 100%;
+      text-align: center;
+      box-shadow: none;
+      background-color: transparent;
+    }
+  
+    .dropdown-content a {
+      width: 100%;
+      padding: 8px 0;
+      color: steelblue;
+    }
+  
+    .contact_button {
+      max-width: 90%;
+      margin: 20px auto;
+      text-align: center;
+      display: block;
+    }
+  }
+  
