@@ -41,8 +41,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
     
     const projectLinks = {
-        roosevelt: 'davidpaiz-torres.github.io/page_2/roosevelt.html',
-        toh: 'davidpaiz-torres.github.io/page_4/taste_of_home.html',
+        roosevelt: 'davidpaiz-torres.github.io/page_2/index.html',
+        toh: 'davidpaiz-torres.github.io/vis_story/index.html',
         // eht: 'page_3/electoral_history_tracker.html', 
         // rrc: '../restaurant_report_card.html'  
       };
