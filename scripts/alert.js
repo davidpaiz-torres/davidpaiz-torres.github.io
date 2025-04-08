@@ -38,11 +38,11 @@ document.addEventListener('DOMContentLoaded', function() {
             home: 'index.html',
         }
     }
-  
     
     const projectLinks = {
-        roosevelt: 'davidpaiz-torres.github.io/page_2/index.html',
+        roosevelt: 'https://david-mia-asad-capstone.github.io/',
         toh: 'davidpaiz-torres.github.io/vis_story/index.html',
+        congress_tracker: 'davidpaiz-torres.github.io/q1-congressional-activity/index.html',
         // eht: 'page_3/electoral_history_tracker.html', 
         // rrc: '../restaurant_report_card.html'  
       };
@@ -53,24 +53,6 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     
 
-    Object.keys(buttonActions).forEach(function(buttonId) {
-        const button = document.getElementById(buttonId);
-        if (button) {
-            button.addEventListener('click', function() {
-                showPopup("Processing your request... You will be redirected to another page... ");
-                // github.style.cursor = "wait"; 
-                // bsky.style.cursor = "wait"; 
-                setTimeout(function() {
-                    const popup = document.querySelector('.popup');
-                    if (popup) {
-                        popup.remove();
-                    }
-                    window.location.href = buttonActions[buttonId];
-                }, 3850);
-            });
-        }
-        
-    });
 });
 // Drop Down Menu Studd
 function dropDown() {
@@ -94,7 +76,11 @@ function dropDown() {
             
             const href = link.getAttribute('href');
             if (href && href.trim() !== "#") {
-                const url = `${window.location.origin}/${href.replace(/^#/, '')}`;
+                let url = href;
+                // Check if there is an absolute or relative URL before processing request
+                    if (!href.startsWith('http')) {
+                    url = `${window.location.origin}/${href.replace(/^#/, '')}`;
+                }
                 showPopup("Processing your request... You will be redirected to another page...");
                 setTimeout(function () {
                     window.location.href = url;
