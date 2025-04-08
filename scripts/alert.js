@@ -36,9 +36,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const projectLinks = {
         roosevelt: 'https://david-mia-asad-capstone.github.io/',
-        toh: 'https://davidpaiz-torres.github.io/vis_story/index.html',
-        home: 'https://david.paiz-torres.github.io/index.html',
-        congress_tracker: 'davidpaiz-torres.github.io/q1-congressional-activity.index.html'
+        // toh: 'https://davidpaiz-torres.github.io/vis_story/index.html',
+        // home: 'https://david.paiz-torres.github.io/index.html',
+        // congress_tracker: 'davidpaiz-torres.github.io/q1-congressional-activity.index.html'
     };
   
 
