@@ -14,77 +14,88 @@ function createPopup(message) {
     document.body.appendChild(popup);
     return popup;
 }
+
 function showPopup(message) {
     const popup = createPopup(message);
-
     // Remove the pop-up after 3 seconds
     setTimeout(function() {
         popup.remove();
     }, 2850);
 }
+
+
 document.addEventListener('DOMContentLoaded', function() {
-    const base = window.location.origin + '/davidpaiz-torres.github.io/';
-    
+    // Use absolute URLs for external pages and root-relative for internal ones.
     const buttonActions = {
         github: 'https://github.com/davidpaiz-torres',
         linkedIn: 'https://www.linkedin.com/in/david-paiz-torres-494b3614a/',
         bsky: 'https://bsky.app/profile/davidpaiz-torres.bsky.social',
-        home: '/davidpaiz-torres.github.io/index.html',
-      
+        roosevelt: 'https://david-mia-asad-capstone.github.io/',
     };
 
-    if (window.location.href === "davidpaiz-torres.github.io/index.html") {
-         buttonActions ={
-            home: 'index.html',
-        }
-    }
-    
     const projectLinks = {
         roosevelt: 'https://david-mia-asad-capstone.github.io/',
-        toh: 'davidpaiz-torres.github.io/vis_story/index.html',
-        congress_tracker: 'davidpaiz-torres.github.io/q1-congressional-activity/index.html',
-        // eht: 'page_3/electoral_history_tracker.html', 
-        // rrc: '../restaurant_report_card.html'  
-      };
+        toh: 'https://davidpaiz-torres.github.io/vis_story/index.html',
+        home: 'https://david.paiz-torres.github.io/index.html',
+        congress_tracker: 'https://david.paiz-torres.github.io/q1-congressional-activity/index.html'
+    };
+  
 
-      Object.entries(projectLinks).forEach(([id, url]) => {
+    // Set href attributes for project links
+    Object.entries(projectLinks).forEach(([id, url]) => {
         const el = document.getElementById(id);
-        if (el) el.setAttribute('href', url);
-      });
-    
+        if (el) {
+            el.setAttribute('href', url);
+        }
+    });
 
+    // Attach click event listeners to navigation buttons
+    Object.keys(buttonActions).forEach(function(buttonId) {
+        const button = document.getElementById(buttonId);
+        if (button) {
+            button.addEventListener('click', function() {
+                showPopup("Processing your request... You will be redirected to another page... ");
+                setTimeout(function() {
+                    const popup = document.querySelector('.popup');
+                    if (popup) {
+                        popup.remove();
+                    }
+                    window.location.href = buttonActions[buttonId];
+                }, 3850);
+            });
+        }
+    });
 });
-// Drop Down Menu Studd
+
+// Drop Down Menu
 function dropDown() {
     document.getElementById("myDropdown").classList.toggle("show");
-  }
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(e) {
-    if (!e.target.matches('.dropbtn')) {
-    const myDropdown = document.getElementById("myDropdown");
-      if (myDropdown.classList.contains('show')) {
-        myDropdown.classList.remove('show');
-      }
-    }
-  }
+}
 
-  document.addEventListener('DOMContentLoaded', function () {
+// Close dropdown if clicking outside
+window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+        const myDropdown = document.getElementById("myDropdown");
+        if (myDropdown && myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+        }
+    }
+};
+
+document.addEventListener('DOMContentLoaded', function () {
     const dropdownLinks = document.querySelectorAll('.dropdown-content a');
     dropdownLinks.forEach(link => {
         link.addEventListener('click', function (e) {
-            e.preventDefault(); 
-            
+            e.preventDefault();
             const href = link.getAttribute('href');
             if (href && href.trim() !== "#") {
-                let url = href;
-                // Check if there is an absolute or relative URL before processing request
-                    if (!href.startsWith('http')) {
-                    url = `${window.location.origin}/${href.replace(/^#/, '')}`;
-                }
+                // If it's an absolute URL (starts with "http"), use it as is,
+                // otherwise, assume it's a relative URL.
+                let url = href.startsWith("http") ? href : href;
                 showPopup("Processing your request... You will be redirected to another page...");
                 setTimeout(function () {
                     window.location.href = url;
-                }, 3850); 
+                }, 3850);
             } else {
                 showPopup("This link is not available yet. Please check back later!");
             }
