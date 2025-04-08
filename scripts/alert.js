@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         linkedIn: 'https://www.linkedin.com/in/david-paiz-torres-494b3614a/',
         bsky: 'https://bsky.app/profile/davidpaiz-torres.bsky.social',
         roosevelt: 'https://david-mia-asad-capstone.github.io/',
+        toh: 'https://davidpaiz-torres.github.io/vis_story/index.html',
     };
 
     const projectLinks = {
