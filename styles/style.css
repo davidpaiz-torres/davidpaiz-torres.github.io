@@ -84,7 +84,7 @@ header, nav, footer{
     flex-direction:row;
     justify-content:center;
     padding-top:2px;
-    padding-bottom:25px;
+    padding-bottom:35px;
 
 }
 nav{
@@ -180,20 +180,17 @@ header{
   .dropdown-content.show {
     display: block;
     width: fit-content; 
+    position: inherit;
     margin-left: 0 auto;
     margin-right: 0 auto;
     text-align: center;
   }
   .dropdown-content a, a#toh, a#roosevelt, a#congress_activity {
-    color: black;
-    padding: 2px 6px;
+    color: black; 
     text-decoration: none; 
-    left:30em;
     max-width: 8em;
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
+   
+   
 }
 
 
@@ -201,7 +198,11 @@ header{
 
 
 @media (max-width: 450px) {
-
+  
+nav, header{
+  padding-top:2px;
+  padding-bottom:5px;
+}
   .show {
     position:relative;
     width: 100%;
@@ -257,14 +258,13 @@ header{
     .dropdown-content {
       display: none;
       position: absolute;
-      top: calc(5% + 50px); 
-      /* left: 50%;              */
-      transform: translateX(-50%);
-      width: 70%;            
-      max-width: 200px;      
+      /* top: calc(5% + 50px); 
+      left: 50%;              */
+      /* transform: translateX(-50%); */
+      width: 12em;            
+      max-width: 200em;      
       background-color: #f1f1f1;  
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-      z-index: 9999;
     }
 
     .dropdown-content.show {
@@ -273,7 +273,7 @@ header{
       max-width: 8em;
       /* width: 375px; */
       max-width: 10em;
-      left:276px;
+      left:236px;
     }
 
     
