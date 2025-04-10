@@ -83,8 +83,8 @@ header, nav, footer{
     display:flex;
     flex-direction:row;
     justify-content:center;
-    padding-top:20px;
-    padding-bottom:20px;
+    padding-top:2px;
+    padding-bottom:25px;
 
 }
 nav{
@@ -275,19 +275,8 @@ header{
       max-width: 10em;
       left:276px;
     }
-    .dropdown-content a, a#toh, a#roosevelt, a#congress_activity {
-      color: black;
-      padding: 2px 6px;
-      text-decoration: none; 
-      left:30em;
-      max-width: 8em;
-      display:flex;
-      justify-content: center;
-      flex-direction: column;
-      flex-wrap: wrap;
-  }
-  
 
+    
     .contact_button {
       max-width: 90%;
       margin: 20px auto;
