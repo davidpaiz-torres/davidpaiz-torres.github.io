@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const buttonActions = {
         github: 'https://github.com/davidpaiz-torres',
         linkedIn: 'https://www.linkedin.com/in/david-paiz-torres-494b3614a/',
-        bsky: 'https://bsky.app/profile/davidpaiz-torres.bsky.social',
+        bsky: 'https://bsky.app/profile/davidpaiztorres.bsky.social',
         roosevelt: 'https://david-mia-asad-capstone.github.io/',
         
     };
