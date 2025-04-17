@@ -286,3 +286,12 @@ nav, header{
 
   }
   
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #121219;
+      color: #f1f1f1;
+    }
+    .home_button, .github_button, .project_button, .bluesky_button, .dropbtn, .linkedIn_button {
+      color: #f1f1f1;
+    }
+  }
