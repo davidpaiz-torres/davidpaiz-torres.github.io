@@ -4,6 +4,14 @@ body {
     /* height:200vh; */
 }
 
+a:hover{
+color:#ff6347;
+transition:  0.75s ease; 
+}
+
+a:not(:hover){
+  transition:  2.75s ease; 
+}
 
 #headshot{
     max-width: 200px;
@@ -96,8 +104,8 @@ nav{
 .home_button, .github_button, .project_button, .bluesky_button, .dropbtn, .linkedIn_button {
     color: black; 
     margin: 0px 10px; 
-    transition: background-color 0.23s ease; 
-    background-color: rgba(255, 255, 255, 0.0);
+    all:unset;
+    transition:  0.75s ease; 
     align-content:center;
     width: fit-content;
     min-height: 40px;
@@ -112,10 +120,10 @@ nav{
     cursor: pointer;
 }
 
-  .dropdown {
+  /* .dropdown {
     position: relative;
     display: inline-block;
-  }
+  } */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -123,8 +131,8 @@ nav{
     min-width: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    top: 80%;
-    left: 395px; 
+    top: 50%;
+    left: 315px; 
 }
   
 
@@ -244,7 +252,7 @@ nav, header{
       font-size: 12px;
       display: flex;
       flex-wrap:wrap;
-    
+      all:unset;
       justify-content: center;
       padding: 8px 12px;
       min-height: unset;
