@@ -1,9 +1,10 @@
+
 function createPopup(message) {
     const popup = document.createElement("div");
     popup.className = 'popup';
     popup.textContent = message;
     popup.style.position = "fixed";
-    popup.style.top = "25%";
+    popup.style.top = "15%";
     popup.style.left = "50%";
     popup.style.transform = "translate(-50%, -50%)";
     popup.style.padding = "10px";
@@ -15,13 +16,17 @@ function createPopup(message) {
     return popup;
 }
 
+
 function showPopup(message) {
     const popup = createPopup(message);
-    // Remove the pop-up after 3 seconds
     setTimeout(function() {
         popup.remove();
-    }, 2850);
+    }, 
+    3850);
+   
 }
+
+
 
 
 document.addEventListener('DOMContentLoaded', function() {
