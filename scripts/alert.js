@@ -21,12 +21,10 @@ function showPopup(message) {
         popup.remove();
     }, 
     3850);
-   
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Use absolute URLs for external pages and root-relative for internal ones.
-    const buttonActions = {
+        const buttonActions = {
         github: 'https://github.com/davidpaiz-torres',
         linkedIn: 'https://www.linkedin.com/in/david-paiz-torres-494b3614a/',
         bsky: 'https://bsky.app/profile/davidpaiztorres.bsky.social',
@@ -36,9 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const projectLinks = {
         roosevelt: 'https://david-mia-asad-capstone.github.io/',
-        // toh: 'https://davidpaiz-torres.github.io/vis_story/index.html',
-        // home: 'https://david.paiz-torres.github.io/index.html',
-        // congress_tracker: 'davidpaiz-torres.github.io/q1-congressional-activity.index.html'
     };
   
 
@@ -57,10 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
             button.addEventListener('click', function() {
                 showPopup("Processing your request... You will be redirected to another page... ");
                 setTimeout(function() {
-                    const popup = document.querySelector('.popup');
-                    if (popup) {
-                        popup.remove();
-                    }
+            
                     window.location.href = buttonActions[buttonId];
                 }, 3850);
             });
