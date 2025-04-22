@@ -16,7 +16,6 @@ function createPopup(message) {
     return popup;
 }
 
-
 function showPopup(message) {
     const popup = createPopup(message);
     setTimeout(function() {
@@ -25,9 +24,6 @@ function showPopup(message) {
     3850);
    
 }
-
-
-
 
 document.addEventListener('DOMContentLoaded', function() {
     // Use absolute URLs for external pages and root-relative for internal ones.
@@ -95,8 +91,6 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
             const href = link.getAttribute('href');
             if (href && href.trim() !== "#") {
-                // If it's an absolute URL (starts with "http"), use it as is,
-                // otherwise, assume it's a relative URL.
                 let url = href.startsWith("http") ? href : href;
                 showPopup("Processing your request... You will be redirected to another page...");
                 setTimeout(function () {
@@ -108,3 +102,38 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const contact = document.getElementById("contact");
+    contact.addEventListener("click", () => {
+      const email = "davidpaiz38@gmail.com";
+      // copy to clipboard
+      navigator.clipboard.writeText(email)
+        .then(() => {
+          const popup = showPopup("Email copied to clipboard!");
+          popup.style.position = "absolute";
+          popup.style.top      = "42%";
+          popup.style.left     = "52%";
+          popup.style.borderRadius = "60px 20px 60px";
+          popup.style.backgroundColor ="orangered";
+        })
+        .catch(err => console.error("Clipboard write failed:", err));
+    });
+  });
+  
+  // helper to create & return a pop‑up DIV
+  function showPopup(message) {
+    const popup = document.createElement("div");
+    popup.className   = "popup";
+    popup.textContent = message;
+    popup.style.transform = "translate(-50%, -50%)";
+    popup.style.padding = "10px";
+    popup.style.backgroundColor = "#2171b5";
+    popup.style.border = "1px solid black";
+    popup.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.5)";
+    popup.style.zIndex = "9999";
+    document.body.appendChild(popup);
+    setTimeout(() => popup.remove(), 3850);
+    return popup;
+  }
