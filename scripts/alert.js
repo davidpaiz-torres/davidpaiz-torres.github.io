@@ -11,7 +11,6 @@ function createPopup(message) {
     popup.style.backgroundColor = "#2171b5";
     popup.style.border = "1px solid black";
     popup.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.5)";
-    popup.style.zIndex = "9999";
     document.body.appendChild(popup);
     return popup;
 }
@@ -103,7 +102,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
 document.addEventListener("DOMContentLoaded", () => {
     const contact = document.getElementById("contact");
     contact.addEventListener("click", () => {
@@ -111,29 +109,16 @@ document.addEventListener("DOMContentLoaded", () => {
       // copy to clipboard
       navigator.clipboard.writeText(email)
         .then(() => {
-          const popup = showPopup("Email copied to clipboard!");
-          popup.style.position = "absolute";
-          popup.style.top      = "42%";
-          popup.style.left     = "52%";
-          popup.style.borderRadius = "60px 20px 60px";
-          popup.style.backgroundColor ="orangered";
+          const clipboard = createPopup("Email copied to clipboard!");
+          clipboard.style.position = "absolute";
+          clipboard.style.top      = "42%";
+          clipboard.style.left     = "52%";
+          clipboard.style.textAlign = "center";
+          clipboard.style.borderRadius = "60px 20px 60px";
+          clipboard.style.backgroundColor ="orangered";
+          setTimeout(() => clipboard.remove(), 3850);
         })
         .catch(err => console.error("Clipboard write failed:", err));
     });
   });
-  
-  // helper to create & return a pop‑up DIV
-  function showPopup(message) {
-    const popup = document.createElement("div");
-    popup.className   = "popup";
-    popup.textContent = message;
-    popup.style.transform = "translate(-50%, -50%)";
-    popup.style.padding = "10px";
-    popup.style.backgroundColor = "#2171b5";
-    popup.style.border = "1px solid black";
-    popup.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.5)";
-    popup.style.zIndex = "9999";
-    document.body.appendChild(popup);
-    setTimeout(() => popup.remove(), 3850);
-    return popup;
-  }
+
