@@ -58,6 +58,10 @@ a{
     margin-bottom: 0px;
 }
 
+/* #name:hover{
+  cursor: pointer;
+} */
+
 #title{
     font-size:1.25em;
     color:#007acc;
@@ -71,15 +75,14 @@ a{
     padding: 10px;
     background-color: #007acc;
     color: white;
-    border-radius: 6px;
+    border-radius: 60px 20px 60px;
     font-weight: 60;
     cursor: pointer;
     transition: background 0.2s ease;
 }
 
 .contact_button:hover {
-    background-color: #005fa3;
-    color:orange;
+    color:black;
     font-weight: bold;
   }
   
